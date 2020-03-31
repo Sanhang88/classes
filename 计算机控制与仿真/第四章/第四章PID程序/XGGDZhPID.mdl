@@ -1,0 +1,1294 @@
+Model {
+  Name			  "XGGDZhPID"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Apr 01 09:38:41 2005"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ThinkPad"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu May 12 19:44:28 2011"
+  ModelVersionFormat	  "1.%<AutoIncrement:60>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode4"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "8000"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "20"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      WaveForm		      "sine"
+      Amplitude		      "1"
+      Frequency		      "1"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransportDelay
+      DelayTime		      "1"
+      InitialInput	      "0"
+      BufferSize	      "1024"
+      PadeOrder		      "0"
+      TransDelayFeedthrough   off
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "XGGDZhPID"
+    Location		    [2, 82, 1253, 736]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "233"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Scope
+      Name		      " Scope "
+      Ports		      [1]
+      Position		      [515, 174, 545, 206]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Location		      [5, 60, 1285, 807]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"±Í◊ºPIDøÿ÷∆À„∑®µƒ ‰»Î/ ‰≥ˆœÏ”¶"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-1.3"
+      YMax		      "1.3"
+      SaveToWorkspace	      on
+      SaveName		      "PID"
+      DataFormat	      "Array"
+      MaxDataPoints	      "500000"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      " –ﬁ∏ƒ∏¯∂®÷µ±‰ªØ√Ù∏–µƒŒª÷√ ΩPIDøÿ÷∆À„∑®"
+      Ports		      [3, 1]
+      Position		      [205, 14, 280, 116]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			" –ﬁ∏ƒ∏¯∂®÷µ±‰ªØ√Ù∏–µƒŒª÷√ ΩPIDøÿ÷∆À„∑®"
+	Location		[2, 78, 1278, 749]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"240"
+	Block {
+	  BlockType		  Inport
+	  Name			  "y(k)"
+	  Position		  [35, 132, 65, 148]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "y(k-1)"
+	  Position		  [35, 177, 65, 193]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k)"
+	  Position		  [15, 22, 45, 38]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/T"
+	  Position		  [255, 122, 305, 158]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "1/20"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kd"
+	  Position		  [170, 124, 210, 156]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "14"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Ki"
+	  Position		  [240, 12, 310, 48]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "0.004"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kp"
+	  Position		  [115, 85, 170, 115]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "0.3"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [425, 16, 455, 44]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  UpperLimit		  "10"
+	  LowerLimit		  "-10"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [90, 130, 110, 150]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [365, 20, 385, 40]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [330, 20, 350, 40]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  Ports			  [2, 1]
+	  Position		  [140, 20, 160, 40]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T"
+	  Position		  [75, 12, 125, 48]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "20"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay "
+	  Position		  [170, 41, 205, 79]
+	  Orientation		  "left"
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  SampleTime		  "20"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u(k)"
+	  Position		  [495, 23, 525, 37]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Line {
+	  SrcBlock		  "e(k)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "T"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Kp"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "y(k-1)"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "y(k)"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Kd"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Kd"
+	  SrcPort		  1
+	  DstBlock		  "1/T"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "u(k)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Kp"
+	  SrcPort		  1
+	  Points		  [165, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ki"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unit Delay "
+	  SrcPort		  1
+	  Points		  [-15, 0]
+	  DstBlock		  "Sum6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  Points		  [0, 0; 55, 0]
+	  Branch {
+	    DstBlock		    "Unit Delay "
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Ki"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1/T"
+	  SrcPort		  1
+	  Points		  [65, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Annotation {
+	  Name			  "u(k)"
+	  Position		  [401, 23]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Name			  "u(k)"
+	  Position		  [466, 23]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [60, 152, 90, 178]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Gain		      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [340, 231, 345, 264]
+      ShowName		      off
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [2, 1]
+      Position		      [495, 154, 500, 221]
+      ShowName		      off
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux5"
+      Ports		      [2, 1]
+      Position		      [495, 48, 500, 117]
+      ShowName		      off
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [515, 69, 545, 101]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Location		      [5, 60, 1285, 807]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"–ﬁ∏ƒÀ„∑®÷–∂‘∏¯∂®÷µ±‰ªØ√Ù∏–µƒœÓµƒ ‰»Î/ ‰≥ˆ"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-1.3"
+      YMax		      "1.3"
+      SaveToWorkspace	      on
+      SaveName		      "XGGDZhPIDry"
+      DataFormat	      "Array"
+      MaxDataPoints	      "500000"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope "
+      Ports		      [1]
+      Position		      [365, 238, 390, 262]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Location		      [1, 56, 1281, 769]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"–ﬁ∏ƒÀ„∑®÷–∂‘∏¯∂®÷µ±‰ªØ√Ù∏–µƒœÓ∫Õ±Í◊ºPIDøÿ÷∆À„"
+"∑®µƒøÿ÷∆ ‰≥ˆ"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "-1.5"
+      YMax		      "1.5"
+      SaveToWorkspace	      on
+      SaveName		      "XGGDZhPIDu"
+      DataFormat	      "Array"
+      MaxDataPoints	      "500000"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Signal\nGenerator"
+      Position		      [15, 150, 45, 180]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      WaveForm		      "square"
+      Frequency		      "0.0005*pi"
+      Units		      "rad/sec"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave"
+      Position		      [20, 85, 50, 115]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      SineType		      "Time based"
+      Amplitude		      "0.05"
+      Frequency		      "0.03*pi"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [130, 175, 150, 195]
+      ShowName		      off
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [85, 90, 105, 110]
+      ShowName		      off
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum5"
+      Ports		      [2, 1]
+      Position		      [125, 90, 145, 110]
+      ShowName		      off
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn"
+      Position		      [365, 45, 405, 85]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Denominator	      "[70 1]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Transfer Fcn "
+      Position		      [375, 149, 415, 191]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      Denominator	      "[70 1]"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Transport\nDelay"
+      Position		      [425, 50, 455, 80]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      DelayTime		      "80"
+    }
+    Block {
+      BlockType		      TransportDelay
+      Name		      "Transport\nDelay "
+      Position		      [435, 155, 465, 185]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      DelayTime		      "80"
+    }
+    Block {
+      BlockType		      UnitDelay
+      Name		      "Unit Delay"
+      Position		      [170, 169, 200, 201]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      SampleTime	      "20"
+    }
+    Block {
+      BlockType		      UnitDelay
+      Name		      "Unit Delay "
+      Position		      [155, 47, 190, 83]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      SampleTime	      "20"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold"
+      Position		      [305, 46, 340, 84]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      SampleTime	      "20"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold "
+      Position		      [320, 151, 355, 189]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      SampleTime	      "20"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Œª÷√ ΩPIDøÿ÷∆À„∑®\n"
+      Ports		      [2, 1]
+      Position		      [225, 141, 285, 199]
+      FontName		      "Œ¢»Ì—≈∫⁄"
+      FontWeight	      "bold"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"Œª÷√ ΩPIDøÿ÷∆À„∑®\n"
+	Location		[2, 82, 1270, 753]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"243"
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k)"
+	  Position		  [15, 22, 45, 38]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k-1)"
+	  Position		  [20, 178, 50, 192]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/T"
+	  Position		  [255, 142, 325, 178]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "1/20"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kd"
+	  Position		  [165, 143, 230, 177]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "14"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Ki"
+	  Position		  [280, 50, 355, 80]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "0.004"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kp"
+	  Position		  [135, 14, 175, 46]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "0.3"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [435, 51, 465, 79]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  UpperLimit		  "10"
+	  LowerLimit		  "-10"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [175, 55, 195, 75]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [120, 150, 140, 170]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [3, 1]
+	  Position		  [375, 13, 415, 117]
+	  ShowName		  off
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Inputs		  "+++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T"
+	  Position		  [90, 49, 145, 81]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  Gain			  "20"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [205, 85, 240, 125]
+	  Orientation		  "left"
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	  SampleTime		  "20"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u(k)"
+	  Position		  [485, 58, 515, 72]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Kd"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "e(k)"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "Kp"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 35]
+	    Branch {
+	      Points		      [0, 95]
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Kp"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ki"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Saturation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Kd"
+	  SrcPort		  1
+	  DstBlock		  "1/T"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1/T"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -60]
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [0, 0; 55, 0]
+	  Branch {
+	    DstBlock		    "Unit Delay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Ki"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  Points		  [-15, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "e(k-1)"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "T"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "u(k)"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "e(k)"
+	  Position		  [71, 55]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Name			  "\n"
+	  Position		  [99, 96]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Name			  "°∆e(k)T"
+	  Position		  [226, 56]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Name			  "°∆e(k-1)T\n"
+	  Position		  [161, 101]
+	  FontName		  "Œ¢»Ì—≈∫⁄"
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sine Wave"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Signal\nGenerator"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	DstBlock		"Sum5"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 85; 0, 0]
+	Branch {
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 40; 370, 0; 0, -20]
+	  Branch {
+	    DstBlock		    "Mux5"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Mux3"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn"
+      SrcPort		      1
+      DstBlock		      "Transport\nDelay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold"
+      SrcPort		      1
+      DstBlock		      "Transfer Fcn"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux5"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transport\nDelay"
+      SrcPort		      1
+      Points		      [0, 0; 5, 0]
+      Branch {
+	DstBlock		"Mux5"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 70; -330, 0]
+	DstBlock		"Sum5"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -55; -345, 0; 0, 20]
+	Branch {
+	  Points		  [0, 35]
+	  DstBlock		  "Unit Delay "
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  " –ﬁ∏ƒ∏¯∂®÷µ±‰ªØ√Ù∏–µƒŒª÷√ ΩPIDøÿ÷∆À„∑®"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      " –ﬁ∏ƒ∏¯∂®÷µ±‰ªØ√Ù∏–µƒŒª÷√ ΩPIDøÿ÷∆À„∑®"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Zero-Order\nHold"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 190]
+	DstBlock		"Mux1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Sum5"
+      SrcPort		      1
+      DstBlock		      " –ﬁ∏ƒ∏¯∂®÷µ±‰ªØ√Ù∏–µƒŒª÷√ ΩPIDøÿ÷∆À„∑®"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Unit Delay "
+      SrcPort		      1
+      DstBlock		      " –ﬁ∏ƒ∏¯∂®÷µ±‰ªØ√Ù∏–µƒŒª÷√ ΩPIDøÿ÷∆À„∑®"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Œª÷√ ΩPIDøÿ÷∆À„∑®\n"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Unit Delay"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Œª÷√ ΩPIDøÿ÷∆À„∑®\n"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"Zero-Order\nHold "
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      DstBlock		      " Scope "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transfer Fcn "
+      SrcPort		      1
+      DstBlock		      "Transport\nDelay "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold "
+      SrcPort		      1
+      DstBlock		      "Transfer Fcn "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Transport\nDelay "
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[0, 50; -335, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Mux3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Unit Delay"
+      SrcPort		      1
+      DstBlock		      "Œª÷√ ΩPIDøÿ÷∆À„∑®\n"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Scope "
+      DstPort		      1
+    }
+  }
+}

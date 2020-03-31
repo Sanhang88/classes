@@ -1,0 +1,2544 @@
+Model {
+  Name			  "YXPChFPID_jhua"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Mar 16 08:46:17 2005"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ThinkPad"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue May 17 11:11:17 2011"
+  ModelVersionFormat	  "1.%<AutoIncrement:85>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "SingleTasking"
+  StartTime		  "0.0"
+  StopTime		  "1"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.001"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aExtModeTes"
+"ting=0 -aFoldNonRolledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1"
+" -aGenerateReport=0 -aIgnoreCustomStorageClasses=1 -aIncDataTypeInIds=0 -aInc"
+"HierarchyInIds=0 -aInlineInvariantSignals=0 -aInlinedPrmAccess=\"Literals\" -"
+"aLocalBlockOutputs=1 -aLogVarNameModifier=\"rt_\" -aMaxRTWIdLen=31 -aPrefixMo"
+"delToSubsysFcnNames=1 -aRTWVerbose=1 -aRollThreshold=5 -aShowEliminatedStatem"
+"ents=0"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      ActionType	      "unset"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      If
+      NumInputs		      "1"
+      IfExpression	      "u1 > 0"
+      ShowElse		      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "YXPChFPID_jhua"
+    Location		    [2, 82, 1261, 753]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "195"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Scope
+      Name		      "  Scope "
+      Ports		      [1]
+      Position		      [550, 54, 580, 86]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      Location		      [5, 60, 1285, 773]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"»ý·ÖÏî±È½Ï"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      YMin		      "0"
+      YMax		      "1.8"
+      SaveToWorkspace	      on
+      SaveName		      "YXPChFPIDI1"
+      DataFormat	      "Array"
+      MaxDataPoints	      "500000"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      " Transfer Fcn "
+      Position		      [380, 36, 470, 74]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      Numerator		      "[285689]"
+      Denominator	      "[1 80 8400 0]"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      " Transfer Fcn 1"
+      Position		      [390, 116, 480, 154]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      Numerator		      "[285689]"
+      Denominator	      "[1 80 8400 0]"
+    }
+    Block {
+      BlockType		      UnitDelay
+      Name		      " Unit Delay "
+      Position		      [120, 47, 155, 83]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      SampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      UnitDelay
+      Name		      " Unit Delay 1"
+      Position		      [130, 127, 165, 163]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      SampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      " Zero-Order\nHold "
+      Position		      [300, 36, 335, 74]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      SampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      " Zero-Order\nHold 1"
+      Position		      [315, 116, 350, 154]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      SampleTime	      "0.001"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [2, 1]
+      Position		      [520, 43, 525, 92]
+      ShowName		      off
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      Position		      [15, 50, 45, 80]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      Time		      "0"
+      After		      "30"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [85, 135, 105, 155]
+      ShowName		      off
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [75, 55, 95, 75]
+      ShowName		      off
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ÓÐÐ§Æ«²î·¨\n(ÎÞe*(k)Óëe(k)µÄÅÐ¶Ï)"
+      Ports		      [2, 1]
+      Position		      [205, 108, 270, 157]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"ÓÐÐ§Æ«²î·¨\n(ÎÞe*(k)Óëe(k)µÄÅÐ¶Ï)"
+	Location		[2, 82, 1270, 753]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"156"
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k)"
+	  Position		  [15, 22, 45, 38]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k-1)"
+	  Position		  [25, 213, 55, 227]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  " Unit Delay "
+	  Position		  [320, 147, 355, 183]
+	  Orientation		  "left"
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/T"
+	  Position		  [270, 192, 340, 228]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "1/0.001"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kd"
+	  Position		  [195, 193, 245, 227]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Ki"
+	  Position		  [445, 74, 475, 106]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "9"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kp"
+	  Position		  [385, 14, 430, 46]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "0.8"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [565, 76, 595, 104]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  UpperLimit		  "10"
+	  LowerLimit		  "-10"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [335, 80, 355, 100]
+	  ShowName		  off
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [125, 184, 160, 231]
+	  ShowName		  off
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [3, 1]
+	  Position		  [505, 54, 540, 126]
+	  ShowName		  off
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Inputs		  "+++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T"
+	  Position		  [250, 75, 310, 105]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "0.001"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [370, 105, 405, 145]
+	  Orientation		  "left"
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay "
+	  Position		  [385, 235, 420, 275]
+	  Orientation		  "left"
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "¼ÆËãe*(k)"
+	  Ports			  [3, 1]
+	  Position		  [130, 53, 200, 127]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "¼ÆËãe*(k)"
+	    Location		    [2, 82, 1270, 753]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "156"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "¡Æe(k-1)"
+	      Position		      [260, 48, 290, 62]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "e(k-1)"
+	      Position		      [30, 63, 60, 77]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u(k-1)"
+	      Position		      [15, 23, 45, 37]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      " Product"
+	      Ports		      [2, 1]
+	      Position		      [170, 154, 205, 196]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      " Product "
+	      Ports		      [2, 1]
+	      Position		      [245, 121, 280, 154]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "1/T"
+	      Position		      [200, 62, 270, 98]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Gain		      "1/0.001"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IfÅÐ¶ÏÓï¾ä"
+	      Ports		      [1, 1]
+	      Position		      [70, 12, 140, 48]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"IfÅÐ¶ÏÓï¾ä"
+		Location		[2, 82, 1270, 753]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"195"
+		Block {
+		  BlockType		  Inport
+		  Name			  "u(k-1)"
+		  Position		  [25, 103, 55, 117]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  Position		  [155, 140, 185, 170]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  Value			  "-10"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant "
+		  Position		  [155, 35, 185, 65]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  Value			  "10"
+		}
+		Block {
+		  BlockType		  If
+		  Name			  "If"
+		  Ports			  [1, 3]
+		  Position		  [85, 85, 190, 135]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  IfExpression		  "u1>=10"
+		  ElseIfExpressions	  "u1<=-10"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "If Action\nSubsystem"
+		  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+		  Position		  [240, 31, 320, 69]
+		  NamePlacement		  "alternate"
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  TreatAsAtomicUnit	  on
+		  System {
+		    Name		    "If Action\nSubsystem"
+		    Location		    [157, 220, 803, 578]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In "
+		    Position		    [15, 83, 45, 97]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Block {
+		    BlockType		    ActionPort
+		    Name		    "Action Port"
+		    Position		    [95, 20, 154, 48]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    ActionType		    "then"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out "
+		    Position		    [230, 83, 260, 97]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Line {
+		    SrcBlock		    "In "
+		    SrcPort		    1
+		    DstBlock		    "Out "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "If Action\nSubsystem "
+		  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+		  Position		  [175, 202, 255, 238]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  TreatAsAtomicUnit	  on
+		  System {
+		    Name		    "If Action\nSubsystem "
+		    Location		    [324, 371, 942, 692]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In "
+		    Position		    [15, 78, 45, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Block {
+		    BlockType		    ActionPort
+		    Name		    "Action Port"
+		    Position		    [95, 15, 154, 43]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    ActionType		    "else"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out "
+		    Position		    [230, 78, 260, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Line {
+		    SrcBlock		    "In "
+		    SrcPort		    1
+		    DstBlock		    "Out "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "If Action\nSubsystem  "
+		  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+		  Position		  [235, 137, 315, 173]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  TreatAsAtomicUnit	  on
+		  System {
+		    Name		    "If Action\nSubsystem  "
+		    Location		    [299, 362, 897, 717]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In "
+		    Position		    [15, 78, 45, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Block {
+		    BlockType		    ActionPort
+		    Name		    "Action Port"
+		    Position		    [95, 15, 154, 43]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    ActionType		    "elseif"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out "
+		    Position		    [230, 78, 260, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Line {
+		    SrcBlock		    "In "
+		    SrcPort		    1
+		    DstBlock		    "Out "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Merge
+		  Name			  "Merge"
+		  Ports			  [3, 1]
+		  Position		  [395, 37, 435, 103]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  Inputs		  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "u*\n"
+		  Position		  [455, 63, 485, 77]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Line {
+		  SrcBlock		  "If Action\nSubsystem "
+		  SrcPort		  1
+		  Points		  [115, 0; 0, -130]
+		  DstBlock		  "Merge"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "If"
+		  SrcPort		  3
+		  Points		  [20, 0]
+		  DstBlock		  "If Action\nSubsystem "
+		  DstPort		  ifaction
+		}
+		Line {
+		  SrcBlock		  "If"
+		  SrcPort		  2
+		  Points		  [80, 0]
+		  DstBlock		  "If Action\nSubsystem  "
+		  DstPort		  ifaction
+		}
+		Line {
+		  SrcBlock		  "Merge"
+		  SrcPort		  1
+		  DstBlock		  "u*\n"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "If"
+		  SrcPort		  1
+		  Points		  [85, 0]
+		  DstBlock		  "If Action\nSubsystem"
+		  DstPort		  ifaction
+		}
+		Line {
+		  SrcBlock		  "Constant "
+		  SrcPort		  1
+		  DstBlock		  "If Action\nSubsystem"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "If Action\nSubsystem"
+		  SrcPort		  1
+		  DstBlock		  "Merge"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "If Action\nSubsystem  "
+		  SrcPort		  1
+		  Points		  [20, 0; 0, -85]
+		  DstBlock		  "Merge"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "u(k-1)"
+		  SrcPort		  1
+		  Points		  [0, 0; 5, 0]
+		  Branch {
+		    Points		    [0, 110]
+		    DstBlock		    "If Action\nSubsystem "
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "If"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "If Action\nSubsystem  "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Kd"
+	      Position		      [70, 78, 95, 102]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Ki"
+	      Position		      [115, 173, 135, 197]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "9"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Kp"
+	      Position		      [255, 195, 285, 225]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "0.8"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [395, 46, 440, 79]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product "
+	      Ports		      [2, 1]
+	      Position		      [145, 58, 175, 102]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      Ports		      [3, 1]
+	      Position		      [310, 125, 340, 225]
+	      ShowName		      off
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      Ports		      [3, 1]
+	      Position		      [320, 14, 355, 96]
+	      ShowName		      off
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "+-+"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "T"
+	      Position		      [35, 130, 65, 160]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "0.001"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "e*(k)"
+	      Position		      [460, 58, 490, 72]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Line {
+	      SrcBlock		      "IfÅÐ¶ÏÓï¾ä"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "¡Æe(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "u(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "IfÅÐ¶ÏÓï¾ä"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "e*(k)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -105]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Kp"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      " Product"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      " Product "
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      Points		      [0, 0; 35, 0]
+	      Branch {
+		DstBlock		" Product "
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 20]
+		DstBlock		" Product"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Kd"
+	      SrcPort		      1
+	      Points		      [5, 0; 10, 0]
+	      Branch {
+		Points			[0, 40]
+		DstBlock		" Product "
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Product "
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "1/T"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "e(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "Product "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product "
+	      SrcPort		      1
+	      DstBlock		      "1/T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Ki"
+	      SrcPort		      1
+	      DstBlock		      " Product"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u(k)"
+	  Position		  [615, 83, 645, 97]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	}
+	Line {
+	  SrcBlock		  "Unit Delay "
+	  SrcPort		  1
+	  Points		  [-290, 0; 0, -140]
+	  DstBlock		  "¼ÆËãe*(k)"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "T"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  Points		  [-20, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [20, 0; 50, 0]
+	  Branch {
+	    DstBlock		    "Ki"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 35]
+	    DstBlock		    "Unit Delay"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  " Unit Delay "
+	  SrcPort		  1
+	  Points		  [-245, 0; 0, -100]
+	  DstBlock		  "¼ÆËãe*(k)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "¼ÆËãe*(k)"
+	  SrcPort		  1
+	  DstBlock		  "T"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ki"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    " Unit Delay "
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum3"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "1/T"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "e(k-1)"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, -130]
+	    DstBlock		    "¼ÆËãe*(k)"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Kd"
+	  SrcPort		  1
+	  DstBlock		  "1/T"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    Points		    [0, 165]
+	    DstBlock		    "Unit Delay "
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Saturation"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Kp"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 35]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "e(k)"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    Points		    [0, 165]
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Kp"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Kd"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "u(k)"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "\n"
+	  Position		  [369, 126]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ÓÐÐ§Æ«²î·¨£¨ÊéÉÏÄ£ÐÍ£©"
+      Ports		      [2, 1]
+      Position		      [195, 28, 260, 77]
+      FontName		      "Î¢ÈíÑÅºÚ"
+      FontWeight	      "bold"
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"ÓÐÐ§Æ«²î·¨£¨ÊéÉÏÄ£ÐÍ£©"
+	Location		[2, 82, 1270, 753]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"195"
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k)"
+	  Position		  [15, 22, 45, 38]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "e(k-1)"
+	  Position		  [25, 213, 55, 227]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  " Unit Delay "
+	  Position		  [320, 147, 355, 183]
+	  Orientation		  "left"
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "1/T"
+	  Position		  [270, 192, 340, 228]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "1/0.001"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "IfÅÐ¶ÏÓï¾ä"
+	  Ports			  [3, 1]
+	  Position		  [205, 44, 270, 136]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "IfÅÐ¶ÏÓï¾ä"
+	    Location		    [2, 82, 1270, 753]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "303"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "e(k)"
+	      Position		      [130, 138, 160, 152]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "e(k)*\n"
+	      Position		      [130, 38, 160, 52]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u(k-1)"
+	      Position		      [15, 93, 45, 107]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      If
+	      Name		      "If"
+	      Ports		      [1, 2]
+	      Position		      [65, 80, 195, 115]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      IfExpression	      "u1>=10|u1<=-10"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "If Action\nSubsystem"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [215, 26, 295, 64]
+	      NamePlacement	      "alternate"
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"If Action\nSubsystem"
+		Location		[259, 314, 795, 637]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"195"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In "
+		  Position		  [15, 83, 45, 97]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  Position		  [110, 20, 169, 48]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  ActionType		  "then"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out "
+		  Position		  [230, 83, 260, 97]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Line {
+		  SrcBlock		  "In "
+		  SrcPort		  1
+		  DstBlock		  "Out "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "If Action\nSubsystem "
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [210, 127, 290, 163]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      TreatAsAtomicUnit	      on
+	      System {
+		Name			"If Action\nSubsystem "
+		Location		[250, 338, 839, 661]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"195"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In "
+		  Position		  [15, 78, 45, 92]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  Position		  [95, 15, 154, 43]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  ActionType		  "else"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out "
+		  Position		  [230, 78, 260, 92]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Line {
+		  SrcBlock		  "In "
+		  SrcPort		  1
+		  DstBlock		  "Out "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      Ports		      [2, 1]
+	      Position		      [320, 28, 360, 92]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out "
+	      Position		      [375, 53, 405, 67]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Line {
+	      SrcBlock		      "If"
+	      SrcPort		      2
+	      Points		      [50, 0]
+	      DstBlock		      "If Action\nSubsystem "
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      SrcBlock		      "e(k)"
+	      SrcPort		      1
+	      DstBlock		      "If Action\nSubsystem "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "u(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "If"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "If Action\nSubsystem "
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -70]
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "If Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "e(k)*\n"
+	      SrcPort		      1
+	      DstBlock		      "If Action\nSubsystem"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "If"
+	      SrcPort		      1
+	      Points		      [55, 0]
+	      DstBlock		      "If Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Out "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kd"
+	  Position		  [195, 193, 245, 227]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Ki"
+	  Position		  [445, 74, 475, 106]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "9"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Kp"
+	  Position		  [385, 14, 430, 46]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "0.8"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [565, 76, 595, 104]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  UpperLimit		  "10"
+	  LowerLimit		  "-10"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [355, 80, 375, 100]
+	  ShowName		  off
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [125, 184, 160, 231]
+	  ShowName		  off
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [3, 1]
+	  Position		  [505, 54, 540, 126]
+	  ShowName		  off
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Inputs		  "+++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "T"
+	  Position		  [285, 75, 345, 105]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  Gain			  "0.001"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [380, 105, 415, 145]
+	  Orientation		  "left"
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay "
+	  Position		  [385, 235, 420, 275]
+	  Orientation		  "left"
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  SampleTime		  "0.001"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "¼ÆËãe(k)*"
+	  Ports			  [3, 1]
+	  Position		  [110, 53, 180, 127]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "¼ÆËãe(k)*"
+	    Location		    [2, 82, 1270, 753]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "243"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "¡Æe(k-1)"
+	      Position		      [260, 48, 290, 62]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "e(k-1)"
+	      Position		      [30, 63, 60, 77]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u(k-1)"
+	      Position		      [15, 23, 45, 37]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      " Product"
+	      Ports		      [2, 1]
+	      Position		      [170, 154, 205, 196]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      " Product "
+	      Ports		      [2, 1]
+	      Position		      [245, 121, 280, 154]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "1/T"
+	      Position		      [200, 62, 270, 98]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Gain		      "1/0.001"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "IfÅÐ¶ÏÓï¾ä"
+	      Ports		      [1, 1]
+	      Position		      [65, 12, 135, 48]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"IfÅÐ¶ÏÓï¾ä"
+		Location		[2, 82, 1270, 753]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"242"
+		Block {
+		  BlockType		  Inport
+		  Name			  "u(k-1)"
+		  Position		  [25, 103, 55, 117]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  Position		  [155, 140, 185, 170]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  Value			  "-10"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant "
+		  Position		  [155, 35, 185, 65]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  Value			  "10"
+		}
+		Block {
+		  BlockType		  If
+		  Name			  "If"
+		  Ports			  [1, 3]
+		  Position		  [85, 85, 190, 135]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  IfExpression		  "u1>=10"
+		  ElseIfExpressions	  "u1<=-10"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "If Action\nSubsystem"
+		  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+		  Position		  [240, 31, 320, 69]
+		  NamePlacement		  "alternate"
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  TreatAsAtomicUnit	  on
+		  System {
+		    Name		    "If Action\nSubsystem"
+		    Location		    [157, 220, 803, 578]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "195"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In "
+		    Position		    [15, 83, 45, 97]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Block {
+		    BlockType		    ActionPort
+		    Name		    "Action Port"
+		    Position		    [95, 20, 154, 48]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    ActionType		    "then"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out "
+		    Position		    [230, 83, 260, 97]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Line {
+		    SrcBlock		    "In "
+		    SrcPort		    1
+		    DstBlock		    "Out "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "If Action\nSubsystem "
+		  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+		  Position		  [175, 202, 255, 238]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  TreatAsAtomicUnit	  on
+		  System {
+		    Name		    "If Action\nSubsystem "
+		    Location		    [324, 371, 942, 692]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "195"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In "
+		    Position		    [15, 78, 45, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Block {
+		    BlockType		    ActionPort
+		    Name		    "Action Port"
+		    Position		    [95, 15, 154, 43]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    ActionType		    "else"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out "
+		    Position		    [230, 78, 260, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Line {
+		    SrcBlock		    "In "
+		    SrcPort		    1
+		    DstBlock		    "Out "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "If Action\nSubsystem  "
+		  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+		  Position		  [235, 137, 315, 173]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  TreatAsAtomicUnit	  on
+		  System {
+		    Name		    "If Action\nSubsystem  "
+		    Location		    [299, 362, 897, 717]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    ZoomFactor		    "195"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In "
+		    Position		    [15, 78, 45, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Block {
+		    BlockType		    ActionPort
+		    Name		    "Action Port"
+		    Position		    [95, 15, 154, 43]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    ActionType		    "elseif"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out "
+		    Position		    [230, 78, 260, 92]
+		    FontName		    "Î¢ÈíÑÅºÚ"
+		    FontWeight		    "bold"
+		    }
+		    Line {
+		    SrcBlock		    "In "
+		    SrcPort		    1
+		    DstBlock		    "Out "
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Merge
+		  Name			  "Merge"
+		  Ports			  [3, 1]
+		  Position		  [395, 37, 435, 103]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		  Inputs		  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "u*\n"
+		  Position		  [455, 63, 485, 77]
+		  FontName		  "Î¢ÈíÑÅºÚ"
+		  FontWeight		  "bold"
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "If Action\nSubsystem  "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "u(k-1)"
+		  SrcPort		  1
+		  Points		  [0, 0; 5, 0]
+		  Branch {
+		    DstBlock		    "If"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 110]
+		    DstBlock		    "If Action\nSubsystem "
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "If Action\nSubsystem  "
+		  SrcPort		  1
+		  Points		  [20, 0; 0, -85]
+		  DstBlock		  "Merge"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "If Action\nSubsystem"
+		  SrcPort		  1
+		  DstBlock		  "Merge"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant "
+		  SrcPort		  1
+		  DstBlock		  "If Action\nSubsystem"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "If"
+		  SrcPort		  1
+		  Points		  [85, 0]
+		  DstBlock		  "If Action\nSubsystem"
+		  DstPort		  ifaction
+		}
+		Line {
+		  SrcBlock		  "Merge"
+		  SrcPort		  1
+		  DstBlock		  "u*\n"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "If"
+		  SrcPort		  2
+		  Points		  [80, 0]
+		  DstBlock		  "If Action\nSubsystem  "
+		  DstPort		  ifaction
+		}
+		Line {
+		  SrcBlock		  "If"
+		  SrcPort		  3
+		  Points		  [20, 0]
+		  DstBlock		  "If Action\nSubsystem "
+		  DstPort		  ifaction
+		}
+		Line {
+		  SrcBlock		  "If Action\nSubsystem "
+		  SrcPort		  1
+		  Points		  [115, 0; 0, -130]
+		  DstBlock		  "Merge"
+		  DstPort		  3
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Kd"
+	      Position		      [70, 78, 95, 102]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Ki"
+	      Position		      [115, 173, 135, 197]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "9"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Kp"
+	      Position		      [255, 195, 285, 225]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "0.8"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [395, 46, 440, 79]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product "
+	      Ports		      [2, 1]
+	      Position		      [145, 58, 175, 102]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      InputSameDT	      off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      Ports		      [3, 1]
+	      Position		      [310, 125, 340, 225]
+	      ShowName		      off
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      Ports		      [3, 1]
+	      Position		      [320, 14, 355, 96]
+	      ShowName		      off
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Inputs		      "+-+"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "T"
+	      Position		      [35, 130, 65, 160]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	      Value		      "0.001"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "e(k)*"
+	      Position		      [460, 58, 490, 72]
+	      FontName		      "Î¢ÈíÑÅºÚ"
+	      FontWeight	      "bold"
+	    }
+	    Line {
+	      SrcBlock		      "Ki"
+	      SrcPort		      1
+	      DstBlock		      " Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product "
+	      SrcPort		      1
+	      DstBlock		      "1/T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "e(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "Product "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "1/T"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Kd"
+	      SrcPort		      1
+	      Points		      [5, 0; 10, 0]
+	      Branch {
+		DstBlock		"Product "
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 40]
+		DstBlock		" Product "
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      Points		      [0, 0; 35, 0]
+	      Branch {
+		Points			[0, 20]
+		DstBlock		" Product"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		" Product "
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      " Product "
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Product"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Kp"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -105]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "e(k)*"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "u(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "IfÅÐ¶ÏÓï¾ä"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "¡Æe(k-1)"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "IfÅÐ¶ÏÓï¾ä"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u(k)"
+	  Position		  [615, 83, 645, 97]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "u(k)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Kd"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "e(k)"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    Points		    [130, 0]
+	    Branch {
+	      DstBlock		      "IfÅÐ¶ÏÓï¾ä"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Kp"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 165]
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Kp"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 35]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "Saturation"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 165]
+	    DstBlock		    "Unit Delay "
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Kd"
+	  SrcPort		  1
+	  DstBlock		  "1/T"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "e(k-1)"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -130]
+	    DstBlock		    "¼ÆËãe(k)*"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "1/T"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Ki"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    DstBlock		    "Sum3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    " Unit Delay "
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "¼ÆËãe(k)*"
+	  SrcPort		  1
+	  DstBlock		  "IfÅÐ¶ÏÓï¾ä"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  " Unit Delay "
+	  SrcPort		  1
+	  Points		  [-245, 0; 0, -100]
+	  DstBlock		  "¼ÆËãe(k)*"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IfÅÐ¶ÏÓï¾ä"
+	  SrcPort		  1
+	  DstBlock		  "T"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [0, 0; 50, 0]
+	  Branch {
+	    DstBlock		    "Unit Delay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Ki"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  Points		  [-10, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "T"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unit Delay "
+	  SrcPort		  1
+	  Points		  [-290, 0; 0, -105]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "¼ÆËãe(k)*"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [100, 0]
+	    DstBlock		    "IfÅÐ¶ÏÓï¾ä"
+	    DstPort		    3
+	  }
+	}
+	Annotation {
+	  Name			  "\n"
+	  Position		  [369, 126]
+	  FontName		  "Î¢ÈíÑÅºÚ"
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Step"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Sum2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 80]
+	DstBlock		"Sum1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "ÓÐÐ§Æ«²î·¨£¨ÊéÉÏÄ£ÐÍ£©"
+      SrcPort		      1
+      DstBlock		      " Zero-Order\nHold "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " Zero-Order\nHold "
+      SrcPort		      1
+      DstBlock		      " Transfer Fcn "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " Transfer Fcn "
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, 45; -400, 0]
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Mux3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      " Unit Delay "
+      SrcPort		      1
+      DstBlock		      "ÓÐÐ§Æ«²î·¨£¨ÊéÉÏÄ£ÐÍ£©"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	DstBlock		" Unit Delay "
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -25]
+	DstBlock		"ÓÐÐ§Æ«²î·¨£¨ÊéÉÏÄ£ÐÍ£©"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      DstBlock		      "  Scope "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "ÓÐÐ§Æ«²î·¨\n(ÎÞe*(k)Óëe(k)µÄÅÐ¶Ï)"
+      SrcPort		      1
+      DstBlock		      " Zero-Order\nHold 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " Zero-Order\nHold 1"
+      SrcPort		      1
+      DstBlock		      " Transfer Fcn 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " Unit Delay 1"
+      SrcPort		      1
+      DstBlock		      "ÓÐÐ§Æ«²î·¨\n(ÎÞe*(k)Óëe(k)µÄÅÐ¶Ï)"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [0, 0]
+      Branch {
+	Points			[0, -25]
+	DstBlock		"ÓÐÐ§Æ«²î·¨\n(ÎÞe*(k)Óëe(k)µÄÅÐ¶Ï)"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		" Unit Delay 1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      " Transfer Fcn 1"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, -55]
+	DstBlock		"Mux3"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 60; -405, 0]
+	DstBlock		"Sum1"
+	DstPort			2
+      }
+    }
+  }
+}

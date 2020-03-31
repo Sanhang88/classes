@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*-----------------------
+Css for 词条正文页--文献app
+Author:yang
+Date:2012-03-31
+-----------------------*/
+.wenxian_app{margin-top:30px;font-size:14px;}
+.wenxian_app .h3tit{padding:0 10px;line-height:30px;height:30px;background:#edf4fb;border-left:3px solid #8dbbe9;}
+.wenxian_app h3{font-size:14px;font-weight: 700;}
+.wenxian_app ul{margin:16px 20px 17px 15px;}
+.wenxian_app li{line-height:24px;}
+.wenxian_app li .wfimg{width:16px;height:16px;line-height:0;font-size:0;overflow:hidden;margin-right:10px;vertical-align:-3px;display:inline-block;background:url(../images/wenxianbg.jpg) no-repeat;padding:0!important;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ .wenxian_app li .wfimg {line-height:16px;font-size:12px; text-indent:999em;} }
+.wenxian_app li a{padding-left:6px;color:#0077CC;}
+.wenxian_app li a:hover{color:#EF320E !important;}
+.wenxian_app li span{padding-left:3px;color:#808080}

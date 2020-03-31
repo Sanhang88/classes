@@ -1,0 +1,65 @@
+—————————复习各种matlab图形函数————————————
+1.绘制二维曲线的最基本函数plot
+2.双纵坐标函数plotyy
+3.
+坐标控制
+函数的调用格式为：
+axis([xmin xmax ymin ymax zmin zmax])
+axis函数功能丰富，常用的用法还有：
+axis equal    纵、横坐标轴采用等长刻度
+axis square   产生正方形坐标系(缺省为矩形)
+axis auto     使用缺省设置
+axis off      取消坐标轴
+axis on      显示坐标轴
+grid on/off命令控制是画还是不画网格线，不带参数的grid命令在两种状态之间进行切换。
+box on/off命令控制是加还是不加边框线，不带参数的box命令在两种状态之间进行切换。
+4.图形窗口的分割
+    subplot函数的调用格式为：
+    subplot(m,n,p)
+5.绘制二维图形的其他函数
+1. 其他形式的线性直角坐标图
+在线性直角坐标系中，其他形式的图形有条形图、阶梯图、杆图和填充图等，所采用的函数分别是：
+bar(x,y,选项)
+stairs(x,y,选项)
+stem(x,y,选项)
+fill(x1,y1,选项1,x2,y2,选项2,…)
+6.极坐标图
+polar函数用来绘制极坐标图，其调用格式为：
+polar(theta,rho,选项)
+其中theta为极坐标极角，rho为极坐标矢径，选项的内容与plot函数相似。
+7.对数坐标图形
+    MATLAB提供了绘制对数和半对数坐标曲线的函数，调用格式为：
+    semilogx(x1,y1,选项1,x2,y2,选项2,…)
+    semilogy(x1,y1,选项1,x2,y2,选项2,…)
+    loglog(x1,y1,选项1,x2,y2,选项2,…)
+8.对函数自适应采样的绘图函数
+fplot函数的调用格式为：  
+fplot(fname,lims,tol,选项)
+9.绘制三维曲线的最基本函数
+    plot3函数与plot函数用法十分相似，其调用格式为：
+    plot3(x1,y1,z1,选项1,x2,y2,z2,选项2,…,xn,yn,zn,选项n)
+10.三维曲面
+1．平面网格坐标矩阵的生成
+(1)利用矩阵运算生成。
+x=a:dx:b; y=(c:dy:d)';
+X=ones(size(y))*x;
+Y=y*ones(size(x));
+(2)利用meshgrid函数生成。
+x=a:dx:b; y=c:dy:d;
+[X,Y]=meshgrid(x,y);
+10.绘制三维曲面的函数
+    surf函数和mesh函数的调用格式为：
+    mesh(x,y,z,c)
+    surf(x,y,z,c)
+标准三维曲面
+sphere函数的调用格式为：
+    [x,y,z]=sphere(n)
+cylinder函数的调用格式为：
+    [x,y,z]=sphere(R,n)
+MATLAB还有一个peaks 函数，称为多峰函数，常用于三维曲面的演示。
+
+11.其他三维图形
+   条形图、饼图和填充图等特殊图形，它们还可以以三维形式出现，使用的函数分别是bar3、pie3和fill3。此外，还有三维曲面的等高线图。等高线图分二维和三维两种形式，分别使用函数contour和contour3绘制。
+
+
+

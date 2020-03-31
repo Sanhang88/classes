@@ -1,0 +1,51 @@
+%四方向逐点比较法四象限直线不等步长插补example  3_2
+clear;
+F=0;
+x=0;y=0;
+dx=0.4;dy=0.6;
+xe=-4;ye=6;
+dmin=min(dx,dy)/2.0;
+K=ye/xe;
+xx(1)=x;yy(1)=y;
+Index=2;
+while(1)
+    if(F>=0)
+        if(xe>0)
+            x=x+dx;
+        else
+            x=x-dx;
+        end
+        y=y;
+        F=abs(xe*y)-abs(ye*x);
+    else
+        if(ye>0)
+            y=y+dy;
+        else
+            y=y-dy;
+        end
+        x=x;
+        F=abs(xe*y)-abs(ye*x);
+    end
+    if(abs(F)<=0.01)   %对偏差F做的限制，不然不符合四方向逐点比较法的插补规定
+        F=0;
+    end
+    xx(Index)=x;
+    yy(Index)=y;  
+    Index=Index+1;
+%    if(abs((abs(x)+abs(y))-(abs(xe)+abs(ye)))<dmin)   %对终点判断做的限制，不然有时会多走一步
+    if((abs(x)+abs(y))>=(abs(xe)+abs(ye)))
+        break;
+    end
+end
+if(xe>0)
+    xxx=0:0.001:xe;
+else
+    xxx=0:-0.001:xe;
+end
+yyy=K*xxx;
+if(xe>0)
+    plot(xx,yy,'r->',xxx,yyy,'b');
+else
+    plot(xx,yy,'r-<',xxx,yyy,'b');
+end   
+grid on;

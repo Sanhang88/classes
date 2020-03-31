@@ -1,0 +1,1 @@
+define("wiki-lemma:widget/lemma_content/configModule/secondsKnow/perfect-scrollbar/src/js/lib/guid",function(n,t,r){"use strict";r.exports=function(){function n(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return n()+n()+"-"+n()+"-"+n()+"-"+n()+"-"+n()+n()+n()}}()});

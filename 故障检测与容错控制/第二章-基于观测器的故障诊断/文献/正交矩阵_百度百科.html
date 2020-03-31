@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./正交矩阵_百度百科_files/element.min.js"></script><script async="" src="./正交矩阵_百度百科_files/monkey.min.js"></script><script async="" src="./正交矩阵_百度百科_files/dp.min.js"></script><script charset="utf-8" async="" src="./正交矩阵_百度百科_files/snippetcacher.php"></script><script type="text/javascript" async="" src="./正交矩阵_百度百科_files/hcem"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="referrer" content="always">
+<meta name="description" content="如果AAT=E（E为单位矩阵，AT表示“矩阵A的转置矩阵”）或ATA=E，则n阶实矩阵A称为正交矩阵。正交矩阵是实数特殊化的酉矩阵，因此总是正规矩阵。尽管我们在这里只考虑实数矩阵，这个定义可用于其元素来自任何域的矩阵。正交矩阵毕竟是从内积自然引出的，对于复数的矩阵这导致了归一要求。正交矩阵不一定是实矩阵。实正交矩阵（即该正交矩阵中所有元都是实数）可以看做是一种特殊的酉矩阵，但是存在一种复正交矩阵，复正交矩阵不是酉矩阵。...">
+<title>正交矩阵_百度百科</title>
+<link rel="shortcut icon" href="https://baike.baidu.com/favicon.ico" type="image/x-icon">
+<link rel="icon" sizes="any" mask="" href="https://www.baidu.com/img/baidu.svg">
+
+<meta name="keywords" content="正交矩阵 正交矩阵定义 正交矩阵定理 正交矩阵例子 正交矩阵基本构造 正交矩阵特性 正交矩阵理论实践 正交矩阵分析算法">
+<meta name="image" content="https://bkssl.bdimg.com/cms/static/baike.png">
+<script src="./正交矩阵_百度百科_files/hm.js"></script><script async="" src="./正交矩阵_百度百科_files/alog.min.js"></script><script type="text/javascript">
+  // 配置 PD 监控。
+  window.alogObjectConfig = {
+    product: '103',
+    page: '103_1',
+    speed: {
+      sample: '0.008'
+    },
+    monkey: {
+      sample: '1',
+      hid: '1533'
+    },
+    exception: { 
+      sample: '0.004'
+    },
+    feature: {
+      sample: '0.004'
+    },
+    csp: {
+      sample: '0.008',
+      'default-src': [
+        {match: '*.baidu.com,*.bdimg.com,localhost', target: 'Accept'},
+        {match: '*', target: 'Accept,Warn'}
+      ]
+    }
+  };
+
+  void function(a,b,c,d,e,f,g){a.alogObjectName=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=a[e].l||+new Date,d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d;var h=!0;if(a.alogObjectConfig&&a.alogObjectConfig.sample){var i=Math.random();a.alogObjectConfig.rand=i,i>a.alogObjectConfig.sample&&(h=!1)}h&&(f=b.createElement(c),f.async=!0,f.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),g=b.getElementsByTagName(c)[0],g.parentNode.insertBefore(f,g))}(window,document,"script","/hunter/alog/alog.min.js","alog"),void function(){function a(){}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date),alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:a,tti:a,page_ready:a}}();
+  void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+</script>
+<meta name="csrf-token" content="">
+<meta itemprop="dateUpdate" content="2017-09-06 15:18:53">
+
+<!--[if lte IE 9]>
+<script>
+    (function() {
+      var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+        i = e.length;
+      while (i--) {
+        document.createElement(e[i]);
+      }
+    })();
+  </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/wiki-lemma_63c8341.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/wiki-common-base_666ffea.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/userbar-n_78dab81.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/larkplayer_981c735.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/webuploader_08d9db4.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/wiki-lemma-module_245729f.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/announcement_cba33f4.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/label_ca156c6.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/sideShare_9c411cd.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/pageMask_ff9a193.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/mainContent_98e3702.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/lemmaRelation_ac86a59.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/professional_054b270.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/zhixin_3b0d7a5.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/sideAuth_c13d91a.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/toolButtons-n_6e90fdd.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/userInfo-n_7e90184.css"><link rel="stylesheet" type="text/css" href="./正交矩阵_百度百科_files/searchHeader-n_f9a6e5b.css">    
+<script type="text/javascript">
+    alog('speed.set', 'ht', +new Date);
+</script><script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?55b574651fcae74b0a9f1cf9c8d7c93a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script><script type="text/javascript" src="./正交矩阵_百度百科_files/lemmaReferenceTip_53efc29.js"></script><link rel="stylesheet" href="./正交矩阵_百度百科_files/share_style0_16.css"><script src="./正交矩阵_百度百科_files/qc.php" type="text/javascript" charset="utf-8"></script></head>
+
+
+
+
+<body class="wiki-lemma normal"><div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="./正交矩阵_百度百科_files/o.html" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div>
+
+
+<div class="header-wrapper pc-header-new">
+<div class="topbar cmn-clearfix">
+<ul class="wgt-userbar wgt-userbar-n" id="j-wgt-userbar"><li>
+<a href="http://www.baidu.com/" nslog="normal" nslog-type="10080109">百度首页</a>
+</li>
+<li>
+<a data-action="login" href="javascript:;" nslog="normal" nslog-type="10080110">登录</a>
+</li>
+<li>
+<a href="https://passport.baidu.com/v2/?reg&amp;regType=1&amp;tpl=wk" nslog="normal" nslog-type="10080111">注册</a><a>
+</a></li></ul>
+<div class="separator"></div>
+<div class="wiki-common-headTabBar">
+<a href="https://www.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://www.baidu.com/s?ie=utf-8&amp;fr=bks0000&amp;wd=">网页</a>
+<a href="http://news.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://news.baidu.com/ns?tn=news&amp;cl=2&amp;rn=20&amp;ct=1&amp;fr=bks0000&amp;ie=utf-8&amp;word=">新闻</a>
+<a href="https://tieba.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://tieba.baidu.com/f?ie=utf-8&amp;fr=bks0000&amp;kw=">贴吧</a>
+<a href="https://zhidao.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://zhidao.baidu.com/search?pn=0&amp;&amp;rn=10&amp;lm=0&amp;fr=bks0000&amp;word=">知道</a>
+<a href="http://music.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://music.baidu.com/search?f=ms&amp;ct=134217728&amp;ie=utf-8&amp;rn=&amp;lm=-1&amp;pn=30&amp;fr=bks0000&amp;key=">音乐</a>
+<a href="http://image.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://image.baidu.com/search/index?tn=baiduimage&amp;ct=201326592&amp;lm=-1&amp;cl=2&amp;nc=1&amp;ie=utf-8&amp;word=">图片</a>
+<a href="http://v.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://v.baidu.com/v?ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=22&amp;ie=utf-8&amp;fr=bks0000&amp;word=">视频</a>
+<a href="http://map.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://map.baidu.com/m?ie=utf-8&amp;fr=bks0000&amp;word=">地图</a>
+<a href="https://wenku.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://wenku.baidu.com/search?lm=0&amp;od=0&amp;ie=utf-8&amp;fr=bks0000&amp;word=">文库</a>
+<b class="baike">百科</b>
+</div>
+</div>
+<div class="header">
+<div class="layout">
+<div class="wgt-searchbar wgt-searchbar-new wgt-searchbar-main cmn-clearfix wgt-searchbar-large">
+<div class="logo-container">
+<a class="logo cmn-inline-block" title="到百科首页" href="https://baike.baidu.com/">
+<span class="cmn-baike-logo">
+<em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em>
+</span>
+</a>
+</div>
+<div class="search">
+<div class="form">
+<form id="searchForm" action="https://baike.baidu.com/search/word" method="GET" target="_self">
+<input id="query" nslog="normal" nslog-type="10080011" name="word" type="text" autocomplete="off" autocorrect="off" value="正交矩阵"><button id="search" nslog="normal" nslog-type="10080008" type="button">进入词条</button><button id="searchLemma" nslog="normal" nslog-type="10080009" type="button">全站搜索</button><a class="help" href="https://baike.baidu.com/help" nslog="normal" nslog-type="10080010" target="_blank">帮助</a>
+</form>
+<form id="searchLemmaForm" action="https://baike.baidu.com/search" method="GET" target="_self">
+<input id="searchLemmaQuery" name="word" type="hidden">
+<input name="pn" type="hidden" value="0">
+<input name="rn" type="hidden" value="0">
+<input name="enc" type="hidden" value="utf8">
+</form>
+<ul id="suggestion" class="suggestion" style="display: none;">
+<div class="sug"></div>
+<li class="extra">
+<span id="clear" style="margin-right:8px;">清除历史记录</span><span id="close" nslog="normal" nslog-type="10080012">关闭</span>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="declare-wrap" id="J-declare-wrap" style="display: block;">
+<div class="declare" id="J-declare">声明：百科词条人人可编辑，词条创建和修改均免费，绝不存在官方及代理商付费代编，请勿上当受骗。<a class="declare-details" target="_blank" href="https://baike.baidu.com/common/declaration">详情&gt;&gt;</a>
+<div class="close-btn" id="J-declare-close">
+<em class="cmn-icon cmn-icons cmn-icons_close"></em>
+</div>
+</div>
+</div>
+<a target="_blank" class="topA" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;4203&quot;, &quot;adTitle&quot;: &quot;活动-wmj 5.15-17&quot;, &quot;adPos&quot;: 3}" href="https://baike.baidu.com/task/204112" title="" style="background-image:url(https://baikebcs.bdimg.com/adpic/150x75b.jpg);"></a></div>
+</div>
+</div>
+<div class="navbar-wrapper">
+<div class="wgt-navbar">
+<div class="navbar-bg">
+<div class="navbar-bg-top">
+<div class="navbar-content layout">
+<div class="navbar-content-box">
+<dl class="index ">
+<dt><a href="https://baike.baidu.com/">首页</a></dt>
+</dl>
+<dl class="cat ">
+<dt><a>分类</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/art" target="_blank" class="art">艺术</a></div>
+<div><a href="https://baike.baidu.com/science" target="_blank" class="technology">科学</a></div>
+<div><a href="https://baike.baidu.com/ziran" target="_blank">自然</a></div>
+<div><a href="https://baike.baidu.com/wenhua" target="_blank">文化</a></div>
+<div><a href="https://baike.baidu.com/dili" target="_blank">地理</a></div>
+<div><a href="https://baike.baidu.com/shenghuo" target="_blank">生活</a></div>
+<div><a href="https://baike.baidu.com/shehui" target="_blank">社会</a></div>
+<div><a href="https://baike.baidu.com/renwu" target="_blank">人物</a></div>
+<div><a href="https://baike.baidu.com/jingji" target="_blank">经济</a></div>
+<div><a href="https://baike.baidu.com/tiyu" target="_blank">体育</a></div>
+<div><a href="https://baike.baidu.com/lishi" target="_blank">历史</a></div>
+</dd>
+</dl>
+<dl class="special ">
+<dt><a>特色百科</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/calendar/" target="_blank">历史上的今天</a></div>
+<div><a href="https://baike.baidu.com/museum/" target="_blank">数字博物馆</a></div>
+<div><a href="https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0%C2%B72016?fr=navbar" target="_blank">史记·2016</a></div>
+<div><a href="https://baike.baidu.com/city/" target="_blank">城市百科</a></div>
+<div><a href="https://baike.baidu.com/operation/worldwar2" target="_blank">二战百科</a></div>
+<div><a href="https://baike.baidu.com/feiyi?fr=dhlfeiyi" target="_blank">非遗百科</a></div>
+</dd>
+</dl>
+<dl class="user">
+<dt><a>用户</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/kedou/" target="_blank">蝌蚪团</a></div>
+<div><a href="https://baike.baidu.com/event/ranmeng/" target="_blank">燃梦计划</a></div>
+<div><a href="https://baike.baidu.com/task/" target="_blank">百科任务</a></div>
+<div><a href="https://baike.baidu.com/mall/" target="_blank">百科商城</a></div>
+</dd>
+</dl>
+<dl class="cooperation">
+<dt><a>权威合作</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/operation/cooperation#joint" target="_blank">合作模式</a></div>
+<div><a href="https://baike.baidu.com/operation/cooperation#issue" target="_blank">常见问题</a></div>
+<div><a href="https://baike.baidu.com/operation/cooperation#connection" target="_blank">联系方式</a></div>
+</dd>
+</dl>
+<dl class="mobile">
+<dt><a>手机百科</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/m#wap" target="_blank">网页版</a></div>
+</dd>
+</dl>
+<div class="usercenter">
+<div><a href="https://baike.baidu.com/usercenter" target="_blank"><em class="cmn-icon cmn-icons cmn-icons_navbar-usercenter"></em>个人中心</a></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="body-wrapper">
+<div class="before-content">
+</div>
+<div class="content-wrapper">
+<div class="content">
+<div class="personal-content">
+</div>
+<div class="main-content">
+<a class="posterFlag expert-icon " href="javascript:;" title="权威专家认证词条"></a>
+<div class="top-tool">
+<a class="add-sub-icon top-tool-icon" href="javascript:;" title="添加义项" nslog-type="50000101" style="display: inline-block;">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_add-subLemma-solid"></em>
+</a>
+<a href="https://baike.baidu.com/divideload/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5" title="拆分词条" target="_blank" class="split-icon top-tool-icon" style="display:none;" nslog-type="50000104">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_lemma-split"></em>
+</a>
+<div class="top-collect top-tool-icon" nslog="area" nslog-type="50000102">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_star-solid"></em>
+<span class="collect-text">收藏</span>
+<div class="collect-tip">查看<a href="https://baike.baidu.com/uc/favolemma" target="_blank">我的收藏</a></div>
+</div>
+<a href="javascript:void(0);" id="j-top-vote" class="top-vote top-tool-icon" nslog-type="10060801">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_zan-solid"></em>
+<span class="vote-count">876</span>
+<span class="vote-tip">有用+1</span>
+<span class="voted-tip">已投票</span>
+</a><div class="bksharebuttonbox top-share">
+<a class="top-share-icon top-tool-icon" nslog-type="9067">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_share"></em>
+<span class="share-count" id="j-topShareCount">60</span>
+</a>
+<div class="new-top-share" id="top-share">
+<ul class="top-share-list">
+<li class="top-share-item">
+<a class="share-link bds_qzone" href="javascript:void(0);" nslog-type="10060501">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qzone"></em>
+</a>
+</li>
+<li class="top-share-item">
+<a class="share-link bds_tsina" href="javascript:void(0);" nslog-type="10060701">
+<em class="cmn-icon cmn-icons cmn-icons_logo-sina-weibo"></em>
+</a>
+</li>
+<li class="top-share-item">
+<a class="bds_wechat" href="javascript:void(0);" nslog-type="10060401">
+<em class="cmn-icon cmn-icons cmn-icons_logo-wechat"></em>
+</a>
+</li>
+<li class="top-share-item">
+<a class="share-link bds_tqq" href="javascript:void(0);" nslog-type="10060601">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qq"></em>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="width:0;height:0;clear:both"></div><dl class="lemmaWgt-lemmaTitle lemmaWgt-lemmaTitle-">
+<dd class="lemmaWgt-lemmaTitle-title">
+<h1>正交矩阵</h1>
+<a href="javascript:;" class="edit-lemma cmn-btn-hover-blue cmn-btn-28 j-edit-link" style="display: inline-block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+<a class="lock-lemma" target="_blank" href="https://baike.baidu.com/view/10812319.htm" title="锁定"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_lock-lemma"></em>锁定</a>
+</dd>
+</dl><div class="authorityListPrompt">
+<div class="main-content-zj">
+本词条由<a href="http://www.cast.org.cn/" target="_blank" class="nslog:7175">“科普中国”百科科学词条编写与应用工作项目</a>
+审核
+。</div>
+</div>
+<div class="promotion-declaration">
+</div><div class="lemma-summary" label-module="lemmaSummary">
+<div class="para" label-module="para">如果AA<sup class="normal">T</sup>=E（E为单位矩阵，A<sup class="normal">T</sup>表示“矩阵A的转置矩阵”）或A<sup class="normal">T</sup>A=E，则n阶<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%9E%E7%9F%A9%E9%98%B5">实矩阵</a>A称为正交矩阵。</div><div class="para" label-module="para">正交<a target="_blank" href="https://baike.baidu.com/item/%E7%9F%A9%E9%98%B5">矩阵</a>是实数特殊化的<a target="_blank" href="https://baike.baidu.com/item/%E9%85%89%E7%9F%A9%E9%98%B5">酉矩阵</a>，因此总是<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E8%A7%84%E7%9F%A9%E9%98%B5">正规矩阵</a>。尽管我们在这里只考虑实数矩阵，这个定义可用于其元素来自任何域的矩阵。正交矩阵毕竟是从<a target="_blank" href="https://baike.baidu.com/item/%E5%86%85%E7%A7%AF">内积</a>自然引出的，对于复数的矩阵这导致了归一要求。</div><div class="para" label-module="para">正交矩阵不一定是实矩阵。实正交矩阵（即该正交矩阵中所有元都是实数）可以看做是一种特殊的酉矩阵，但是存在一种复正交矩阵，复正交矩阵不是酉矩阵。</div>
+</div>
+<div class="configModuleBanner">
+</div><div class="basic-info cmn-clearfix">
+<dl class="basicInfo-block basicInfo-left">
+<dt class="basicInfo-item name">中文名</dt>
+<dd class="basicInfo-item value">
+正交矩阵
+</dd>
+<dt class="basicInfo-item name">外文名</dt>
+<dd class="basicInfo-item value">
+The orthogonal matrix
+</dd>
+<dt class="basicInfo-item name">源学科</dt>
+<dd class="basicInfo-item value">
+<a target="_blank" href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/800" data-lemmaid="800">线性代数</a>
+</dd>
+</dl><dl class="basicInfo-block basicInfo-right">
+<dt class="basicInfo-item name">定&nbsp;&nbsp;&nbsp;&nbsp;义</dt>
+<dd class="basicInfo-item value">
+矩阵与其本身的转置矩阵乘积为E
+</dd>
+<dt class="basicInfo-item name">性&nbsp;&nbsp;&nbsp;&nbsp;质</dt>
+<dd class="basicInfo-item value">
+群性质
+</dd>
+<dt class="basicInfo-item name">应&nbsp;&nbsp;&nbsp;&nbsp;用</dt>
+<dd class="basicInfo-item value">
+计算机图形学
+</dd>
+</dl></div>
+<div class="lemmaWgt-lemmaCatalog">
+<div class="lemma-catalog">
+<h2 class="block-title">目录</h2>
+<div class="catalog-list column-3">
+<ol>
+<li class="level1">
+<span class="index">1</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#1">定义</a></span>
+</li>
+<li class="level1">
+<span class="index">2</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#2">定理</a></span>
+</li>
+<li class="level1">
+<span class="index">3</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#3">例子</a></span>
+</li>
+<li class="level1">
+<span class="index">4</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4">基本构造</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4_1">低维度</a></span>
+</li>
+</ol><ol><li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4_2">更高维度</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4_3">基本变换</a></span>
+</li>
+<li class="level1">
+<span class="index">5</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5">特性</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5_1">矩阵性质</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5_2">群性质</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5_3">规范形式</a></span>
+</li>
+</ol><ol><li class="level1">
+<span class="index">6</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#6">理论实践</a></span>
+</li>
+<li class="level1">
+<span class="index">7</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#7">分析算法</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#7_1">利益</a></span>
+</li>
+<li class="level2">
+<span class="index">▪</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#7_2">分解</a></span>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="anchor-list">
+<a name="1" class="lemma-anchor para-title"></a>
+<a name="sub21085_1" class="lemma-anchor "></a>
+<a name="定义" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>定义</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="1" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">如果：AA<sup class="normal">T</sup>=E（E为单位矩阵，A<sup class="normal">T</sup>表示“矩阵A的转置矩阵”。）或A<sup class="normal">T</sup>A=E，则n阶<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%9E%E7%9F%A9%E9%98%B5">实矩阵</a>A称为正交矩阵， 若A为<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E9%98%B5">正交阵</a>，则满足以下条件:</div>
+<div class="para" label-module="para">1) A<sup class="normal">T</sup>是正交矩阵</div>
+<div class="para" label-module="para">2)<div class="layoutinline formula" style="width:115px;display: inline;">
+<img align="absmiddle" alt="" title="" height="16" width="115" src="./正交矩阵_百度百科_files/730e0cf3d7ca7bcb30b4f57ebf096b63f724a897.jpg">
+</div> （E为单位矩阵）</div>
+<div class="para" label-module="para">3) A的各行是单位向量且两两正交</div>
+<div class="para" label-module="para">4) A的各列是单位向量且两两正交</div>
+<div class="para" label-module="para">5) (Ax,Ay)=(x,y) x,y∈R</div>
+<div class="para" label-module="para">6) |A| = 1或-1</div>
+<div class="para" label-module="para">7)<div class="layoutinline formula" style="width:67px;display: inline;">
+<img align="absmiddle" alt="" title="" height="16" width="67" src="./正交矩阵_百度百科_files/f703738da9773912611e9d20f1198618367ae2b3.jpg">
+</div> <sup class="normal"></sup></div>
+<div class="para" label-module="para"><b>正交矩阵通常用字母Q表示。</b></div>
+<div class="para" label-module="para">举例：A=[r<sub>11</sub> r<sub>12</sub> r<sub>13</sub>;r<sub>21</sub> r<sub>22</sub> r<sub>23</sub>;r<sub>31</sub> r<sub>32</sub> r<sub>33</sub>]</div>
+<div class="para" label-module="para">则有：r11^2+r21^2+r31^2=r12^2+r22^2+r32^2=r13^2+r23^2+r33^2=1</div>
+<div class="para" label-module="para">r11*r12+r21*r22+r31*r32=0等性质</div><div class="anchor-list">
+<a name="2" class="lemma-anchor para-title"></a>
+<a name="sub21085_2" class="lemma-anchor "></a>
+<a name="定理" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>定理</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="2" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">1. 方阵A正交的充要条件是A的行（列) 向量组是单位正交向量组；</div>
+<div class="para" label-module="para">2. 方阵A正交的充要条件是A的n个行（列)向量是n维向量空间的一组标准正交基；</div>
+<div class="para" label-module="para">3. A是正交矩阵的充要条件是：A的行向量组两两正交且都是单位向量；</div>
+<div class="para" label-module="para">4. A的列向量组也是正交单位向量组。</div>
+<div class="para" label-module="para">5. 正交方阵是欧氏空间中标准正交基到标准正交基的过渡矩阵。</div>
+<div class="para" label-module="para">在<a target="_blank" href="https://baike.baidu.com/item/%E7%9F%A9%E9%98%B5%E8%AE%BA">矩阵论</a>中，<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%9E%E6%95%B0">实数</a><b>正交矩阵</b>是<a target="_blank" href="https://baike.baidu.com/item/%E6%96%B9%E5%9D%97%E7%9F%A9%E9%98%B5">方块矩阵</a>Q，它的<a target="_blank" href="https://baike.baidu.com/item/%E8%BD%AC%E7%BD%AE%E7%9F%A9%E9%98%B5">转置矩阵</a>是它的<a target="_blank" href="https://baike.baidu.com/item/%E9%80%86%E7%9F%A9%E9%98%B5">逆矩阵</a>，如果正交矩阵的<a target="_blank" href="https://baike.baidu.com/item/%E8%A1%8C%E5%88%97%E5%BC%8F">行列式</a>为 +1，则我们称之为<b>特殊正交矩阵</b></div><div class="anchor-list">
+<a name="3" class="lemma-anchor para-title"></a>
+<a name="sub21085_3" class="lemma-anchor "></a>
+<a name="例子" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>例子</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="3" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">下面是一些小正交矩阵的例子和可能的解释。</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2">恒等变换</a>。 旋转 16.26°。 针对<i>x</i>轴反射。 旋转反演(rotoinversion): 轴 (0,-3/5,4/5)，角度90°。 置换坐标轴。</div><div class="anchor-list">
+<a name="4" class="lemma-anchor para-title"></a>
+<a name="sub21085_4" class="lemma-anchor "></a>
+<a name="基本构造" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>基本构造</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="4" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="anchor-list">
+<a name="4_1" class="lemma-anchor para-title"></a>
+<a name="sub21085_4_1" class="lemma-anchor "></a>
+<a name="低维度" class="lemma-anchor "></a>
+<a name="4-1" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>低维度</h3>
+</div>
+<div class="para" label-module="para">最简单的正交矩阵是 1×1 矩阵 [1] 和 [−1]，它们可分别解释为恒等和实数线针对原点的反射。</div>
+<div class="para" label-module="para">它的正交性要求满足三个方程，在考虑第一个方程时，不丢失一般性而设<i>p</i>= cos θ,<i>q</i>= sin θ；因此要么<i>t</i>= −<i>q</i>,<i>u</i>=<i>p</i>要么<i>t</i>=<i>q</i>,<i>u</i>= −<i>p</i>。我们可以解释第一种情况为<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC">旋转</a>θ(θ = 0 是<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5">单位矩阵</a>)，第二个解释为针对在角 θ/2 的直线的反射。</div>
+<div class="para" label-module="para">旋转 反射 在 45°的反射对换<i>x</i>和<i>y</i>；它是<a target="_blank" href="https://baike.baidu.com/item/%E7%BD%AE%E6%8D%A2%E7%9F%A9%E9%98%B5">置换矩阵</a>，在每列和每行带有一个单一的 1(其他都是 0):</div>
+<div class="para" label-module="para">单位矩阵也是置换矩阵。</div>
+<div class="para" label-module="para">反射是它自己的逆，这蕴涵了反射矩阵是<a target="_blank" href="https://baike.baidu.com/item/%E5%AF%B9%E7%A7%B0">对称</a>的(等于它的转置矩阵)也是正交的。两个<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5">旋转矩阵</a>的积是一个旋转矩阵，两个反射矩阵的积也是旋转矩阵<sup class="sup--normal" data-sup="1">
+[1]</sup><a class="sup-anchor" name="ref_[1]_21085">&nbsp;</a>
+。</div><div class="anchor-list">
+<a name="4_2" class="lemma-anchor para-title"></a>
+<a name="sub21085_4_2" class="lemma-anchor "></a>
+<a name="更高维度" class="lemma-anchor "></a>
+<a name="4-2" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>更高维度</h3>
+</div>
+<div class="para" label-module="para">不管维度，总是可能把正交矩阵按纯旋转与否来分类，但是对于 3×3 矩阵和更高维度矩阵要比反射复杂多了。例如，表示通过原点的<a target="_blank" href="https://baike.baidu.com/item/%E5%8F%8D%E6%BC%94">反演</a>和关于<i>z</i>轴的旋转反演(<a target="_blank" href="https://baike.baidu.com/item/%E9%80%86%E6%97%B6%E9%92%88%E6%97%8B%E8%BD%AC">逆时针旋转</a>90°后针对<i>x</i>-<i>y</i>平面反射，或逆时针旋转 270°后对原点反演)。旋转也变得更加复杂；它们不再由一个角来刻画，并可能影响多于一个平面子空间。尽管经常以一个轴和角来描述 3×3<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5">旋转矩阵</a>，在这个维度<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E8%BD%B4">旋转轴</a>的存在是偶然的性质而不适用于其他维度。但是，我们有了一般适用的基本建造板块如置换、反射、和旋转。</div><div class="anchor-list">
+<a name="4_3" class="lemma-anchor para-title"></a>
+<a name="sub21085_4_3" class="lemma-anchor "></a>
+<a name="基本变换" class="lemma-anchor "></a>
+<a name="4-3" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>基本变换</h3>
+</div>
+<div class="para" label-module="para">最基本的置换是换位(transposition)，通过交换单位矩阵的两行得到。任何<i>n</i>×<i>n</i>置换矩阵都可以构造为最多<i>n</i>−1 次换位的积。 构造自<a target="_blank" href="https://baike.baidu.com/item/%E9%9D%9E%E9%9B%B6%E5%90%91%E9%87%8F">非零向量</a><b>v</b>的Householder反射，这里的分子是<a target="_blank" href="https://baike.baidu.com/item/%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5">对称矩阵</a>，而分母是<b>v</b>的平方量的一个数。这是在垂直于<b>v</b>的超平面上的反射(取负平行于<b>v</b>任何<a target="_blank" href="https://baike.baidu.com/item/%E5%90%91%E9%87%8F">向量</a>分量)。如果<b>v</b>是<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%95%E4%BD%8D%E5%90%91%E9%87%8F">单位向量</a>，则<i>Q</i>=<i>I</i>−2<b>vv</b>就足够了。Householder 反射典型的用于同时置零一列的较低部分。任何<i>n</i>×<i>n</i>正交矩阵都可以构造为最多<i>n</i>次这种反射的积。</div>
+<div class="para" label-module="para">Givens旋转作用于由两个<a target="_blank" href="https://baike.baidu.com/item/%E5%9D%90%E6%A0%87%E8%BD%B4">坐标轴</a>所生成的二维(平面)子空间上，按选定角度旋转。它典型的用来置零一个单一的次对角线元素(subdiagonal entry)。任何<i>n</i>×<i>n</i>的<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5">旋转矩阵</a>都可以构造为最多<i>n</i>(<i>n</i>−1)/2 次这种旋转的积。在 3x3 矩阵的情况下，三个这种旋转就足够了；并且通过固定这个序列，我们可以用经常叫做<a target="_blank" href="https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89%E8%A7%92">欧拉角</a>的三个角来(尽管不唯一)描述所有 3×3 旋转矩阵。</div>
+<div class="para" label-module="para">雅可比旋转有同 Givens 旋转一样的形式，但是被用做<a target="_blank" href="https://baike.baidu.com/item/%E7%9B%B8%E4%BC%BC%E5%8F%98%E6%8D%A2">相似变换</a>，选择来置零 2×2 子矩阵的两个远离对角元素(off-diagonal entry)。</div><div class="anchor-list">
+<a name="5" class="lemma-anchor para-title"></a>
+<a name="sub21085_5" class="lemma-anchor "></a>
+<a name="特性" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>特性</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="5" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="anchor-list">
+<a name="5_1" class="lemma-anchor para-title"></a>
+<a name="sub21085_5_1" class="lemma-anchor "></a>
+<a name="矩阵性质" class="lemma-anchor "></a>
+<a name="5-1" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>矩阵性质</h3>
+</div>
+<div class="para" label-module="para">实数方块矩阵是正交的，当且仅当它的列形成了带有普通欧几里得<a target="_blank" href="https://baike.baidu.com/item/%E7%82%B9%E7%A7%AF">点积</a>的<a target="_blank" href="https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%A9%BA%E9%97%B4">欧几里得空间</a><b>R</b>的正交规范基，它为真当且仅当它的行形成<b>R</b>的正交基。假设带有正交(非正交规范)列的矩阵叫正交矩阵可能是诱人的，但是这种矩阵没有特殊价值而没有特殊名字；他们只是<i>M</i><i>M</i>=<i>D</i>，<i>D</i>是<a target="_blank" href="https://baike.baidu.com/item/%E5%AF%B9%E8%A7%92%E7%9F%A9%E9%98%B5">对角矩阵</a>。</div>
+<div class="para" label-module="para">1. 逆也是正交阵;</div>
+<div class="para" label-module="para">2. 积也是正交阵;</div>
+<div class="para" label-module="para">3. 行列式的值为正1或负1。</div>
+<div class="para" label-module="para">任何正交矩阵的<a target="_blank" href="https://baike.baidu.com/item/%E8%A1%8C%E5%88%97%E5%BC%8F">行列式</a>是 +1 或 −1。这可从关于行列式的如下基本事实得出:</div>
+<div class="para" label-module="para">反过来不是真的；有 +1 行列式不保证<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E6%80%A7">正交性</a>，即使带有正交列，可由下列反例证实。</div>
+<div class="para" label-module="para">对于置换矩阵，行列式是 +1 还是 −1 匹配置换是偶还是奇的标志，行列式是行的交替函数。</div>
+<div class="para" label-module="para">比行列式限制更强的是正交矩阵总可以是在<a target="_blank" href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0">复数</a>上可对角化来展示<a target="_blank" href="https://baike.baidu.com/item/%E7%89%B9%E5%BE%81%E5%80%BC">特征值</a>的完全的集合，它们全都必须有(复数)绝对值1<sup class="sup--normal" data-sup="2">
+[2]</sup><a class="sup-anchor" name="ref_[2]_21085">&nbsp;</a>
+。</div><div class="anchor-list">
+<a name="5_2" class="lemma-anchor para-title"></a>
+<a name="sub21085_5_2" class="lemma-anchor "></a>
+<a name="群性质" class="lemma-anchor "></a>
+<a name="5-2" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>群性质</h3>
+</div>
+<div class="para" label-module="para">正交矩阵的逆是正交的，两个正交矩阵的积是正交的。事实上，所有<i>n</i>×<i>n</i>正交矩阵的集合满足群的所有公理。它是<i>n</i>(<i>n</i>−1)/2 维的紧致<a target="_blank" href="https://baike.baidu.com/item/%E6%9D%8E%E7%BE%A4">李群</a>，叫做<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%BE%A4">正交群</a>并指示为<i>O</i>(<i>n</i>)。</div>
+<div class="para" label-module="para">行列式为 +1 的正交矩阵形成了<a target="_blank" href="https://baike.baidu.com/item/%E8%B7%AF%E5%BE%84%E8%BF%9E%E9%80%9A">路径连通</a>的子群指标为 2 的<i>O</i>(<i>n</i>)<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4">正规子群</a>，叫做<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC">旋转</a>的<a target="_blank" href="https://baike.baidu.com/item/%E7%89%B9%E6%AE%8A%E6%AD%A3%E4%BA%A4%E7%BE%A4">特殊正交群</a><i>SO</i>(<i>n</i>)。<a target="_blank" href="https://baike.baidu.com/item/%E5%95%86%E7%BE%A4">商群</a><i>O</i>(<i>n</i>)/<i>SO</i>(<i>n</i>) 同构于<i>O</i>(1)，带有依据行列式选择 [+1] 或 [−1] 的投影映射。带有行列式 −1 的正交矩阵不包括<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5">单位矩阵</a>，所以不形成子群而只是<a target="_blank" href="https://baike.baidu.com/item/%E9%99%AA%E9%9B%86">陪集</a>；它也是(分离的)连通的。所以每个正交群被分为两个部分；因为投影映射分裂，<i>O</i>(<i>n</i>) 是<i>SO</i>(<i>n</i>) 与<i>O</i>(1)的<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%8A%E7%9B%B4%E7%A7%AF">半直积</a>。用实用术语说，一个相当的陈述是任何正交矩阵可以通过采用一个<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5">旋转矩阵</a>并可能取负它的一列来生成，如我们在 2×2 矩阵中看到的。如果<i>n</i>是奇数，则半直积实际上是<a target="_blank" href="https://baike.baidu.com/item/%E7%9B%B4%E7%A7%AF">直积</a>，任何正交矩阵可以通过采用一个旋转矩阵并可能取负它的所有列来生成。</div>
+<div class="para" label-module="para">现在考虑 (<i>n</i>+1)×(<i>n</i>+1) 右底元素等于 1 的正交矩阵。最后一列(和最后一行)的余下元素必须是零，而任何两个这种矩阵的积有同样的形式。余下的矩阵是<i>n</i>×<i>n</i>正交矩阵；因此<i>O</i>(<i>n</i>) 是<i>O</i>(<i>n</i>+1) (和所有更高维群)的子群。</div>
+<div class="para" label-module="para">因为 Householder 正交矩阵形式的基本反射可把任何正交矩阵简约成这种约束形式，一系列的这种反射可以把任何正交矩阵变回<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5">单位矩阵</a>；因此正交群是反射群。最后一列可以被固定为任何<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%95%E4%BD%8D%E5%90%91%E9%87%8F">单位向量</a>，并且每种选择给出不同的<i>O</i>(<i>n</i>) 在<i>O</i>(<i>n</i>+1) 中的复本；以这种方式<i>O</i>(<i>n</i>+1) 是在单位球<i>S</i>与纤维<i>O</i>(<i>n</i>) 上的丛。</div>
+<div class="para" label-module="para">类似的，<i>SO</i>(<i>n</i>) 是<i>SO</i>(<i>n</i>+1) 的子群；任何特定正交矩阵可以使用类似过程通过 Givens 平面旋转来生成。丛结构持续:<i>SO</i>(<i>n</i>) ↪<i>SO</i>(<i>n</i>+1) →<i>S</i>。一个单一旋转可以在最后一列的第一行生成一个零，而<i>n</i>−1 次旋转序列将置零<i>n</i>×<i>n</i><a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5">旋转矩阵</a>的除了最后一列的最后一行的所有元素。因为平面是固定的，每次旋转只有一个自由度，就是它的角度。通过归纳，<i>SO</i>(<i>n</i>) 因此有自由度，<i>O</i>(<i>n</i>) 也是。置换矩阵简单一些；它们不形成李群，只是一个有限群，<i>n</i>! 次<a target="_blank" href="https://baike.baidu.com/item/%E5%AF%B9%E7%A7%B0%E7%BE%A4">对称群</a><i>S</i><i>n</i>。通过同类的讨论，<i>S</i><i>n</i>是<i>S</i><i>n</i>+1 的子群。偶置换生成行列式 +1 的置换矩阵的子群，<i>n</i>!/2 次<a target="_blank" href="https://baike.baidu.com/item/%E4%BA%A4%E9%94%99%E7%BE%A4">交错群</a>。</div><div class="anchor-list">
+<a name="5_3" class="lemma-anchor para-title"></a>
+<a name="sub21085_5_3" class="lemma-anchor "></a>
+<a name="规范形式" class="lemma-anchor "></a>
+<a name="5-3" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>规范形式</h3>
+</div>
+<div class="para" label-module="para">更广泛的说，任何正交矩阵的效果分离到在正交二维空间上的独立动作。就是说，如果<i>Q</i>是狭义正交的，则你可以找到(旋转)改变基的一个正交矩阵<i>P</i>，把<i>Q</i>带回到分块对角形式:(<i>n</i><a target="_blank" href="https://baike.baidu.com/item/%E5%81%B6%E6%95%B0">偶数</a>)， (<i>n</i><a target="_blank" href="https://baike.baidu.com/item/%E5%A5%87%E6%95%B0">奇数</a>)。 这里的矩阵<i>R</i>1,...,<i>R</i><i>k</i>是 2×2<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5">旋转矩阵</a>，而余下的元素是零。作为例外，一个旋转块可以是对角的， ±<i>I</i>。因此如果需要的话取负一列，并注意 2×2 反射可对角化为 +1 和 −1，任何正交矩阵可变为如下形式，矩阵<i>R</i>1,…,<i>R</i><i>k</i>给出位于<a target="_blank" href="https://baike.baidu.com/item/%E5%A4%8D%E5%B9%B3%E9%9D%A2">复平面</a>中<a target="_blank" href="https://baike.baidu.com/item/%E5%8D%95%E4%BD%8D%E5%9C%86">单位圆</a>上的特征值的共轭对；所以这个分解复合确定所有带有绝对值1 的<a target="_blank" href="https://baike.baidu.com/item/%E7%89%B9%E5%BE%81%E5%80%BC">特征值</a>。如果<i>n</i>是奇数，至少有一个实数特征值 +1 或 −1；对于 3×3 旋转，关联着 +1 的特征向量是<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC%E8%BD%B4">旋转轴</a>。</div><div class="anchor-list">
+<a name="6" class="lemma-anchor para-title"></a>
+<a name="sub21085_6" class="lemma-anchor "></a>
+<a name="理论实践" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>理论实践</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="6" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">要看出与内积的联系，考虑在<i>n</i>维实数<a target="_blank" href="https://baike.baidu.com/item/%E5%86%85%E7%A7%AF%E7%A9%BA%E9%97%B4">内积空间</a>中的关于正交基写出的向量<b>v</b>。<b>v</b>的长度的平方是<b>v</b><b>v</b>。所以有限维线性<a target="_blank" href="https://baike.baidu.com/item/%E7%AD%89%E8%B7%9D%E5%90%8C%E6%9E%84">等距同构</a>，比如<a target="_blank" href="https://baike.baidu.com/item/%E6%97%8B%E8%BD%AC">旋转</a>、反射和它们的组合，都产生正交矩阵。反过来也成立: 正交矩阵蕴涵了正交变换。但是，<a target="_blank" href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">线性代数</a>包括了在既不是有限维的也不是同样维度的空间之间的<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E5%8F%98%E6%8D%A2">正交变换</a>，它们没有等价的正交矩阵。</div>
+<div class="para" label-module="para">有多种原由使正交矩阵对理论和实践是重要的。<i>n</i>×<i>n</i>正交矩阵形成了一个群，即指示为<i>O</i>(<i>n</i>) 的<a target="_blank" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%BE%A4">正交群</a>，它和它的子群广泛的用在数学和物理科学中。例如，分子的<a target="_blank" href="https://baike.baidu.com/item/%E7%82%B9%E7%BE%A4">点群</a>是<i>O</i>(3) 的子群。因为<a target="_blank" href="https://baike.baidu.com/item/%E6%B5%AE%E7%82%B9">浮点</a>版本的正交矩阵有有利的性质，它们是字<a target="_blank" href="https://baike.baidu.com/item/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">数值线性代数</a>中很多算法比如<a target="_blank" href="https://baike.baidu.com/item/QR%E5%88%86%E8%A7%A3">QR分解</a>的关键，通过适当的规范化，<a target="_blank" href="https://baike.baidu.com/item/%E7%A6%BB%E6%95%A3%E4%BD%99%E5%BC%A6%E5%8F%98%E6%8D%A2">离散余弦变换</a>(用于MP3压缩)可用正交矩阵表示。</div><div class="anchor-list">
+<a name="7" class="lemma-anchor para-title"></a>
+<a name="sub21085_7" class="lemma-anchor "></a>
+<a name="分析算法" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">正交矩阵</span>分析算法</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="7" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="anchor-list">
+<a name="7_1" class="lemma-anchor para-title"></a>
+<a name="sub21085_7_1" class="lemma-anchor "></a>
+<a name="利益" class="lemma-anchor "></a>
+<a name="7-1" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>利益</h3>
+</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90">数值分析</a>自然的利用了正交矩阵的很多数值<a target="_blank" href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">线性代数</a>的性质。例如，经常需要计算空间的正交基，或基的正交变更；二者都采用了正交矩阵的形式。有行列式 ±1 和所有模为 1 的特征值是对数值稳定性非常有利的。 一个蕴涵是<a target="_blank" href="https://baike.baidu.com/item/%E6%9D%A1%E4%BB%B6%E6%95%B0">条件数</a>为 1 (这是极小的)，所以在乘以正交矩阵的时候错误不放大。很多算法为此使用正交矩阵如Householder反射和Givens旋转。有帮助的不只是正交矩阵是可逆的，还有它的逆矩阵本质上是免花费的，只需要对换索引(下标)。</div>
+<div class="para" label-module="para">置换是很多算法成功的根本，包括有局部定支点(partial pivoting)的运算繁重的<a target="_blank" href="https://baike.baidu.com/item/%E9%AB%98%E6%96%AF%E6%B6%88%E5%8E%BB%E6%B3%95">高斯消去法</a>(这里的置换用来定支点)。但是它们很少明显作为矩阵出现；它们的特殊形式允许更有限的表示，比如<i>n</i>个索引的列表。</div>
+<div class="para" label-module="para">同样的，使用 Householder 和 Givens 矩阵的算法典型的使用特殊方法的<a target="_blank" href="https://baike.baidu.com/item/%E4%B9%98%E6%B3%95">乘法</a>和存储。例如，Givens 旋转只影响它所乘的矩阵的两行，替代完全的<i>n</i>次的<a target="_blank" href="https://baike.baidu.com/item/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95">矩阵乘法</a>为更有效的<i>n</i>次运算。在使用这些反射和旋转向矩阵介入零的时候，腾出的空间足够存储充足的数据来重生成这个变换。</div><div class="anchor-list">
+<a name="7_2" class="lemma-anchor para-title"></a>
+<a name="sub21085_7_2" class="lemma-anchor "></a>
+<a name="分解" class="lemma-anchor "></a>
+<a name="7-2" class="lemma-anchor "></a>
+</div><div class="para-title level-3" label-module="para-title">
+<h3 class="title-text"><span class="title-prefix">正交矩阵</span>分解</h3>
+</div>
+<div class="para" label-module="para">一些重要的<a target="_blank" href="https://baike.baidu.com/item/%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3">矩阵分解</a>(Golub &amp; Van Loan, 1996)涉及到了正交矩阵，包括:</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/QR%E5%88%86%E8%A7%A3">QR分解</a><i>M</i>=<i>QR</i>,<i>Q</i>正交，<i>R</i>上三角。<a target="_blank" href="https://baike.baidu.com/item/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3">奇异值分解</a><i>M</i>=<i>UΣV</i>,<i>U</i>和<i>V</i>正交，<i>Σ</i>非负对角。<a target="_blank" href="https://baike.baidu.com/item/%E8%B0%B1%E5%88%86%E8%A7%A3">谱分解</a><i>S</i>=<i>QΛQ</i>,<i>S</i>对称，<i>Q</i>正交，<i>Λ</i>对角。<a target="_blank" href="https://baike.baidu.com/item/%E6%9E%81%E5%88%86%E8%A7%A3">极分解</a><i>M</i>=<i>QS</i>,<i>Q</i>正交，<i>S</i>对称非负确定。</div>
+<dl class="lemma-reference collapse nslog-area log-set-param" data-nslog-type="2" log-set-param="ext_reference">
+<dt class="reference-title">参考资料</dt>
+<dd class="reference-list-wrap">
+<ul class="reference-list">
+<li class="reference-item reference-item--type1 " id="reference-[1]-21085-wrap">
+<span class="index">1.</span>
+<a class="gotop anchor" name="refIndex_1_21085" id="refIndex_1_21085" title="向上跳转" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#ref_[1]_21085">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="https://baike.baidu.com/redirect/b5644-asTIgeIP9p-Fj-LlTvx5SuGtk_Gfa98Mb3RiDrQ7ZbON1cHUYmPzhUN6mybmWLORtiXt-YQTag9LA5JUJcFF7EPo4Xfa0DnrFY" target="_blank" class="text">有理正交矩阵的构造<span class="linkout">&nbsp;</span></a>
+<span class="site">．维普</span><span>[引用日期2017-09-05]</span></li><li class="reference-item reference-item--type1 " id="reference-[2]-21085-wrap">
+<span class="index">2.</span>
+<a class="gotop anchor" name="refIndex_2_21085" id="refIndex_2_21085" title="向上跳转" href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#ref_[2]_21085">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="https://baike.baidu.com/redirect/6cddpI0DM9ayR6fGIWU0EJ-oyWkoB-Ttgzr1Knnxy8pEChJy_skgRK9_Pk5a1XlXDiFWdMz1ux6dE7pi2drGxTuUvh_qiybu5iH4Ir4sBtGPgkvHvd3q4k-1Dq7ZX9T5dvTbJXH1dqx9d0uXcSfaBqK7WBQTkuY" target="_blank" class="text">戴立辉,王泽文,刘龙章. 正交矩阵的若干性质[J]. 华东地质学院学报,2002,(03):267-269. [2017-09-05].<span class="linkout">&nbsp;</span></a>
+<span class="site">．中国知网</span><span>[引用日期2017-09-05]</span></li></ul>
+</dd>
+</dl>
+<div id="open-tag">
+<div class="open-tag-title">词条标签：</div>
+<dd id="open-tag-item">
+<span class="taglist">
+<a target="_blank" href="https://baike.baidu.com/wikitag/taglist?tagId=76604">科学百科数理科学分类</a>
+</span>
+，<span class="taglist">
+科学
+</span>
+</dd>
+<div class="open-tag-collapse" id="open-tag-collapse" style="display: none;"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="side-content">
+<div class="summary-pic">
+<a href="https://baike.baidu.com/pic/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284/0/a8014c086e061d9581f7911d79f40ad162d9ca66?fr=lemma&amp;ct=single" target="_blank" nslog-type="10002401">
+<img src="./正交矩阵_百度百科_files/a8014c086e061d9581f7911d79f40ad162d9ca66.jpg">
+<button class="picAlbumBtn"><em></em><span>图集</span></button>
+<div>正交矩阵图册</div>
+</a>
+</div>
+<div class="professional-con">
+<div class="professional-header">
+<div style="background-image: url(&#39;https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D50/sign=a88888073f7adab43dd01b438ad4bcdd/b3119313b07eca8035a902c8982397dda1448374.jpg&#39;)">
+<h2 title="科普中国">科普中国</h2>
+<p title="致力于权威的科学传播">致力于权威的科学传播</p>
+</div>
+</div>
+<div class="professional-content">
+<div class="professional-title professional-clearfix">
+<h3>本词条认证专家为</h3>
+</div>
+<div class="professional-list" id="professional_list" style="height: 61px;">
+<div class="professional-list-slider J-slider" style="width: 242px; position: absolute;">
+<ul>
+<li class="professional-clearfix">
+<a href="https://baike.baidu.com/science/auditorcenter?uk=c4677fb5&amp;fromModule=professional" target="_blank">
+<div class="pro-line"></div>
+<div class="pro-content">
+<div class="pro-content-title professional-clearfix">
+<h4>胡启洲</h4>
+<span>副教授</span><i>审核</i></div>
+<p title="南京理工大学">南京理工大学</p>
+</div>
+</a>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+<div class="lemmaWgt-promotion-vbaike" style="display: block;">
+<div class="promotion_title">V百科<a href="https://baike.baidu.com/vbaike#gallary" target="_blank">往期回顾</a></div>
+<div class="promotion_viewport">
+<dl style="position: absolute; width: 536px; height: 152px; left: 0px;"><dd class="wgt_carousel_aniUnit" style="float: left;">
+<a href="https://baike.baidu.com/vbaike/%E6%81%90%E9%BE%99%E7%81%AD%E7%BB%9D%E7%9A%84%E7%A7%98%E5%AF%86/21804" target="_blank" title="" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;4218&quot;, &quot;adTitle&quot;:&quot;恐龙灭绝的秘密&quot;, &quot;adPos&quot;: 1}">
+<img src="./正交矩阵_百度百科_files/8ad4b31c8701a18bd0a496f5922f07082838fe39.jpg">
+</a>
+</dd></dl>
+<div class="promotion_viewport_pager wgt_horPager">
+<span class="pTagBox">
+<a href="javascript:;" class="pTag prev" p-index="3"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-left"></em></a>
+<a href="javascript:;" class="pTag next" p-index="5"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-right"></em></a>
+</span>
+</div>
+</div>
+</div><div class="lemmaWgt-promotion-rightPreciseAd" data-lemmaid="407284" data-lemmatitle="正交矩阵"></div><div class="lemmaWgt-sideRecommend" style="display: block;">
+<a name="zhixinWrap" class="qnAnchor"></a>
+<div class="zhixin-box" id="zhixinWrap" data-source="aladdin" data-newlemmaid="407284"><div class="zhixin-group js-group" data-datatype="async">
+<h6 class="js-cardTitle">
+<span>知名学者</span>
+</h6>
+<div class="zhixin-fixBtn js-fixBtn">
+<div class="openFix" title="若推荐内容有误，请点击纠错进行反馈">纠错</div>
+<div class="closeFix">关闭纠错</div>
+</div>
+<div class="zhixin-list">
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E8%92%8B%E6%98%A5%E6%9A%84/2924908&quot;,&quot;targetId&quot;:&quot;2924908&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E8%92%8B%E6%98%A5%E6%9A%84/2924908" target="_blank">
+<img src="./正交矩阵_百度百科_files/c995d143ad4bd11398bc80415aafa40f4bfb054b.jpg" alt="蒋春暄">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E8%92%8B%E6%98%A5%E6%9A%84/2924908" target="_blank" title="蒋春暄">蒋春暄</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="2924908">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E6%9C%B1%E6%95%8F%E5%A8%B4/10450256&quot;,&quot;targetId&quot;:&quot;10450256&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E6%9C%B1%E6%95%8F%E5%A8%B4/10450256" target="_blank">
+<img src="./正交矩阵_百度百科_files/96dda144ad345982192b696a06f431adcaef84a1.jpg" alt="朱敏娴">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E6%9C%B1%E6%95%8F%E5%A8%B4/10450256" target="_blank" title="朱敏娴">朱敏娴</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="10450256">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E9%9B%85%E5%8F%AF%E6%AF%94/171940&quot;,&quot;targetId&quot;:&quot;171940&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E9%9B%85%E5%8F%AF%E6%AF%94/171940" target="_blank">
+<img src="./正交矩阵_百度百科_files/b8014a90f603738df6109f1bb21bb051f819ecb5.jpg" alt="雅可比">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E9%9B%85%E5%8F%AF%E6%AF%94/171940" target="_blank" title="雅可比">雅可比</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="171940">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E4%B8%A5%E8%94%9A%E6%95%8F/294705&quot;,&quot;targetId&quot;:&quot;294705&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E4%B8%A5%E8%94%9A%E6%95%8F/294705" target="_blank">
+<img src="./正交矩阵_百度百科_files/80cb39dbb6fd5266dc03c231ae18972bd40736ee.jpg" alt="严蔚敏">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E4%B8%A5%E8%94%9A%E6%95%8F/294705" target="_blank" title="严蔚敏">严蔚敏</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="294705">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E8%8B%A5%E5%B0%94%E5%BD%93/550205&quot;,&quot;targetId&quot;:&quot;550205&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E8%8B%A5%E5%B0%94%E5%BD%93/550205" target="_blank">
+<img src="./正交矩阵_百度百科_files/d6ca7bcb0a46f21fe59e825ff6246b600c33ae10.jpg" alt="若尔当">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E8%8B%A5%E5%B0%94%E5%BD%93/550205" target="_blank" title="若尔当">若尔当</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="550205">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E5%9F%83%E5%B0%94%E6%B8%A9%C2%B7%E8%96%9B%E5%AE%9A%E8%B0%94/2124805&quot;,&quot;targetId&quot;:&quot;2124805&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E5%9F%83%E5%B0%94%E6%B8%A9%C2%B7%E8%96%9B%E5%AE%9A%E8%B0%94/2124805" target="_blank">
+<img src="./正交矩阵_百度百科_files/730e0cf3d7ca7bcb503514efbc096b63f724a8a0.jpg" alt="埃尔温·薛定谔">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E5%9F%83%E5%B0%94%E6%B8%A9%C2%B7%E8%96%9B%E5%AE%9A%E8%B0%94/2124805" target="_blank" title="埃尔温·薛定谔">埃尔温·薛定谔</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="2124805">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E5%BC%A0%E7%A6%BE%E7%91%9E/5539431&quot;,&quot;targetId&quot;:&quot;5539431&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E5%BC%A0%E7%A6%BE%E7%91%9E/5539431" target="_blank">
+<img src="./正交矩阵_百度百科_files/b8014a90f603738db6e7de2ab31bb051f819ec0d.jpg" alt="张禾瑞">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E5%BC%A0%E7%A6%BE%E7%91%9E/5539431" target="_blank" title="张禾瑞">张禾瑞</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="5539431">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E8%A2%81%E6%99%96%E5%9D%AA/10772015&quot;,&quot;targetId&quot;:&quot;10772015&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E8%A2%81%E6%99%96%E5%9D%AA/10772015" target="_blank">
+<img src="./正交矩阵_百度百科_files/7c1ed21b0ef41bd5e66f55b453da81cb39db3db5.jpg" alt="袁晖坪">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E8%A2%81%E6%99%96%E5%9D%AA/10772015" target="_blank" title="袁晖坪">袁晖坪</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="10772015">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF/5189&quot;,&quot;targetId&quot;:&quot;5189&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF/5189" target="_blank">
+<img src="./正交矩阵_百度百科_files/b999a9014c086e064d44c4da03087bf40bd1cbb7.jpg" alt="拉普拉斯">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF/5189" target="_blank" title="拉普拉斯">拉普拉斯</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="5189">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+</div>
+</div>
+<div class="zhixin-group js-group" data-datatype="async">
+<h6 class="js-cardTitle">
+<span>相关术语</span>
+</h6>
+<div class="zhixin-fixBtn js-fixBtn">
+<div class="openFix" title="若推荐内容有误，请点击纠错进行反馈">纠错</div>
+<div class="closeFix">关闭纠错</div>
+</div>
+<div class="zhixin-list">
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E7%B3%96%E6%B0%B4%E4%B8%8D%E7%AD%89%E5%BC%8F/8704996&quot;,&quot;targetId&quot;:&quot;8704996&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E7%B3%96%E6%B0%B4%E4%B8%8D%E7%AD%89%E5%BC%8F/8704996" target="_blank">
+<img src="./正交矩阵_百度百科_files/377adab44aed2e732d6aec008c01a18b87d6fa1f.jpg" alt="糖水不等式">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E7%B3%96%E6%B0%B4%E4%B8%8D%E7%AD%89%E5%BC%8F/8704996" target="_blank" title="糖水不等式">糖水不等式</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="8704996">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E6%97%A0%E9%99%90%E7%8C%B4%E5%AD%90%E5%AE%9A%E7%90%86/2221476&quot;,&quot;targetId&quot;:&quot;2221476&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E6%97%A0%E9%99%90%E7%8C%B4%E5%AD%90%E5%AE%9A%E7%90%86/2221476" target="_blank">
+<img src="./正交矩阵_百度百科_files/e850352ac65c103830060c0fb5119313b17e8987.jpg" alt="无限猴子定理">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E6%97%A0%E9%99%90%E7%8C%B4%E5%AD%90%E5%AE%9A%E7%90%86/2221476" target="_blank" title="无限猴子定理">无限猴子定理</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="2221476">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E6%9D%8E%E4%BB%A3%E6%95%B0/8751984&quot;,&quot;targetId&quot;:&quot;8751984&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E6%9D%8E%E4%BB%A3%E6%95%B0/8751984" target="_blank">
+<img src="./正交矩阵_百度百科_files/e61190ef76c6a7ef9378b8aaf7faaf51f2de66db.jpg" alt="李代数">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E6%9D%8E%E4%BB%A3%E6%95%B0/8751984" target="_blank" title="李代数">李代数</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="8751984">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E5%93%88%E8%BE%BE%E7%8E%9B%E5%8F%98%E6%8D%A2/14679032&quot;,&quot;targetId&quot;:&quot;14679032&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E5%93%88%E8%BE%BE%E7%8E%9B%E5%8F%98%E6%8D%A2/14679032" target="_blank">
+<img src="./正交矩阵_百度百科_files/a8773912b31bb0512310abfd347adab44aede02b.jpg" alt="哈达玛变换">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E5%93%88%E8%BE%BE%E7%8E%9B%E5%8F%98%E6%8D%A2/14679032" target="_blank" title="哈达玛变换">哈达玛变换</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="14679032">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E5%90%91%E9%87%8F%E7%9A%84%E6%A8%A1/2073854&quot;,&quot;targetId&quot;:&quot;2073854&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E5%90%91%E9%87%8F%E7%9A%84%E6%A8%A1/2073854" target="_blank">
+<img src="./正交矩阵_百度百科_files/d833c895d143ad4b351a75e580025aafa40f06da.jpg" alt="向量的模">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E5%90%91%E9%87%8F%E7%9A%84%E6%A8%A1/2073854" target="_blank" title="向量的模">向量的模</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="2073854">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E7%BE%A4%E8%AE%BA/10980672&quot;,&quot;targetId&quot;:&quot;10980672&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E7%BE%A4%E8%AE%BA/10980672" target="_blank">
+<img src="./正交矩阵_百度百科_files/fd039245d688d43f0eb0982c771ed21b0ff43bd6.jpg" alt="群论">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E7%BE%A4%E8%AE%BA/10980672" target="_blank" title="群论">群论</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="10980672">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+</div>
+</div>
+<div class="zhixin-group js-group" data-datatype="async">
+<h6 class="js-cardTitle">
+<span>自然科学类书籍</span>
+</h6>
+<div class="zhixin-fixBtn js-fixBtn">
+<div class="openFix" title="若推荐内容有误，请点击纠错进行反馈">纠错</div>
+<div class="closeFix">关闭纠错</div>
+</div>
+<div class="zhixin-list">
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E5%90%91%E9%87%8F%E5%BE%AE%E7%A7%AF%E5%88%86/186198&quot;,&quot;targetId&quot;:&quot;186198&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E5%90%91%E9%87%8F%E5%BE%AE%E7%A7%AF%E5%88%86/186198" target="_blank">
+<img src="./正交矩阵_百度百科_files/5366d0160924ab18b40e6e4837fae6cd7b890bb0.jpg" alt="向量微积分">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E5%90%91%E9%87%8F%E5%BE%AE%E7%A7%AF%E5%88%86/186198" target="_blank" title="向量微积分">向量微积分</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="186198">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6/6491693&quot;,&quot;targetId&quot;:&quot;6491693&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6/6491693" target="_blank">
+<img src="./正交矩阵_百度百科_files/d52a2834349b033b9d5344ba17ce36d3d439bdf3.jpg" alt="线性代数应该这样学">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6/6491693" target="_blank" title="线性代数应该这样学">线性代数应该这样学</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="6491693">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+<div class="zhixin-item" nslog="area" nslog-type="10000101" nslog-params="{&quot;source&quot;:&quot;aladdin&quot;,&quot;url&quot;:&quot;https://baike.baidu.com/item/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/579367&quot;,&quot;targetId&quot;:&quot;579367&quot;}">
+<div class="portraitbox">
+<a href="https://baike.baidu.com/item/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/579367" target="_blank">
+<img src="./正交矩阵_百度百科_files/a8773912b31bb0512d2cb622337adab44aede0b4.jpg" alt="大学数学线性代数">
+</a>
+</div>
+<p class="item-title js-name"><a href="https://baike.baidu.com/item/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/579367" target="_blank" title="大学数学线性代数">大学数学线性代数</a></p>
+<div class="zhixinErrorBox js-fixBox hidden" data-lemma-id="579367">
+<a class="submit-trigger" href="javascript:;">有错误</a>
+<span class="js-text hidden">已反馈</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<form id="zhixinErrorForm" class="hidden" action="https://sp2.baidu.com/-uV1bjeh1BF3odCf/index.php/feedback/zx/baikeJC" target="zhixinSubErr" method="post">
+<input class="js-url" name="fb_html_url" type="hidden">
+<input class="js-query" name="fb_query" type="hidden">
+<input class="js-title" name="fb_card_title" type="hidden">
+<input class="js-content" name="fb_content" type="hidden">
+<input class="js-souceId" name="fb_source_id" type="hidden">
+</form>
+<iframe id="zhixinSubErr" name="zhixinSubErr" style="display:none" frameborder="0" src="./正交矩阵_百度百科_files/saved_resource.html"></iframe>
+</div>
+<div class="lemmaWgt-promotion-slide" style="display: block;">
+<div class="promotion_viewport">
+<dl style="position: absolute; width: 540px; height: 260px; left: 0px;"><dd class="wgt_carousel_aniUnit" style="float: left;">
+<a href="https://baike.baidu.com/wikisecond/videoflow?lemmaId=444842&amp;secondId=462461" target="_blank" title="--" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;4103&quot;, &quot;adTitle&quot;:&quot;林依晨-sx4.24&quot;, &quot;adPos&quot;: 2}">
+<img src="./正交矩阵_百度百科_files/linyichen270x150.png">
+</a>
+</dd></dl>
+<div class="promotion_viewport_pager wgt_horPager"><span class="pTagBox">
+<a href="javascript:;" class="pTag prev" p-index="2"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-left"></em></a><span><a href="javascript:;" class="dot pTag" p-index="1"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a><a href="javascript:;" class="dot pTag" p-index="2"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a><a href="javascript:;" class="dot pTag cur"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a></span><a href="javascript:;" class="pTag next" p-index="3"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-right"></em></a>
+</span></div>
+</div>
+</div><div class="lemmaWgt-promotion-rightBigAd">
+</div><div id="side-auth">
+<div id="authEdit" class="side-box">
+<dl>
+<dt class="sidetitle">权威合作编辑</dt>
+<dd class="side-auth-content">
+<div class="side-auth-img">
+<a href="http://www.cast.org.cn/" target="_blank" class="nslog:7075" id="authOrgRightEditPic">
+<img style="width: 50px;" onload="this.style.width = &#39;50px&#39;;this.style.display=&#39;&#39;;" src="./正交矩阵_百度百科_files/QQ图片20141121003618.jpg" alt="权威编辑" title="权威编辑">
+</a>
+</div>
+<div class="side-auth-info">
+<p class="auth-info-name">
+<a href="http://www.cast.org.cn/" nslog-type="7075" target="_blank" id="authOrgRightEdit">“科普中国”百科科学词条编写与应用工作项目</a>
+</p>
+<span id="authDetail">
+“科普中国”是为我国科普信息化建设塑造的全...
+</span>
+</div>
+<div class="clear"></div>
+</dd>
+<dd class="authVersion">
+<span style="">
+<a class="whatIs" align="absmiddle" href="javascript:void(0);"></a><a href="http://baike.bdimg.com/cms/static/cooperation/content.pdf" target="_blank" nslog-type="36" class="link-toggle" id="whatIsAuthEdit">什么是权威编辑</a>
+</span>
+<span class="divisionLine"></span>
+<a href="https://baike.baidu.com/history/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/122347920" class="nslog:37" target="_blank" id="authEditVersion">查看编辑版本</a>
+</dd>
+</dl>
+</div>
+</div><dl class="side-box lemma-statistics">
+<dt class="title">词条统计</dt>
+<dd class="description">
+<ul>
+<li>浏览次数：<span id="j-lemmaStatistics-pv">1202893</span>次</li>
+<li>编辑次数：37次<a href="https://baike.baidu.com/historylist/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284" class="nslog:1021" target="_blank">历史版本</a></li>
+<li>最近更新：<span class="j-modified-time" style="">2017-09-06</span></li>
+<li>创建者：<a class="show-userCard" data-uid="8224501" title="查看此用户资料" target="_blank" href="http://www.baidu.com/p/samking630" nslog-type="1022">samking630</a></li>
+</ul>
+</dd>
+</dl>
+<div class="side-catalog" style="visibility: hidden; bottom: 10px;">
+<div class="side-bar">
+<em class="circle start"></em>
+<em class="circle end"></em>
+</div>
+<div class="catalog-scroller">
+<dl class="catalog-list">
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#1" class="title-link">
+<span class="text">
+<span class="title-index">1</span>
+<span class="title-link" nslog-type="10002802">定义</span>
+</span>
+</a>
+</dt>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#2" class="title-link">
+<span class="text">
+<span class="title-index">2</span>
+<span class="title-link" nslog-type="10002802">定理</span>
+</span>
+</a>
+</dt>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#3" class="title-link">
+<span class="text">
+<span class="title-index">3</span>
+<span class="title-link" nslog-type="10002802">例子</span>
+</span>
+</a>
+</dt>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4" class="title-link">
+<span class="text">
+<span class="title-index">4</span>
+<span class="title-link" nslog-type="10002802">基本构造</span>
+</span>
+</a>
+</dt>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4_1" class="title-link">
+<span class="text">
+<span class="title-index">4.1</span>
+<span class="title-link" nslog-type="10002802">低维度</span>
+</span>
+</a>
+</dd>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4_2" class="title-link">
+<span class="text">
+<span class="title-index">4.2</span>
+<span class="title-link" nslog-type="10002802">更高维度</span>
+</span>
+</a>
+</dd>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#4_3" class="title-link">
+<span class="text">
+<span class="title-index">4.3</span>
+<span class="title-link" nslog-type="10002802">基本变换</span>
+</span>
+</a>
+</dd>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5" class="title-link">
+<span class="text">
+<span class="title-index">5</span>
+<span class="title-link" nslog-type="10002802">特性</span>
+</span>
+</a>
+</dt>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5_1" class="title-link">
+<span class="text">
+<span class="title-index">5.1</span>
+<span class="title-link" nslog-type="10002802">矩阵性质</span>
+</span>
+</a>
+</dd>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5_2" class="title-link">
+<span class="text">
+<span class="title-index">5.2</span>
+<span class="title-link" nslog-type="10002802">群性质</span>
+</span>
+</a>
+</dd>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#5_3" class="title-link">
+<span class="text">
+<span class="title-index">5.3</span>
+<span class="title-link" nslog-type="10002802">规范形式</span>
+</span>
+</a>
+</dd>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#6" class="title-link">
+<span class="text">
+<span class="title-index">6</span>
+<span class="title-link" nslog-type="10002802">理论实践</span>
+</span>
+</a>
+</dt>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#7" class="title-link">
+<span class="text">
+<span class="title-index">7</span>
+<span class="title-link" nslog-type="10002802">分析算法</span>
+</span>
+</a>
+</dt>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#7_1" class="title-link">
+<span class="text">
+<span class="title-index">7.1</span>
+<span class="title-link" nslog-type="10002802">利益</span>
+</span>
+</a>
+</dd>
+<dd class="catalog-title level2">
+<a href="https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5/407284?fr=aladdin#7_2" class="title-link">
+<span class="text">
+<span class="title-index">7.2</span>
+<span class="title-link" nslog-type="10002802">分解</span>
+</span>
+</a>
+</dd>
+<a class="arrow" href="javascript:void(0);" style="top: 5px;"></a>
+</dl>
+</div>
+<div class="right-wrap">
+<a class="go-up disable" href="javascript:void(0);"></a>
+<a class="go-down" href="javascript:void(0);"></a>
+</div>
+<div class="bottom-wrap">
+<a class="toggle-button" href="javascript:void(0);" nslog-type="10002803"></a>
+<a class="gotop-button" href="javascript:void(0);" nslog-type="10002804"></a>
+</div>
+</div>
+
+<div id="side_box_unionAd" class="unionAd side-box union" style="display: block;">
+<div class="union-content" id="cpro_u1997633"><iframe id="iframeu1997633_0" name="iframeu1997633_0" src="./正交矩阵_百度百科_files/hcem.html" width="250" height="250" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0;vertical-align:bottom;margin:0;width:250px;height:250px" allowtransparency="true"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+<div class="after-content">
+<div class="fc-guess-like new" id="fc_guess_like_new" style="display: block;">
+<span class="logo-du">
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+</span>
+<h6>猜你关注</h6>
+<ul class="cmn-clearfix"><li><a href="https://www.baidu.com/s?wd=%C5%AE%D0%D4%C5%C5%C2%D1%C6%DA%B5%C4%CC%D8%D5%F7&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">女性排卵期的特征</a></li>
+<li><a href="https://www.baidu.com/s?wd=%CA%B2%C3%B4%CA%C7%D5%FD%BD%BB%BE%D8%D5%F3&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=0&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">什么是正交矩阵</a></li>
+<li><a href="https://www.baidu.com/s?wd=%D0%A1%BA%A2%D7%D4%B1%D5%D6%A2%D3%D0%C9%B6%CC%D8%D5%F7&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">小孩自闭症有啥特征</a></li>
+<li><a href="https://www.baidu.com/s?wd=%D1%F2%F1%B2%B7%E7%B5%C4%CC%D8%D5%F7&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">羊癫风的特征</a></li>
+<li><a href="https://www.baidu.com/s?wd=%C8%F5%D6%C7%CC%D8%D5%F7%D3%D0%C4%C4%D0%A9&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">弱智特征有哪些</a></li>
+<li><a href="https://www.baidu.com/s?wd=%CA%AA%D3%C8%B5%C4%CC%D8%D5%F7&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">湿尤的特征</a></li>
+<li><a href="https://www.baidu.com/s?wd=%CD%F8%C2%E7%D3%CE%CF%B7%BD%BB%D2%D7%C6%BD%CC%A8&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">网络游戏交易平台</a></li>
+<li><a href="https://www.baidu.com/s?wd=%B6%E0%B6%AF%D6%A2%D0%A1%BA%A2%CC%D8%D5%F7&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">多动症小孩特征</a></li>
+<li><a href="https://www.baidu.com/s?wd=%B6%F9%CD%AF%D6%C7%D5%CF%B5%C4+%CC%D8%D5%F7&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">儿童智障的 特征</a></li>
+<li><a href="https://www.baidu.com/s?wd=%B2%FA%C6%B7%BE%AD%C0%ED+%BC%B1%D5%D0&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=2&amp;dmaseid=dmaseid202&amp;qid=fb7229c84dae9ccd" target="_blank">产品经理 急招</a></li>
+</ul>
+</div>
+<div class="bottom-promotion" id="bottom-promotion" style="display: block;">
+<div id="BOTTOM_PRO_AD"><iframe id="iframe1120393_0" name="iframe1120393_0" onload="BAIDU_SSP_cacheRequest(&#39;0a803f04a007674b&#39;, this);" src="./正交矩阵_百度百科_files/hcem(1).html" width="960" height="90" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0;vertical-align:bottom;margin:0;width:960px;height:90px" allowtransparency="true"></iframe></div>
+</div>
+</div>
+</div>
+
+<div class="wgt-footer-main">
+<div class="content">
+<dl class="fresh">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-fresh"></em>新手上路</dt>
+<dd>
+<div><a target="_blank" href="https://baike.baidu.com/usercenter/tasks#guide">成长任务</a></div>
+<div><a target="_blank" href="https://baike.baidu.com/help#main01">编辑入门</a></div>
+<div><a target="_blank" href="https://baike.baidu.com/help#main06">编辑规则</a></div>
+<div><a target="_blank" href="https://baike.baidu.com/help#main05">百科术语</a></div>
+</dd>
+</dl>
+<dl class="question">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-question"></em>我有疑问</dt>
+<dd>
+<div><a id="J-bk-feedback-query" data-lemma="正交矩阵" href="javascript:void(0);" nslog-type="10070001">我要质疑</a></div>
+<div><a target="_blank" href="https://aikefu.baidu.com/?product=bk001" nslog-type="10000003">在线客服</a></div>
+<div><a target="_blank" href="http://tieba.baidu.com/f?ie=utf-8&amp;fr=bks0000&amp;kw=%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">参加讨论</a></div>
+<div><a id="J-bk-feedback-main" href="javascript:void(0);">意见反馈</a></div>
+</dd>
+</dl>
+<dl class="suggestion">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-suggestion"></em>投诉建议</dt>
+<dd>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E6%25AD%25A3%25E4%25BA%25A4%25E7%259F%25A9%25E9%2598%25B5%2F407284%3Ffr%3Daladdin&amp;prod_id=10&amp;category=1">举报不良信息</a></div>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E6%25AD%25A3%25E4%25BA%25A4%25E7%259F%25A9%25E9%2598%25B5%2F407284%3Ffr%3Daladdin&amp;prod_id=10&amp;category=2">未通过词条申诉</a></div>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E6%25AD%25A3%25E4%25BA%25A4%25E7%259F%25A9%25E9%2598%25B5%2F407284%3Ffr%3Daladdin&amp;prod_id=10&amp;category=6">投诉侵权信息</a></div>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E6%25AD%25A3%25E4%25BA%25A4%25E7%259F%25A9%25E9%2598%25B5%2F407284%3Ffr%3Daladdin&amp;prod_id=10&amp;category=5">封禁查询与解封</a></div>
+</dd>
+</dl>
+</div>
+<div class="copyright">©2018&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;|&nbsp;<a href="http://help.baidu.com/question?prod_en=baike&amp;class=89&amp;id=1637" target="_blank">百科协议</a>&nbsp;|&nbsp;<a href="https://baike.baidu.com/operation/cooperation" target="_blank">百度百科合作平台</a>&nbsp;|&nbsp;<span>京ICP证030173号&nbsp;</span><img class="copyright-img" width="13" height="16" src="./正交矩阵_百度百科_files/copy_rignt_24.png"></div>
+<p class="recordcode"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank"><i class="icon-police"></i>京公网安备11000002000001号</a></p>
+</div>
+
+
+<div class="lemmaWgt-searchHeader" style="display: block; opacity: 1;">
+<div class="layout cmn-clearfix">
+<div class="wgt-searchbar wgt-searchbar-new wgt-searchbar-simple cmn-clearfix ">
+<div class="logo-container">
+<a class="logo cmn-inline-block" title="到百科首页" href="https://baike.baidu.com/">
+<span class="cmn-baike-logo">
+<em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em>
+</span>
+</a>
+</div>
+<div class="search">
+<div class="form">
+<form id="searchForm" action="https://baike.baidu.com/search/word" method="GET" target="_self">
+<input id="query" nslog="normal" nslog-type="10080015" name="word" type="text" autocomplete="off" autocorrect="off" value="正交矩阵"><button id="search" nslog="normal" nslog-type="10080013" type="button">进入词条</button>
+</form>
+<form id="searchLemmaForm" action="https://baike.baidu.com/search" method="GET" target="_self">
+<input id="searchLemmaQuery" name="word" type="hidden">
+<input name="pn" type="hidden" value="0">
+<input name="rn" type="hidden" value="0">
+<input name="enc" type="hidden" value="utf8">
+</form>
+<ul id="suggestion" class="suggestion" style="display: none;">
+<div class="sug"></div>
+<li class="extra">
+<span id="clear" style="margin-right:8px;">清除历史记录</span><span id="close" nslog="normal" nslog-type="10080016">关闭</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tool-buttons">
+<a class="toolButtons-edit button j-edit-link" href="javascript:;" nslog-type="10010001"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-hollow"></em>编辑</a>
+<a class="toolButtons-collect button" href="javascript:;" nslog-type="10010002"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_star-hollow"></em><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_star-solid"></em>收藏</a>
+<a class="toolButtons-vote button top-vote" href="javascript:;" nslog-type="10010003"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_zan-hollow"></em><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_zan-solid"></em><span class="j-tool-btn-vote-num">赞</span></a>
+</div>
+<div class="user-info">
+<a class="user-link unlogin" href="javascript:;" nslog-type="10010008" target="_blank">登录</a>
+</div>
+</div></div>
+<div class="new-bdsharebuttonbox new-side-share" id="side-share">
+<span class="title">分享</span>
+<div class="side-border">
+<div class="triangle"></div>
+<a class="share-link bds_qzone" href="javascript:void(0);" nslog-type="10060101">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qzone"></em>
+</a>
+<a class="share-link bds_tsina" href="javascript:void(0);" nslog-type="10060301">
+<em class="cmn-icon cmn-icons cmn-icons_logo-sina-weibo"></em>
+</a>
+<a class="bds_wechat" href="javascript:void(0);" nslog-type="10060001">
+<em class="cmn-icon cmn-icons cmn-icons_logo-wechat"></em>
+</a>
+<a class="share-link bds_tqq" href="javascript:void(0);" nslog-type="10060201">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qq"></em>
+</a>
+</div>
+</div>
+<div class="qrcode-wrapper" id="layer" style="display: none">
+<div class="bd_weixin_popup_header">
+<em class="cmn-icon cmn-icons cmn-icons_close"></em>
+<span>分享到微信朋友圈</span>
+</div>
+<div id="wechat-qrcode-img"></div>
+<div class="bd_weixin_popup_footer">打开微信“扫一扫”即可将网页分享至朋友圈</div>
+</div>
+<div></div><div></div>
+
+<script type="text/javascript" src="./正交矩阵_百度百科_files/mod_4302fe0.js"></script>
+<script type="text/javascript">require.resourceMap({"res":{"wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/lemmaInsert.js":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/lemmaInsert_8f518c5.js","pkg":"wiki-lemma:p5","deps":["wiki-common:widget/component/nslog/nslog.js"]},"wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/tangram.js":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/tangram_459492a.js","pkg":"wiki-lemma:p5"},"wiki-lemma:widget/lemma_content/mainContent/lemmaReference/lemmaReferenceTip/lemmaReferenceTip.js":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaReference/lemmaReferenceTip/lemmaReferenceTip_53efc29.js","deps":["wiki-common:widget/lib/jquery/jquery.js","wiki-common:widget/lib/jsmart/jsmart.js","wiki-common:widget/component/nslog/nslog.js"]}},"pkg":{"wiki-lemma:p5":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/pkg/wiki-lemma-module-lemmaRelation_0aebd7b.js"}}});</script><script type="text/javascript" src="./正交矩阵_百度百科_files/wiki-common-base_0340632.js"></script>
+<script type="text/javascript" src="./正交矩阵_百度百科_files/wiki-lemma_cab423f.js"></script>
+<script type="text/javascript" src="./正交矩阵_百度百科_files/zhixin_58e6342.js"></script>
+<script type="text/javascript">!function(){  var $ = require('wiki-common:widget/lib/jquery/jquery'),
+    userbar = require('wiki-common:widget/component/userbar-n/userbar-n');
+    
+  userbar.buildUserbar($('#j-wgt-userbar'), null);
+}();
+!function(){  require('wiki-common:widget/component/headTabBar/headTabBar');
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery'),
+      initSearchbar = require('wiki-common:widget/component/searchbar-n/searchbar');  
+    initSearchbar($('.wgt-searchbar-main'));
+  }();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var cookie = require('wiki-common:widget/util/cookie');
+    if (!cookie.get('baikedeclare')) {
+        $('#J-declare-wrap').css('display', 'block');
+    }
+    $('#J-declare-close').on('click', function () {
+        // 用户关闭后，不再显示，这里暂设过期时间为1年
+        cookie.set('baikedeclare', 'showed', {
+            expires: 365 * 60 * 60 * 24 * 1000,
+            path: '/'
+        });
+        $('#J-declare-wrap').css('display', 'none');
+    });
+}();
+!function(){  var $ = require('wiki-common:widget/lib/jquery/jquery');
+
+  var timer = '';
+
+  $('.wgt-navbar').on('mouseenter', 'dl', function() {
+  clearTimeout(timer);
+  timer = setTimeout(function() {
+  $('.wgt-navbar').addClass('wgt-navbar-hover');
+}, 300);
+}).on('mouseleave', function() {
+clearTimeout(timer);
+$('.wgt-navbar').removeClass('wgt-navbar-hover');
+}).on('click', 'a', function() {
+clearTimeout(timer);
+$('.wgt-navbar').removeClass('wgt-navbar-hover');
+});
+}();
+!function(){                var $ = require('wiki-common:widget/lib/jquery/jquery');
+                var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+                // 展现策略
+                rightCheck.editView('407284', function(res) {
+                    if (!res.errno) {
+                        if (res.data.edit) {
+                            $('.lemmaWgt-lemmaTitle .add-subLemma').css('display', 'inline-block');
+                            $('.top-tool .add-sub-icon').css('display', 'inline-block');
+                        }
+                    } else {
+                        if ('1') {
+                            $('.lemmaWgt-lemmaTitle .add-subLemma').css('display', 'inline-block');
+                            $('.top-tool .add-sub-icon').css('display', 'inline-block');
+                        }
+                    }
+                });
+                require('wiki-lemma:widget/basicElement/addSub/addSub.js')({                    lemmaId: '407284',                    lemmaTitle: '正交矩阵',                    lemmaDesc: '',                    versionId: '122347920',                    subLemmaId: '21085'                });
+            }();
+!function(){        var $ = require('wiki-common:widget/lib/jquery/jquery');
+        var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+        // 展现策略
+        rightCheck.editView('407284', function(res) {
+            if (!res.errno) {
+                if (res.data.divide) {
+                    $('.top-tool .split-icon').css('display', 'block');
+                }
+            }
+        });
+    }();
+!function(){    var nslog = require('wiki-common:widget/component/nslog/nslog');
+	require.async(["wiki-lemma:widget/basicElement/collect/collect"],function(collect){
+		collect({
+            newLemmaId:"407284",
+			lemmaId:"21085",
+			subLemmaId:"21085"
+		});
+	});
+}();
+!function(){    require.async(["wiki-lemma:widget/basicElement/topShare/topShare"],function(topShare){
+        topShare({
+            newLemmaId: '407284'
+        });
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.lemmaWgt-lemmaTitle .edit-lemma').css('display', 'inline-block');
+                // 编辑和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .edit-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .edit-lemma').before('<br/><br/>');
+                  }
+                }
+            } else {
+                $('.lemmaWgt-lemmaTitle .lock-lemma').show();
+                // 锁定和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .lock-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .lock-lemma').before('<br/><br/>');
+                  }
+                }
+            }
+        } else {
+            if ('1') {
+                $('.lemmaWgt-lemmaTitle .edit-lemma').css('display', 'inline-block');
+                // 编辑和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .edit-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .edit-lemma').before('<br/><br/>');
+                  }
+                }
+            } else {
+                $('.lemmaWgt-lemmaTitle .lock-lemma').show();
+                // 锁定和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .lock-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .lock-lemma').before('<br/><br/>');
+                  }
+                }
+            }
+        }
+    });
+}();
+!function(){	require('wiki-lemma:widget/lemma_content/mainContent/basicInfo/basicInfo')();
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var nslog = require('wiki-common:widget/component/nslog/nslog');
+    nslog(10002701);
+    $('.lemmaWgt-lemmaCatalog a').on('click', function () {
+           nslog(10002702);
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('407284', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){		require.async(["wiki-lemma:widget/lemma_content/mainContent/lemmaReference/lemmaReference","wiki-lemma:widget/lemma_content/mainContent/lemmaReference/lemmaReferenceTip/lemmaReferenceTip"],function(Reference,ReferenceTip){
+			new Reference({
+				subLemmaId:"21085"
+			});
+			new ReferenceTip({
+				subLemmaId:"407284",
+				lemmaTitle:"正交矩阵",
+				reference:[{"type":"1","title":"\u6709\u7406\u6b63\u4ea4\u77e9\u9635\u7684\u6784\u9020","url":"\/redirect\/b5644-asTIgeIP9p-Fj-LlTvx5SuGtk_Gfa98Mb3RiDrQ7ZbON1cHUYmPzhUN6mybmWLORtiXt-YQTag9LA5JUJcFF7EPo4Xfa0DnrFY","site":"\u7ef4\u666e","publishDate":"","refDate":"2017-09-05","index":1},{"type":"1","title":"\u6234\u7acb\u8f89,\u738b\u6cfd\u6587,\u5218\u9f99\u7ae0. \u6b63\u4ea4\u77e9\u9635\u7684\u82e5\u5e72\u6027\u8d28[J]. \u534e\u4e1c\u5730\u8d28\u5b66\u9662\u5b66\u62a5,2002,(03):267-269. [2017-09-05].","url":"\/redirect\/6cddpI0DM9ayR6fGIWU0EJ-oyWkoB-Ttgzr1Knnxy8pEChJy_skgRK9_Pk5a1XlXDiFWdMz1ux6dE7pi2drGxTuUvh_qiybu5iH4Ir4sBtGPgkvHvd3q4k-1Dq7ZX9T5dvTbJXH1dqx9d0uXcSfaBqK7WBQTkuY","site":"\u4e2d\u56fd\u77e5\u7f51","publishDate":"","refDate":"2017-09-05","index":2}]
+			});
+		});
+	}();
+!function(){        require.async(["wiki-common:widget/lib/jquery/jquery"],function($){
+            function openTagToggle(node) {
+                if ($(node).hasClass("collapse")) {
+                    $(node).removeClass("collapse");
+                    $("#open-tag").css("height", '22px');
+                } else {
+                    $(node).addClass("collapse");
+                    $("#open-tag").css("height", $("#open-tag-item").css("height"));
+                }
+            }
+            if (parseInt($("#open-tag-item").css("height")) <= 30) {
+                $('#open-tag-collapse').hide();
+            }
+            $("#open-tag-collapse").on("click", function () {
+                openTagToggle($("#open-tag")[0]);
+            });
+        });
+    }();
+!function(){    var $ = require("wiki-common:widget/lib/jquery/jquery");
+    
+    var slider = {
+        init: function() {
+            this.control = $("#professional_control");
+            this.prev = this.control.find(".J-prev");
+            this.next = this.control.find(".J-next");
+            this.el = $("#professional_list");
+            this.view = this.el.find(".J-slider");
+            this.items = this.view.find("ul");
+            this.itemWidth = this.items.eq(0).innerWidth();
+            this.initStatus();
+            this.bindEvents();
+        },
+        initStatus: function() {
+            this.view.css({
+                width: this.items.length*this.itemWidth+"px",
+                position: "absolute"
+            });
+            this.setHeight(0);
+            if ( this.items.length < 2 ) return;
+            this.changeControllers(0);
+        },
+        bindEvents: function() {
+            var self = this, index = 0;
+            if ( this.items.length < 2 ) return;
+            this.next.on("click", function() {
+                if ( self.items.length-1 === index ) return;
+                index++;
+                self.setHeight(index);
+                self.goAni(index);
+                self.changeControllers(index);
+            });
+            this.prev.on("click", function() {
+                if ( index == 0 ) return;
+                index--;
+                self.setHeight(index);
+                self.goAni(index);
+                self.changeControllers(index);
+            });
+        },
+        setHeight: function(index) {
+            this.el.height( this.items.eq(index).innerHeight() );
+        },
+        goAni: function(index) {
+            this.view.animate({
+                left: index === 0 ? 0 : "-"+this.itemWidth*index+"px"
+            });
+        },
+        changeControllers: function(index) {
+            var disabledClass = "pro-control-disable";
+            this.prev.removeClass(disabledClass);
+            this.next.removeClass(disabledClass);
+            if ( index === 0 ) {
+                this.prev.addClass(disabledClass);
+            } else if ( index === this.items.length-1 ) {
+                this.next.addClass(disabledClass);
+            }
+        }
+    };
+    slider.init();
+}();
+!function(){        require('wiki-lemma:widget/lemma_content/configModule/zhixin/zhixin')(
+            407284,
+            '正交矩阵'
+        );
+    }();
+!function(){    require.async(["wiki-lemma:widget/lemma_content/mainContent/lemmaStatistics/lemmaStatistics"],function(init){
+        init({
+            newLemmaIdEnc:"fa52d4632701e48f0d256a1c"
+        });
+    });
+}();
+!function(){	require.async(["wiki-lemma:widget/lemma_content/mainContent/sideCatalog/sideCatalog"],function(SideCatalog){
+		new SideCatalog();
+	});
+}();
+!function(){        require.async(["wiki-lemma:widget/promotion/fengchao/fengchao","wiki-lemma:widget/promotion/unionAd/unionAd"], function (init, unionAd) {
+            init({
+                newLemmaId: "407284",
+                lemmaTitle: "正交矩阵",
+                encodeLemmaTitle: "%D5%FD%BD%BB%BE%D8%D5%F3",
+                adManager: {"wapRelatedBusiness":1}
+            }, {
+                errFn: unionAd,
+                dom: $('#side_box_unionAd')
+            });
+        });
+    }();
+!function(){        require.async(['wiki-lemma:widget/promotion/guessLike/guessLike'], function (app) {
+            app.init({
+                lemmaTitle: '正交矩阵',
+                adManager: {"wapRelatedBusiness":1}
+            });
+        });
+    }();
+!function(){            require.async(['wiki-lemma:widget/promotion/bottomAd/bottomAd'], function (init) {
+                init({
+                    sId: 'BOTTOM_PRO_AD',
+                    adManager: {"wapRelatedBusiness":1}
+                });
+            });
+        }();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var Dialog = require("wiki-common:widget/ui/dialog/dialog");
+    var userLogin = require('wiki-common:widget/component/userLogin/userLogin');
+    var unameFiller = require('wiki-common:widget/component/unameFiller/unameFiller');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+            var isEnterprise = false;
+        var enterpriseOwnerUserId = 0;
+    
+    var userId = 0;
+    var editUrl = '/edit/' + encodeURIComponent('正交矩阵') + '/' + '407284';
+    var pgcUrl = '/enterprise/editpgc?lemmaId=407284';
+
+    userLogin.regist({
+        onLogin: function(user) {
+            userId = user ? user.uid : 0;
+        }
+    });
+
+    function gotoEdit(url, isMidNight) {
+        if (isMidNight) {
+            Dialog.alert({
+                title: '编辑提示',
+                subMsg: '晚23:00至次日8:00，因审核系统例行维护，您提交的版本可能需要较长时间才能通过，望您谅解。',
+                onConfirm: function() {
+                    window.location.href = url;
+                }
+            });
+        } else {
+            window.location.href = url;
+        }    
+    }
+
+    function showChoseEditDialog(pgcCallback, ugcCallback) {
+        new Dialog({
+            title: '编辑提示',
+            subMsg: '<p>您已开通企业百科服务，推荐您直接编辑“官方资料”，官方资料仅限企业百科绑定的百科账号修改，其他用户账号不可修改。</p><p>如果您想修改其他网友编辑的普通词条内容，请注意遵守百科百科编辑规则。<p>',
+            btns: [{
+            key: 'pgc',
+            text: '编辑官方资料'
+            }, {
+            style: 'white',
+            text: '修改普通词条',
+            key: 'ugc'
+            }],
+            onBtnClick: function(btnKey){
+                if (btnKey === 'pgc') {
+                    pgcCallback && pgcCallback();
+                } else if (btnKey === 'ugc') {
+                    ugcCallback && ugcCallback();
+                }
+            }
+        }).show();
+    }
+
+    function checkUserLegal(res) {
+        var legal = false;
+        switch (res.errno) {
+            case 100001:
+                userLogin.showLoginPop();
+                break;
+            case 100006:
+                unameFiller.show();
+                break;
+            default:
+                legal = true;
+        }
+        return true;
+    }
+
+    function checkUgc(res, url) {
+        if (res.errno) {
+            switch (res.errno) {
+                case 100005:
+                    alert('对不起，您目前被封禁');
+                    break;
+                case 110001:
+                    alert('对不起，该词条被锁定');
+                    break;
+                case 110007:
+                    alert('对不起，消歧页无法编辑');
+                    break;
+                case 110005:
+                    Dialog.alert({
+                    title: '编辑提示',
+                    mainMsg: '对不起，您暂时没有权限编辑该词条。',
+                    subMsg: '<p>您好，该词条内容已较丰富，现仅对百科等级达到<b>四级</b>且通过率达到<b>85%</b>的科友开放编辑。</p><p>当您通过努力达到以上要求，就可以参与编辑该词条了。</p><p><img src="https://bkssl.bdimg.com/img/baike/usercenter/growuptask/star.gif" class="star" />参加<a target="_blank" href="/usercenter#guide">成长任务</a>，更快掌握百科编辑技巧，加速升级！</p>'
+                    });
+                    break;
+                case 110008:
+                    Dialog.alert({
+                    title: '编辑提示',
+                    mainMsg: '对不起，您暂时没有权限编辑该词条。',
+                    subMsg: '<p>您好，该词条内容已较丰富，现仅对百科等级达到<b>六级</b>且通过率达到<b>85%</b>的科友开放编辑。</p><p>当您通过努力达到以上要求，就可以参与编辑该词条了。</p><p><img src="https://bkssl.bdimg.com/img/baike/usercenter/growuptask/star.gif" class="star" />参加<a target="_blank" href="/usercenter#guide">成长任务</a>，更快掌握百科编辑技巧，加速升级！</p>'
+                    });
+                    break;
+                case 470001:
+                    alert('系统错误，请刷新重试');
+                    break;
+            }
+        } else {
+            if (!res.data.right.noAudit) {
+                Dialog.alert({
+                    title: '编辑提示',
+                    subMsg: '很抱歉，该词条有其他用户编辑的版本正在提交，您暂时无法编辑。<br/>百科建议您晚些时候再编辑该词条，或者尝试编辑其他的词条。'
+                });
+                return;
+            }
+            gotoEdit(url, res.data.notice.isMidNight);
+        }
+    }
+
+    $(document.body).on('click', '.j-edit-link', function() {
+        var dl = $(this).attr('data-edit-dl');
+        if (dl) {
+            var url = editUrl + '?dl=' + dl;
+        } else {
+            var url = editUrl;
+        }
+
+        rightCheck.preeditCheck('407284', '正交矩阵', '正交矩阵', '122347920', '', function(res) {
+            if (!checkUserLegal(res)) {
+                return;
+            }
+            if (isEnterprise && enterpriseOwnerUserId === userId) {
+                showChoseEditDialog(function() {
+                    location.href = pgcUrl;
+                }, function() {
+                    checkUgc(res, url);
+                });
+            } else {
+                checkUgc(res, url);
+            }
+        });
+    });
+}();
+!function(){  require.async(["wiki-common:widget/lib/jquery/jquery","wiki-common:widget/component/footer/footer_feedback"], function($, feedback){
+    feedback({el: '#J-bk-feedback-main'});
+    feedback({el: '#J-bk-feedback-query', config: {
+        appid: 215645,
+        productLine: 20184,
+        needContactWay: false,
+        issuePlaceholder: '亲爱的百度百科用户，请在此填写您的质疑内容及原因哦～'
+      },
+      proData: {
+        "kw": $('#J-bk-feedback-query').data('lemma')
+      }
+    });
+  });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery'),
+      initSearchbar = require('wiki-common:widget/component/searchbar-n/searchbar');  
+    initSearchbar($('.wgt-searchbar-simple'));
+  }();
+!function(){    require.async(["wiki-lemma:widget/tools/searchHeader/toolButtons-n/toolButtons"],function(init){
+        init({
+            lemmaId:"21085",
+            subLemmaId:"21085",
+            newLemmaId:"407284"
+        });
+    });
+}();
+!function(){    require('wiki-lemma:widget/tools/searchHeader/toolButtons-n/userInfo')();
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery'),
+      animation = require('wiki-common:widget/util/animation'),
+      nslog = require('wiki-common:widget/component/nslog/nslog'),
+      initSearchbar = require('wiki-common:widget/component/searchbar/searchbar');
+
+    var isFadeIn = false,
+        isFadeOut = false;
+
+    var fadeInAni, fadeOutAni;
+
+    $(window).on('scroll', function(e) {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > 200 && !isFadeIn && $('.lemmaWgt-searchHeader').css('display') == 'none') {
+            fadeOutAni && fadeOutAni.stop();
+            fadeInAni = animation({
+                duration: 200,
+                easing: 'linear',
+                onStart: function() {
+                    isFadeOut = false;
+                    isFadeIn = true;
+                    $('.lemmaWgt-searchHeader').css('display', 'block');
+                },
+                onStep: function(progress) {
+                    $('.lemmaWgt-searchHeader').css('opacity', progress)
+                },
+                onComplete: function(progress) {
+                    isFadeIn = false;
+                    nslog(10010007);
+                }
+            });
+        } else if (scrollTop <= 200 && !isFadeOut && $('.lemmaWgt-searchHeader').css('display') == 'block') {
+            fadeInAni && fadeInAni.stop();
+            fadeOutAni = animation({
+                duration: 300,
+                easing: 'linear',
+                onStart: function() {
+                    $('.lemmaWgt-searchHeader #suggestion').hide();
+                    isFadeIn = false;
+                    isFadeOut = true;
+                },
+                onStep: function(progress) {
+                    $('.lemmaWgt-searchHeader').css('opacity', 1 - progress);
+                },
+                onComplete: function(progress) {
+                    isFadeOut = false;
+                    $('.lemmaWgt-searchHeader').css('display', 'none');
+                }
+            });
+        }
+    });
+}();
+!function(){    require('wiki-lemma:widget/tools/newSideShare/qzopensl');
+    require.async(["wiki-lemma:widget/tools/newSideShare/taskSideShare"],function(taskShare){
+        taskShare.init({
+            title: '正交矩阵',
+            desc: "\u5982\u679cAAT=E\uff08E\u4e3a\u5355\u4f4d\u77e9\u9635\uff0cAT\u8868\u793a\u201c\u77e9\u9635A\u7684\u8f6c\u7f6e\u77e9\u9635\u201d\uff09\u6216ATA=E\uff0c\u5219n\u9636\u5b9e\u77e9\u9635A\u79f0\u4e3a\u6b63\u4ea4\u77e9\u9635\u3002\u6b63\u4ea4\u77e9\u9635\u662f\u5b9e\u6570\u7279\u6b8a\u5316\u7684\u9149\u77e9\u9635\uff0c\u56e0\u6b64\u603b\u662f\u6b63\u89c4\u77e9\u9635\u3002\u5c3d\u7ba1\u6211\u4eec\u5728\u8fd9\u91cc\u53ea\u8003\u8651\u5b9e\u6570\u77e9\u9635\uff0c\u8fd9\u4e2a\u5b9a\u4e49\u53ef\u7528\u4e8e\u5176\u5143\u7d20\u6765\u81ea\u4efb\u4f55\u57df\u7684\u77e9\u9635\u3002\u6b63\u4ea4\u77e9\u9635\u6bd5\u7adf\u662f\u4ece\u5185\u79ef\u81ea\u7136\u5f15\u51fa\u7684\uff0c\u5bf9\u4e8e\u590d\u6570\u7684\u77e9\u9635\u8fd9\u5bfc\u81f4\u4e86\u5f52\u4e00\u8981\u6c42\u3002\u6b63\u4ea4\u77e9\u9635\u4e0d\u4e00\u5b9a\u662f\u5b9e\u77e9\u9635\u3002\u5b9e\u6b63\u4ea4\u77e9\u9635\uff08\u5373\u8be5\u6b63\u4ea4\u77e9\u9635\u4e2d\u6240\u6709\u5143\u90fd\u662f\u5b9e\u6570\uff09\u53ef\u4ee5\u770b\u505a\u662f\u4e00\u79cd\u7279\u6b8a\u7684\u9149\u77e9\u9635\uff0c\u4f46\u662f\u5b58\u5728\u4e00\u79cd\u590d\u6b63\u4ea4\u77e9\u9635\uff0c\u590d\u6b63\u4ea4\u77e9\u9635\u4e0d\u662f\u9149\u77e9\u9635\u3002",
+            pic: 'https:\/\/gss3.bdstatic.com\/-Po3dSag_xI4khGkpoWK1HF6hhy\/baike\/w%3D268\/sign=81d9200ce9c4b7453494b010f7fd1e78\/a8014c086e061d9581f7911d79f40ad162d9ca66.jpg',
+            url: '',
+            qqPic: 'https:\/\/gss3.bdstatic.com\/-Po3dSag_xI4khGkpoWK1HF6hhy\/baike\/whfpf%3D375%2C375%2C50\/sign=2ac83e215b82b2b7a7ca6a845790f8d8\/a8014c086e061d9581f7911d79f40ad162d9ca66.jpg',
+            newLemmaId: '407284',
+            lemmaTitle: '正交矩阵'
+        });
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var nslog = require("wiki-common:widget/component/nslog/nslog");
+    var testElem = require('wiki-common:widget/component/testElem/testElem');
+    var cmsModuleLoader = require('wiki-common:widget/component/cmsModuleLoader/cmsModuleLoader');
+
+    function requireAsync() {
+        require.async(['wiki-lemma:widget/tools/announcement/announcement']);
+    }
+
+    cmsModuleLoader('/api/wikiui/getlemmaconfig', [{
+        name: 'announcement',
+        script: 'wiki-lemma:widget/tools/announcement/announcement.js'
+    }]);
+
+    require.async(["wiki-lemma:widget/tools/lazyLoad/lazyLoad"], function(LazyLoad) {
+        new LazyLoad();
+    });
+
+    require.async(['wiki-common:widget/component/nslog/nslog','wiki-common:widget/lib/jquery/jquery'], function(nslog, $) {
+        nslog().setGlobal({
+            lemmaId: "21085",
+            newLemmaId: "407284",
+            subLemmaId: "21085",
+            lemmaTitle: "正交矩阵"
+        });
+
+        // 词条页 pv
+        nslog(9322);
+
+        // 新版头部pv（小流量）
+        if ($('.pc-header-new').length > 0) {
+            nslog(9069);
+        }
+
+        // 链接点击 pv
+        var lemmaPageRegExp = new RegExp(/\/subview\/\d+|\/view\/\d+|\/item\//i);
+        $('body').on('mousedown', 'a', function() {
+            var href = $(this).attr('href');
+            if (href && href.indexOf('/') >= 0 && href.indexOf('#') !== 0) {
+                // 链接点击 pv
+                nslog(10000001);
+                if (lemmaPageRegExp.test(href)) {
+                    // 词条页链接点击 pv
+                    nslog(10000002, window.location.href, {
+                        targetTitle: $(this).text()
+                    });
+                }
+            }
+        });
+
+        /****** 词条页站内流转需求统计 start ******/
+        (function () {
+            // 各种统计配置
+            var circulationLinkCfg = {
+                innerLink: [ // 内链
+                    '.para',
+                    '.lemmaWgt-baseInfo-simple-largeMovie',
+                    '.lemmaWgt-baseInfo-simple-largeStar',
+                    '.basic-info .basicInfo-block',
+                    '.lemma-summary',
+                    '.lemmaWgt-lemmaSummary',
+                    '.view-tip-panel',
+                    '.horizontal-module',
+                    '.lemmaWgt-roleIntroduction',
+                    '.dramaSeries .dramaSerialList',
+                    '.module-music',
+                    '.table-view',
+                    '[log-set-param="table_view"]',
+                    '.list-module',
+                    '.cell-module',
+                    '.baseBox .dl-baseinfo', // 配置后台字段
+                    '.pvBtn-box .leadPVBtnWrapper',
+                    '.drama-actor',
+                    '#staffList',
+                    '.starMovieAndTvplay',
+                    '.main_tab:not(.main_tab-defaultTab)' // 除去词条tab外的tab
+                ],
+                relationTable: '.rs-container-foot', // 关系表
+                peopleRelation: '.star-info-block.relations, .lemmaWgt-focusAndRelation', // 人物关系（明星+普通）
+                moduleActors: '.featureBaseInfo .actors, .lemmaWgt-majorActors', // 主要演员、嘉宾、主持人
+                moduleWorks: '.featureBaseInfo .works, .large-feature .works', // 代表作品
+                moduleQuarterly: '.featureBaseInfo .po_quarterly, .mian_quarterly', // 分季介绍
+                rankStar: '.rank-list.stars-rank', // 明星榜
+                rankDrama: '.drama-rank-list', // 电视剧榜
+                specialTopic: '.special-topic', // 专题模块
+                modDetailTable: '#modDetailTable', // 关系表出图
+                chuizhitu: '.chuizhitu', // 垂直化模块
+                polysemantList: '.polysemantList-wrapper' // 义项切换
+            };
+            /****** 连接统计 ******/
+            function clickNslogFn() {
+                for (var k in circulationLinkCfg) {
+                    if (k === 'innerLink') {
+                        // 词条内链到词条页
+                        var tempArr = circulationLinkCfg[k];
+                        for (var i = 0, l = tempArr.length; i < l; i++) {
+                            tempArr[i] += ' a';
+                        }
+                        var sSelector = tempArr.join(', ');
+
+                        $('body').on('mousedown', sSelector, {key: k},function(e) {
+                            var key = e.data.key;
+                            var href = $(this).attr('href');
+                            var tar = $(this).attr('target') || '';
+                            if (href && href.indexOf('/') >= 0 && href.indexOf('#') !== 0
+                            && tar === '_blank' && lemmaPageRegExp.test(href)) {
+                                // 词条页普通内链点击 pv
+                                nslog(10000004, null ,{division: key});
+                            }
+                        });
+                    } else {
+                        // 模块到词条页链接
+                        $(circulationLinkCfg[k]).on('mousedown', 'a', {key: k}, function (e) {
+                            var key = e.data.key;
+                            var href = $(this).attr('href');
+                            if (href && href.indexOf('#') !== 0 && lemmaPageRegExp.test(href)) {
+                                // 词条页配置模块链接点击 pv
+                                nslog(10000004, null, {division: key});
+                            }
+                        });
+                    }
+                }
+            }
+            // 发起统计请求
+            clickNslogFn();
+
+            /****** 各模块展现量pv ******/
+            function checkModuleIsShow() {
+                var result = [];
+                for (var k in circulationLinkCfg) {
+                    if (k !== 'innerLink' && k !== 'relationTable') {
+                        !!$(circulationLinkCfg[k]).html() && result.push(k);
+                    }
+                }
+                if (result.length > 0) {
+                    nslog(10000005, null, {showModules: result.join(',')});
+                }
+            }
+            checkModuleIsShow();
+
+        })();
+        /****** 词条页站内流转需求统计 end ******/
+
+    });
+
+    // 广告接入 wikiad 统一加载
+    // log 词条页广告被拦截情况（此处 log 请求行为）
+    nslog(70000101, window.location.href, {
+        api: 'lemma-ad',
+        action: 'request'
+    });
+    var tags = [{"tagId":76604,"tagName":"\u79d1\u5b66\u767e\u79d1\u6570\u7406\u79d1\u5b66\u5206\u7c7b"},{"tagId":0,"tagName":"\u79d1\u5b66"}];
+    var tagsArray = [];
+    for (var key in tags) {
+        tagsArray.push(tags[key].tagName);
+    }
+    $.ajax({
+        type: 'GET',
+        url: '/api/wikiad/getsquirrels',
+        data: {
+            lemmaId: 407284,
+            tags: tagsArray.join()
+        },
+        cache: false,
+        dataType: 'JSON',
+        success: function (res) {
+            // log 词条页广告被拦截情况（此处 log 请求成功）
+            nslog(70000101, window.location.href, {
+                api: 'lemma-ad',
+                action: 'success'
+            });
+
+            if (!res.errno) {
+                if (res.data[5]) {
+                    require.async(['wiki-lemma:widget/promotion/rightPreciseAd/rightPreciseAd'], function(rightPreciseAd) {
+                        rightPreciseAd(res.data[5]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[5][0].adId,
+                            adTitle: res.data[5][0].name,
+                            adPos: 5
+                        });
+                    });
+                } else if (res.data[1]) {
+                                        require.async(['wiki-lemma:widget/promotion/vbaike/vbaike'], function(vbaike) {
+                        vbaike(res.data[1]);
+                        for(var i in res.data[1]) {
+                            nslog(10002201, location.href, {
+                                adId: res.data[1][i].adId,
+                                adTitle: res.data[1][i].name,
+                                adPos: 1
+                            });
+                        }
+                    });
+                                    }
+                if (res.data[9]) {
+                                        require.async(['wiki-lemma:widget/promotion/rightBigAd/rightBigAd'], function(rightBigAd) {
+                        rightBigAd(res.data[9]);
+                            nslog(10002201, location.href, {
+                                adId: res.data[9][0].adId,
+                                adTitle: res.data[9][0].name,
+                                adPos: 9
+                            });
+                    });
+                                    } else if(res.data[2]) {
+                    require.async(['wiki-lemma:widget/promotion/slide/slide'], function(slide) {
+                        slide(res.data[2]);
+                        for(var i in res.data[2]) {
+                            nslog(10002201, location.href, {
+                                adId: res.data[2][i].adId,
+                                adTitle: res.data[2][i].name,
+                                adPos: 2
+                            });
+                        }
+                    });
+                }
+                if (res.data[3]) {
+                                        require.async(['wiki-lemma:widget/promotion/topAd/topAd'], function(topAd) {
+                        topAd(res.data[3]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[3][0].adId,
+                            adTitle: res.data[3][0].name,
+                            adPos: 3
+                        });
+                    });
+                                    }
+                if (res.data[4]) {
+                                        require.async(['wiki-lemma:widget/promotion/rightAd/rightAd'], function(rightAd) {
+                        rightAd(res.data[4]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[4][0].adId,
+                            adTitle: res.data[4][0].name,
+                            adPos: 4
+                        });
+                    });
+                                    }
+                if (res.data[15]) {
+                    require.async(['wiki-lemma:widget/promotion/banner/banner'], function(banner) {
+                        banner(res.data[15]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[15][0].adId,
+                            adTitle: res.data[15][0].name,
+                            adPos: 15
+                        });
+                    });
+                }
+                if (res.data[16]) {
+                    require.async(['wiki-lemma:widget/promotion/declaration/declaration'], function(declaration) {
+                        declaration(res.data[16]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[16][0].adId,
+                            adTitle: res.data[16][0].name,
+                            adPos: 16
+                        });
+                    })
+                }
+            } else {
+                return;
+            }
+
+            setTimeout(function () {
+                var elemArr = {};
+                res.data[1] && res.data[1].length > 0 && (elemArr['lemma-vbaike-ad'] = $('.lemmaWgt-promotion-vbaike .promotion_viewport a:eq(0) img').get(0));
+                res.data[2] && res.data[2].length > 0 && (elemArr['lemma-slide-ad'] = $('.lemmaWgt-promotion-slide .promotion_viewport a:eq(0) img').get(0));
+                res.data[3] && res.data[3].length > 0 && (elemArr['lemma-navbar-ad'] = {
+                    node: $('.header [nslog-type="10002202"]').get(0),
+                    validations: {
+                        'noBackgroundImage': function() {
+                            return $('.header [nslog-type="10002202"]').css('background-image').indexOf(res.data[3][0].picUrl) < 0
+                        }
+                    }
+                });
+                res.data[4] && res.data[4].length > 0 && (elemArr['lemma-side-ad'] = {
+                    node: $('.right-ad img').get(0),
+                    validations: {
+                        'noBackgroundImage': function() {
+                            return $('.right-ad img').attr('src').indexOf(res.data[4][0].picUrl) < 0
+                        }
+                    }
+                });
+                res.data[15] && res.data[15].length > 0 && (elemArr['lemma-configModule-banner'] = $('.configModuleBanner').get(0));
+                res.data[16] && res.data[16].length > 0 && (elemArr['lemma-configModule-declaration'] = $('.lemmaWgt-declaration').get(0));
+
+                testElem.log(elemArr, 70000102);
+            }, 1000);
+        },
+        error: function () {
+            // log 词条页广告被拦截情况（此处 log 请求失败）
+            nslog(70000101, window.location.href, {
+                api: 'lemma-ad',
+                action: 'error'
+            });
+        }
+    });
+
+    // 设置分享内容
+    window.BKShare.setCommon({
+        bdText: "\u3010\u6b63\u4ea4\u77e9\u9635_\u767e\u5ea6\u767e\u79d1\u3011\u5982\u679cAAT=E\uff08E\u4e3a\u5355\u4f4d\u77e9\u9635\uff0cAT\u8868\u793a\u201c\u77e9\u9635A\u7684\u8f6c\u7f6e\u77e9\u9635\u201d\uff09\u6216ATA=E\uff0c\u5219n\u9636\u5b9e\u77e9\u9635A\u79f0\u4e3a\u6b63\u4ea4\u77e9\u9635\u3002\u6b63\u4ea4\u77e9\u9635\u662f\u5b9e\u6570\u7279\u6b8a\u5316\u7684\u9149\u77e9\u9635\uff0c\u56e0\u6b64\u603b\u662f\u6b63\u89c4\u77e9\u9635\u3002\u5c3d\u7ba1\u6211\u4eec\u5728\u8fd9\u91cc\u53ea\u8003\u8651\u5b9e\u6570\u77e9\u9635\uff0c\u8fd9\u4e2a\u5b9a\u4e49\u53ef\u7528\u4e8e\u5176\u5143\u7d20\u6765\u81ea\u4efb\u4f55\u57df\u7684\u77e9\u9635\u3002\u6b63\u4ea4\u77e9\u9635\u6bd5\u7adf\u662f\u4ece\u5185\u79ef\u81ea\u7136\u5f15\u51fa\u7684\uff0c\u5bf9\u4e8e\u590d\u6570\u7684\u77e9\u9635\u8fd9\u5bfc\u81f4\u4e86\u5f52\u4e00\u8981\u6c42\u3002\u6b63\u4ea4\u77e9\u9635\u4e0d\u4e00\u5b9a\u662f\u5b9e\u77e9\u9635\u3002\u5b9e\u6b63\u4ea4\u77e9\u9635\uff08\u5373\u8be5\u6b63\u4ea4\u77e9\u9635\u4e2d\u6240\u6709\u5143\u90fd\u662f\u5b9e\u6570\uff09\u53ef\u4ee5\u770b\u505a\u662f\u4e00\u79cd\u7279\u6b8a\u7684\u9149\u77e9\u9635\uff0c\u4f46\u662f\u5b58\u5728\u4e00\u79cd\u590d\u6b63\u4ea4\u77e9\u9635\uff0c\u590d\u6b63\u4ea4\u77e9\u9635\u4e0d\u662f\u9149\u77e9\u9635\u3002.....\uff08\u5206\u4eab\u81ea@\u767e\u5ea6\u767e\u79d1\uff09",
+        bdDesc: '',
+        bdUrl: 'http:\/\/baike.baidu.com\/item\/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5\/407284',
+        bdPic: '',
+        onBeforeClick: function (){
+            $('.bdshare_dialog_box').hide();
+        }
+    });
+
+    // 底部投诉带入当前页面 url
+    var map = [1, 2, 6, 5];
+    $('.wgt-footer-main .suggestion').find('a').each(function(i) {
+        $(this).attr('href', 'http://help.baidu.com/newadd?word=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5' + '&&submit_link=' + encodeURIComponent(window.location.href) + '&prod_id=10&category=' + map[i]);
+    });
+
+    // 为超出预设内容的表格添加table-responsive控制
+    $('.main-content').find('table').each(function(index) {
+        var $that = $(this);
+        if ($that.width() > 790) {
+            $that.wrap('<div class="table-responsive"></div>');
+        }
+    });
+}();
+!function(){      require('wiki-common:widget/component/psLink/psLink');
+    }();</script><div class="wgt_overlay" style="opacity: 0; position: fixed;"></div><dl class="wgt_dialog modal add-sub-dialog" style="display: none;">
+<dt>添加义项描述<a href="https://baike.baidu.com/view/10811633.htm" target="_blank">义项命名规则</a></dt>
+<dd class="close dialog-btn" title="关闭" btn-key="close"><em class="cmn-icon cmn-icons cmn-icons_close"></em></dd>
+<dd class="con no-icon no-sub-msg">
+<div class="add-sub">                          <div class="content-inner">                              <div class="tip">您需要给原有的义项和新增加的义项都写一个“义项描述”，让读者能分清楚同名的两个事物。</div>                              <div class="example">                                  <div class="example-tit">示例</div>                                  <div class="example-show">                                      <ul>                                          <li class="show-li clearfix"><div class="tit">词条名</div><div class="content">环太平洋</div></li>                                          <li class="show-li clearfix"><div class="tit">原有义项描述</div><div class="content">地理区域</div></li>                                          <li class="show-li clearfix"><div class="tit">新增义项描述</div><div class="content">2013年美国科幻电影</div></li>                                      </ul>                                  </div>                              </div>                              <form action="https://baike.baidu.com/createsub/%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5" method="get">                                  <div class="form-item name-lemma clearfix"><label for="">词条名</label><input type="text" value="正交矩阵" disabled="disabled"></div>                                  <div class="form-item clearfix"><label for="">原有义项描述(不大于20字)</label><input type="text" value="" name="ori_desc"></div>                                  <div class="form-item clearfix"><label for="">新增义项描述(不大于20字)</label><input type="text" value="" name="desc"></div>                                  <div class="form-item form-notice"><strong>[注意]</strong>如果原义项中已经罗列了多个义项的内容，那么建议您不要直接添加义项，而是<a href="http://tieba.baidu.com/p/4152042379" target="_blank">报告未拆分多义词。</a></div>                                  <div class="add-sub-main-footer"><input type="submit" class="add-sub-main-button add-sub-main-accept" value="确定"><span class="add-sub-main-button add-sub-main-cancel">取消</span></div>                              </form>                          </div>                      </div>
+</dd>
+</dl>
+<script type="text/javascript">
+  var Hunter = window.Hunter || {};
+  Hunter.userConfig = Hunter.userConfig || [];
+  </script>
+<script type="text/javascript" src="./正交矩阵_百度百科_files/baike.js" defer=""></script><script type="text/javascript">
+  // DOM Ready时，统计用户可操作时间。
+  alog('speed.set', 'drt', +new Date);
+
+  void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+</script>
+
+<div class="reference-tip J-referenceTip"><table><tbody><tr><td class="content"></td><td class="title" valign="middle">参考资料</td></tr></tbody></table><em class="triangle-bg"></em><em class="triangle-border"></em></div><div class="right-ad"><a class="rightAd-link" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;4224&quot;, &quot;adTitle&quot;: &quot;秒懂星课堂-母亲节sx5.11&quot;, &quot;adPos&quot;: 4}" title="" href="https://baike.baidu.com/wikisecond/videoflow?lemmaId=127378&amp;secondId=214666" target="_blank"><img src="./正交矩阵_百度百科_files/huanglei悬浮135x180的副本.png" alt=""></a><a class="rightAd-close" href="javascript:;"></a></div></body></html>

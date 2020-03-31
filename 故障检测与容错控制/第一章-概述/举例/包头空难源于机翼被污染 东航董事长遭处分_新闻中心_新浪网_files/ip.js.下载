@@ -1,0 +1,128 @@
+//IP:10.79.112.156, IP2:, HCI:,HXFF:10.79.112.156,RA:10.79.112.156
+//desc:北京市北京
+location1="北京市";
+location2="北京";
+local_index=1;
+// user
+if (typeof(_TT_UP) != 'function') {
+    var _TT_UP = function() {
+        function _TT_GetCookie(N){
+        	var c = document.cookie.split("; ");
+        	for (var i = 0; i < c.length; i++) {
+        		var d = c[i].split("=");
+        		if (d[0] == N) return unescape(d[1]);
+        	}
+        	return '';
+        }
+
+        function _TT_GetPGLS() {
+            var r = '';
+            try {
+                r = document.getElementsByTagName("meta")['stencil'].content;
+            } catch (e) {
+                r = '';
+            }
+            return r;
+        }
+        
+        function _TT_GetUP() {
+            document.domain = 'sina.com.cn';
+            
+            var up = _TT_GetCookie('TSGUP');
+            if (up) {
+                return ';up|' + up;
+            }
+            var up = _TT_GetCookie('SGUP');
+            var r = '';
+            if (up && up != '0') {
+                var ups = up.split('');
+                for (var i = 0; i < ups.length; i++) {
+                    if (i < ups.length && i % 6 == 0) {
+                        r += ';up|';
+                    }
+                    if (i % 6 < 4) {
+                        r += ups[i];
+                    }
+                }
+            } 
+            return r;
+        }
+        
+        function _TT_GetKv() {
+            var r = '';
+            var pgls = _TT_GetPGLS();
+            var up = _TT_GetUP();
+            var sg = _TT_GetCookie('SINAGLOBAL');
+            
+            if (up) {
+                r = 'sg|' + sg + ';pgls|' + pgls + up;
+            }
+            return r;
+        }
+        
+        var _TT_kv = _TT_GetKv();
+        if (_TT_kv) {
+            var _TT_img = new Image();
+            _TT_img.src = 'http://995.adsina.allyes.com/main/adfshow?user=AFP6_for_SINA|vancl_1102|bq_pip_test&db=sina&border=0&local=yes&kv=' + _TT_kv;
+            _TT_img.onerror = (_TT_img.onload=(_TT_img.onabort=function(){_TT_img = null;}));
+        }
+    }
+    
+    //new _TT_UP();
+}
+
+
+try{
+	var loc = window.location;
+	var chlist = [	
+			'news.sina.com.cn',
+			'mil.news.sina.com.cn',
+			'finance.sina.com.cn',
+			'tech.sina.com.cn',
+			'ent.sina.com.cn',
+			'sports.sina.com.cn',
+			
+			'eladies.sina.com.cn',
+			'baby.sina.com.cn',
+			'astro.sina.com.cn',
+			'auto.sina.com.cn',
+			'games.sina.com.cn',
+			'travel.sina.com.cn',
+			
+			'book.sina.com.cn',
+
+			'p4p.sina.com.cn',
+			'202.108.6.208'
+			];
+	var regDomain = new RegExp(/^http:\/\/([^\/]+)\/.+$/);
+	var arrDomain = regDomain.exec(loc);
+	for(var i = 0; i < chlist.length; i++) {
+		if(chlist[i] == arrDomain[1] && typeof PMCID == "undefined") {
+			try {
+				var KM_SINA_CID = "";
+
+				var cookieObj = new Array();
+				var cookieItem = new Array();
+
+				cookieObj = document.cookie.split(";");
+				for(var j = 0; j < cookieObj.length; j++) {
+					cookieItem = cookieObj[j].split("=");
+					cookieItem[0] = cookieItem[0].replace(/(^\s+)|(\s+$)/g,"");
+					if(cookieItem[0] == "SINAGLOBAL") {
+						KM_SINA_CID = cookieItem[1];
+					}
+				}
+
+				document.write('<scr'+'ipt type="text/javascript" src="http://pfp.sina.com.cn/3rd/stat_sina.js"></scr'+'ipt>');
+			}catch(e) {
+	
+			}
+			if (typeof(_TT_UP) == 'function') {
+				new _TT_UP();
+			}
+		}
+	}
+}catch(e){
+	
+}
+

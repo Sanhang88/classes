@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0094)http://www.baike.com/iframeheightforad.html?rnd=0.6036763632822157#300|247|hd_ad_doc_iframe_16 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+var HDAdvertisement={};
+HDAdvertisement.resizePage=function(){
+	var hash_url = window.location.hash;
+	var hash_width = hash_url.split("#")[1].split("|")[0]+"px";
+	var hash_height = hash_url.split("#")[1].split("|")[1]+"px";
+	try{
+		var b_iframe = parent.parent.document.getElementById(hash_url.split("#")[1].split("|")[2]);
+		if(b_iframe!=null){
+			b_iframe.style.width = hash_width;
+			b_iframe.style.height = hash_height;
+		}
+	}catch(e){
+		document.domain="baike.com";
+		var b_iframe = parent.parent.document.getElementById(hash_url.split("#")[1].split("|")[2]);
+		if(b_iframe!=null){
+			b_iframe.style.width = hash_width;
+			b_iframe.style.height = hash_height;
+		}
+	}
+};
+HDAdvertisement.resizePage();
+</script>
+</head><body>
+</body></html>

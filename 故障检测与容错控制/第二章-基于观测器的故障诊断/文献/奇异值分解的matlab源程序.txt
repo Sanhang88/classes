@@ -1,0 +1,60 @@
+%奇异值分解,A=U*D*V'(V'为V的共轭转秩)
+%说明1:只能计算行数不小于列数的矩阵,如果小于,请自行进行转秩.
+%说明2:不可用于数值过小的运算,数值过小时,请自行先进行倍数上的扩大.
+clear;close all;
+A=[1,0,1;2,6,2;2,5,1;2,6,2];
+ho=A'*A;
+oh=A*A';
+[Vo,Do]=eig(ho);         %Vo是标准正交的
+[m,n]=size(ho);
+for i=1:n 
+  do(1,i)=Do(i,i);
+end
+  dx=sort(do,'descend');
+for i=1:n
+  for j=1:n
+    if dx(1,i)==do(1,j)
+       Vx(:,i)=Vo(:,j);
+       do(1,j)=-1;       %ho和oh一定是正定的，所以设置任意负数，可以防止重复使用一个向量
+       j=n+1;
+    end
+  end
+end
+V=Vx;
+j=1;
+k=1;
+for i=1:n
+  dz(1,i)=dx(1,i)^0.5;
+  if dx(1,i)<0.0001
+     VII(:,k)=V(:,i);
+     k=k+1;
+  else
+     VI(:,j)=V(:,i);
+     dy(1,j)=dx(1,i)^0.5;
+     j=j+1;
+  end
+end
+[a,b]=size(A);
+D=zeros(a,b);
+for i=1:b
+  D(i,i)=dz(1,i);
+end
+UI=A*VI*diag(dy);
+[VH,DH]=eig(oh);
+[q,r]=size(oh);
+j=1;
+UX=UI;
+for i=1:r
+  if DH(i,i)<0.0001
+    UII(:,1)=VH(:,i);
+    UX=[UX,UII];
+  end
+end
+[s,t]=size(UX);
+for j=1:t;
+  N(j)=norm(UX(:,j));     %这里理论上可能会出现错误,但是试验中尚未出现.若出现请联系作者,QQ:2293752111
+  UY(:,j)=UX(:,j)/N(j);
+end
+U=UY
+D
+V

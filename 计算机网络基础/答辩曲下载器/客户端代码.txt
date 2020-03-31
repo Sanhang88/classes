@@ -1,0 +1,277 @@
+Form1.cs
+using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.Windows.Forms;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+using System.Diagnostics;
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        String path_ = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+        public Form1()
+        {
+            InitializeComponent();
+            textBox2.Text = path_;
+        }
+        delegate void MyInvoke(Class1 package);
+        void display(Class1 package)
+        {
+            Console.WriteLine(JsonConvert.SerializeObject(package));
+            foreach(List<Class2> songs in package)
+            {
+    
+                foreach (Class2 song in songs)
+                {
+                    listView1.Items.Add(new ListViewItem(new String[] { song.name,song.singer, song.url }));
+                }
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            new Thread(new ThreadStart(search)).Start();
+        }
+        public void search()
+        {
+            IPAddress ip = IPAddress.Parse("47.95.202.222");
+            IPEndPoint point = new IPEndPoint(ip, int.Parse("10251"));
+            Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            try
+            {
+                client.Connect(point);
+            }
+            catch
+            {
+                MessageBox.Show("链接出错！");
+                Application.Exit();
+            }
+            byte[] buffer_send = Encoding.UTF8.GetBytes(textBox1.Text);
+            client.Send(buffer_send);
+            byte[] buffer_recv = new byte[1024 * 1024];
+            int n = client.Receive(buffer_recv);
+            String abc=Encoding.UTF8.GetString(buffer_recv, 0, n);
+            Class1 package= JsonConvert.DeserializeObject<Class1>(abc);
+            MyInvoke mi = new MyInvoke(display);
+            this.BeginInvoke(mi, package);
+        }
+        public void download(Object group)
+        {
+            Class3 GR = (Class3)group;
+            WebClient myWebClient = new WebClient();
+            myWebClient.DownloadFile(GR.url, path_ + @"\" + GR.name + GR.i + ".mp3");
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
+            int i = 0;
+            foreach (ListViewItem song in listView1.SelectedItems)
+            {
+                Class3 group = new Class3(song.SubItems[2].Text, song.SubItems[0].Text, i);
+                Thread down = new Thread(new ParameterizedThreadStart(download));
+                down.Start(group);
+                i++;
+            }
+            watch.Stop();
+            MessageBox.Show("下载完成,总耗时" + watch.ElapsedMilliseconds.ToString() + "ms");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog path = new FolderBrowserDialog();
+            path.ShowDialog();
+            path_=path.SelectedPath;
+            textBox2.Text = path_;
+        }
+    }
+
+}
+Class2.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WindowsFormsApp2
+{
+    class Class2
+    {
+        public Class2(String name,String url,String singer)
+        {
+            this.name = name;
+            this.url = url;
+            this.singer = singer;
+        }
+        public String name { get; set; }
+        public String url { get; set; }
+        public String singer { get; set; }
+    }
+}
+Class1.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WindowsFormsApp2
+{
+    class Class1
+    {
+        public Class1(List<Class2> wangyi, List<Class2> kugou, List<Class2> baidu)
+        {
+            this.wangyi = wangyi;
+            this.baidu = baidu;
+            this.kugou = kugou;
+        }
+        public List<Class2> wangyi { get; set; }
+        public List<Class2> baidu { get; set; }
+        public List<Class2> kugou { get; set; }
+
+        public IEnumerator<List<Class2>> GetEnumerator()
+        {
+            yield return kugou;
+            yield return wangyi;
+            yield return baidu;
+        }
+        
+    }
+}
+EmbeddedAssembly.cs
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Reflection;
+using System.Security.Cryptography;
+
+public class EmbeddedAssembly
+{
+    // Version 1.3
+
+    static Dictionary<string, Assembly> dic = null;
+
+    public static void Load(string embeddedResource, string fileName)
+    {
+        if (dic == null)
+            dic = new Dictionary<string, Assembly>();
+
+        byte[] ba = null;
+        Assembly asm = null;
+        Assembly curAsm = Assembly.GetExecutingAssembly();
+
+        using (Stream stm = curAsm.GetManifestResourceStream(embeddedResource))
+        {
+            // Either the file is not existed or it is not mark as embedded resource
+            if (stm == null)
+                throw new Exception(embeddedResource + " is not found in Embedded Resources.");
+
+            // Get byte[] from the file from embedded resource
+            ba = new byte[(int)stm.Length];
+            stm.Read(ba, 0, (int)stm.Length);
+            try
+            {
+                asm = Assembly.Load(ba);
+
+                // Add the assembly/dll into dictionary
+                dic.Add(asm.FullName, asm);
+                return;
+            }
+            catch
+            {
+                // Purposely do nothing
+                // Unmanaged dll or assembly cannot be loaded directly from byte[]
+                // Let the process fall through for next part
+            }
+        }
+
+        bool fileOk = false;
+        string tempFile = "";
+
+        using (SHA1CryptoServiceProvider sha1 = new SHA1CryptoServiceProvider())
+        {
+            string fileHash = BitConverter.ToString(sha1.ComputeHash(ba)).Replace("-", string.Empty); ;
+
+            tempFile = Path.GetTempPath() + fileName;
+
+            if (File.Exists(tempFile))
+            {
+                byte[] bb = File.ReadAllBytes(tempFile);
+                string fileHash2 = BitConverter.ToString(sha1.ComputeHash(bb)).Replace("-", string.Empty);
+
+                if (fileHash == fileHash2)
+                {
+                    fileOk = true;
+                }
+                else
+                {
+                    fileOk = false;
+                }
+            }
+            else
+            {
+                fileOk = false;
+            }
+        }
+
+        if (!fileOk)
+        {
+            System.IO.File.WriteAllBytes(tempFile, ba);
+        }
+
+        asm = Assembly.LoadFile(tempFile);
+
+        dic.Add(asm.FullName, asm);
+    }
+
+    public static Assembly Get(string assemblyFullName)
+    {
+        if (dic == null || dic.Count == 0)
+            return null;
+
+        if (dic.ContainsKey(assemblyFullName))
+            return dic[assemblyFullName];
+
+        return null;
+    }
+}
+Program.cs
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Reflection;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp2
+{
+    static class Program
+    {
+        /// <summary>
+        /// 应用程序的主入口点。
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            string resource1 = "WindowsFormsApp2.Newtonsoft.Json.dll";
+            EmbeddedAssembly.Load(resource1, "Newtonsoft.Json.dll");
+            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+        private static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            return EmbeddedAssembly.Get(args.Name);
+        }
+    }
+}

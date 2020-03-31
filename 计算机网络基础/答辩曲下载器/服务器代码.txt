@@ -1,0 +1,84 @@
+server.py
+import music
+import socket
+import json
+import threading#导入多线程管理包
+
+host="0.0.0.0"
+port="10251"
+def tcplink(sock, addr):#对连接的路线进行操作
+    print('Accept new connection from %s:%s...' % addr)
+    data=sock.recv(1024)
+    data=data.decode('UTF-8')
+    songList=music.music(data)
+    sendData(songList,sock)
+    print('Close the connection from %s:%s...' % addr)
+
+
+def sendData(songList,sock):
+    sock.send(bytes(json.dumps(songList),encoding='UTF-8'))
+    sock.close()
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)#选择IPV4网络,TCP传输模式
+s.bind((host,10251))#绑定10251端口，允许外界任意ip访问
+s.listen(5)#设置最大请求等待个数
+print('Waiting for connection...')
+while True:#循环监听
+    sock, addr = s.accept()#建立连接
+    t = threading.Thread(target=tcplink, args=(sock, addr))#在新的进程中操作连接
+    t.start()#开启进程
+music.py
+import requests
+import traceback
+import json
+import time
+
+def music(songName):
+    songList = {'wangyi': [], 'kugou': [], 'baidu': []}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1 WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+    }
+
+    data_wangyi = requests.get("http://s.music.163.com/search/get/?type=1&s=" + songName, headers=headers)
+    data_wangyi.close()
+    content_wangyi = json.loads(data_wangyi.text)
+    songs_wangyi = content_wangyi['result']['songs']
+    for song_wangyi in songs_wangyi:
+        songList['wangyi'].append(
+            {'name': song_wangyi['name'], 'singer': song_wangyi['artists'][0]['name'], 'url': song_wangyi['audio']})
+    try:
+        data_kugou = requests.get(
+            "http://songsearch.kugou.com/song_search_v2?callback=jQuery112402944359877152716_1525743328685&keyword=" + songName + "&page=1&pagesize=30&userid=-1&clientver=&platform=WebFilter&tag=em&filter=2&iscorrection=1&privilege_filter=0&_=1525743328690",headers=headers)
+        data_kugou.close()
+        content_kugou = json.loads(data_kugou.text[data_kugou.text.find('(') + 1:-2])
+        songs_kugou = content_kugou['data']['lists']
+        for song_kugou in songs_kugou:
+            data_kugou_song = requests.get(
+                "http://m.kugou.com/app/i/getSongInfo.php?hash=" + song_kugou['FileHash'] + "&cmd=playInfo",
+                headers=headers)
+            data_kugou_song.close()
+            content_kugou_song = json.loads(data_kugou_song.text)
+            songList['kugou'].append({'name': content_kugou_song['songName'], 'singer': content_kugou_song['singerName'],
+                                  'url': content_kugou_song['url']})
+    except:
+        songList['kugou'].append({'name': "酷狗服务器崩溃", 'singer': "酷狗服务器崩溃",
+                                  'url': "酷狗服务器崩溃"})
+    try:
+        requests.adapters.DEFAULT_RETRIES = 20
+        data_baidu = requests.get("https://sug.music.baidu.com/info/suggestion?word=" + songName + "&version=11.1.3",headers=headers)
+        data_baidu.close()
+        content_baidu = json.loads(data_baidu.text)
+        songs_baidu = content_baidu['data']['song']
+        for song_baidu in songs_baidu:
+            data_baidu_song = requests.get(
+                "https://music.baidu.com/data/music/fmlink?rate=320&songIds=" + song_baidu['songid'], headers=headers)
+            data_baidu_song.close()
+            content_baidu_song = json.loads(data_baidu_song.text)
+            print(data_baidu_song.text)
+            songList['baidu'].append(
+                {'name': song_baidu["songname"], 'singer': song_baidu["artistname"],
+                 'url': content_baidu_song['data']['songList'][0]['songLink']})
+    except :
+        songList['baidu'].append({'name': "百度服务器崩溃", 'singer': "百度服务器崩溃",
+                                  'url': "百度服务器崩溃"})
+    return songList

@@ -1,0 +1,60 @@
+%舵面破损故障的纵向增稳回路设计
+clear;
+close all;
+clc;
+
+%正常模式下的相应参数
+M_alpha = -1.94;
+M_q = 0.11;
+M_dlte = 1.3;
+Z_alpha = 0.48;
+Z_dlte = 0;
+K_alpha2az = Z_alpha*177;
+
+%一级品质与二级品质
+kesi1_min = 0.6;
+kesil_max=1;
+kesi2_min=0.2;
+kesi2_max = 0.8;
+wn1_min = 1.8;
+wn1_max = 2.6;
+wn2_min = 1;
+wn2_max = 1.4;
+
+%计算一级品质对应的参数空间
+jj = 0;
+for ii_kesi1 = kesi1_min:0.01:kesil_max
+    for ii_wn1 = wn1_min:0.01:wn1_max
+        jj = jj+1;
+        array_kq(jj) = ( Z_alpha + M_q - 2*ii_kesi1*ii_wn1 )/M_dlte;
+        array_kaz(jj) = ( M_alpha+Z_alpha*M_q-M_dlte*...
+            Z_alpha*array_kq(jj) - ii_wn1^2 )/( M_dlte*K_alpha2az );
+    end
+end
+
+%计算二级品质对应的参数空间
+jj = 0;
+for ii_kesi2 = kesi2_min:0.01:kesi2_max
+    for ii_wn2 = wn2_min:0.01:wn2_max
+        jj = jj+1;
+        array_kq2(jj) = ( Z_alpha + M_q - 2*ii_kesi2*ii_wn2 )/M_dlte;
+        array_kaz2(jj) = ( M_alpha+Z_alpha*M_q-M_dlte*...4
+            Z_alpha*array_kq2(jj) - ii_wn2^2 )/( M_dlte*K_alpha2az );
+    end
+end
+
+%绘制二级品质对应的参数空间图
+figure;
+plot(array_kaz,array_kq,'r*');
+grid on;
+xlabel('kaz');
+ylabel('kq');
+figure;
+plot(array_kaz2,array_kq2,'b*');
+grid on;
+xlabel('kaz');
+ylabel('kq');
+
+
+% %正常模式下的闭环传递函数
+% tf_u2az = -tf( M_dlte*K_alpha2az,[1 Z_alpha+M_q-M_dlte*kq M_alpha+Z_alpha*M_q-M_dlte*Z_alpha*kq-M_dlte*K_alpha2az*kaz] );

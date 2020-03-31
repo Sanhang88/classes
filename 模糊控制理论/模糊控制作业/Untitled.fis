@@ -1,0 +1,65 @@
+[System]
+Name='Untitled'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=21
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[-1 1]
+NumMFs=7
+MF1='ss1':'trimf',[-250 -0.75 -0.375]
+MF2='sm1':'trimf',[-0.375 -0.125 0]
+MF3='b1':'trimf',[0.125 0.375 0.75]
+MF4='m1':'trimf',[-0.125 0 0.125]
+MF5='s1':'trimf',[-0.75 -0.375 -0.125]
+MF6='mb1':'trimf',[0 0.125 0.375]
+MF7='bb1':'trimf',[0.375 0.75 249.8]
+
+[Input2]
+Name='input2'
+Range=[-1 1]
+NumMFs=3
+MF1='s2':'trimf',[-249.8 -0.625 -0.125]
+MF2='m2':'trimf',[-0.25 0 0.25]
+MF3='b2':'trimf',[0.125 0.625 249.8]
+
+[Output1]
+Name='output1'
+Range=[-1 1]
+NumMFs=5
+MF1='s3':'trimf',[-999 -0.8 -0.5]
+MF2='m3':'trimf',[-0.22 0 0.22]
+MF3='b3':'trimf',[0.5 0.8 999]
+MF4='sm3':'trimf',[-0.8 -0.3 -0.1]
+MF5='mb3':'trimf',[0.1 0.3 0.8]
+
+[Rules]
+1 1, 3 (1) : 1
+1 2, 3 (1) : 1
+1 3, 5 (1) : 1
+5 1, 3 (1) : 1
+5 2, 5 (1) : 1
+5 3, 2 (1) : 1
+2 1, 5 (1) : 1
+2 2, 5 (1) : 1
+2 3, 2 (1) : 1
+7 3, 1 (1) : 1
+7 2, 1 (1) : 1
+7 1, 4 (1) : 1
+3 3, 1 (1) : 1
+3 2, 4 (1) : 1
+3 1, 2 (1) : 1
+6 3, 4 (1) : 1
+6 2, 4 (1) : 1
+6 1, 2 (1) : 1
+4 2, 2 (1) : 1
+4 1, 5 (1) : 1
+4 3, 4 (1) : 1

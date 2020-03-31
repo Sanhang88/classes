@@ -1,0 +1,36 @@
+clc;  %配置故障检测滤波器算法如下
+clear;
+clc;
+
+%模型参数配置
+dim=2
+A = [0,1;8.04915,-0.09255];
+B=[0;-8.92329];
+C=eye(dim);
+fi_actuator=[-0;8.92329];
+fi_sensor=[0;-1];
+
+%故障向量对应的特征值配置
+lamdai=-5;
+
+%配置滤波器算法如下
+Afi_actuator=A*fi_actuator;
+Cfi_actuator=C*fi_actuator;
+Cfi_actuator_pinv=pinv(Cfi_actuator);
+Ci_actuator=(eye(dim)-Cfi_actuator*Cfi_actuator_pinv)*C;
+Ai_actuator=A-(Afi_actuator-lamdai*fi_actuator)*Cfi_actuator_pinv*C;
+Mi_actuator=obsv(Ai_actuator,Ci_actuator)';
+qi_actuator=rank(Mi_actuator);
+vi_actuator=rank(size(Ai_actuator))-qi_actuator;
+[V,D]=eig(Ai_actuator);
+w_actuator=V(:,1);
+lamda_actuator=D(1,1);
+Cw_actuator=C*w_actuator;
+Cw_actuator_pinv=pinv(Cw_actuator);
+E=eye(dim);
+I=eye(dim);
+
+%配置结果显示
+D_actuator=(A*w_actuator-lamda_actuator*w_actuator)*Cw_actuator_pinv+E*(I-Cfi_actuator*Cfi_actuator_pinv)
+[V,D]=eig(A-D_actuator*C)
+

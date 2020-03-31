@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0071)http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./数值稳定性_互动百科_files/analytics.js"></script><script async="" src="./数值稳定性_互动百科_files/analytics.js"></script><script type="text/javascript" async="" src="./数值稳定性_互动百科_files/XBKClickMonitor.js"></script>
+
+<meta http-equiv="x-ua-compatible" content="IE=Edge, chrome=1">
+<meta name="mobile-agent" content="format=html5;url=http://www.baike.com/gwiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7">
+<title>数值稳定性_互动百科
+</title>
+<meta content="数值稳定性-数值稳定性，算法对舍入误差的敏感性。在算法执行过程中会出现舍入误差的积累。对同一个计算问题，在不同的算法中舍入误差对计算结果产生的影响也各不相同。" name="description">
+<meta name="keywords" content="数值稳定性,,互动百科,baike,数学名词,数学术语,术语,科学,自然科学">
+<meta name="author" content="数值稳定性">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Expires" content="0">
+<link href="./数值稳定性_互动百科_files/citiao171226.css" rel="stylesheet" type="text/css" media="all">
+<link href="./数值稳定性_互动百科_files/loginbox130606.css" rel="stylesheet" type="text/css" media="all">
+<link href="./数值稳定性_互动百科_files/header160627.css" rel="stylesheet" type="text/css" media="all">
+
+
+<script src="./数值稳定性_互动百科_files/flux.js"></script><script type="text/javascript" src="./数值稳定性_互动百科_files/saved_resource"></script>
+<script type="text/javascript" src="./数值稳定性_互动百科_files/userLogin_home_page_20150319.js"></script>
+<script type="text/javascript" src="./数值稳定性_互动百科_files/doc-pc-monintor-20170308.js"></script>
+<script type="text/javascript" src="./数值稳定性_互动百科_files/seajs.js"></script>
+<script type="text/javascript" src="./数值稳定性_互动百科_files/jquery.lazyload.min.js"></script>
+<script src="./数值稳定性_互动百科_files/linkedme.min.js"></script>
+
+<script type="text/javascript" src="./数值稳定性_互动百科_files/qrcode.min.js"></script>
+<script type="text/javascript" language="javascript">
+		$.ajaxSetup({cache: true});
+			$.getScript("http://stat.baike.com/js/webstat_manage.js");
+			$.getScript("http://stat.baike.com/js/webstat_manage_hdga.js");
+		$.ajaxSetup({cache: false});
+		document.domain="baike.com";
+		var HD_HEAD_OPTION;
+		function editdoc(){
+		try{
+			editpower();
+			return false;
+		}catch(e){
+		}
+	}
+
+	var g_user_isexpert = false;
+	var preTagstr = null;
+	var preThesaurusstr = null;
+	var doctitle_utf8 = null;
+	var pb_url = null;
+	$(document).ready(function() {
+
+		$("#content img").lazyload();
+
+		HD_HEAD_OPTION = {
+			location : $("div.wrap")
+		};
+
+		loadLoginInfo();
+
+		preTagstr=document.getElementById('tagstr').value;
+		preThesaurusstr=document.getElementById('prethes').value;
+		doctitle_utf8=document.getElementById('doctitle_utf8').value;
+		pb_url="/unLockDoc.do?doc_title="+doctitle_utf8+"&unlockType=tag";
+
+		seajs.use('config/1.1.0/config.js');
+
+
+		 $.HdHead({
+	           title_filter:function(q){
+					return q.replace(/\+/g,'%2B');
+				},
+			  openac:true,
+			  openhotword:true,
+			  bottomIpt:".search-l .search-area input[type=text]",
+			  bottomBtn:".search-l .s-btn",
+			  floatIpt:".mainnav-wrap .search-area input[type=text]",
+			  floatBtn:".mainnav-wrap .s-btn"
+
+        });
+
+	});
+
+</script>
+
+ <script>
+    var getParamValue = function(url,key){
+        var regex = new RegExp(key+"=([^&]*)","i");
+        var result = regex.exec(url);
+        return result == null?"":result[1];
+    };
+    var applink_channel = getParamValue(window.location,'applink_channel');
+ 
+
+    linkedme.init("11bc8ce982cee52baeb8afd0760eeae8", {type: "live"}, null);
+    var linkedme_data = {};
+    linkedme_data.type = "live";
+    linkedme_data.feature = "doc" ;/*可以是doc fm 等不同产品标识*/
+    linkedme_data.tags = "doc"; /*便于LinkedME后台查询深度链接关键字*/
+    if(applink_channel.length == 0){  /*如果applink_channel未传递 则标识为直接*/
+        /*如果需要辨别搜索引擎来源,需要在此处增加判断逻辑*/
+        linkedme_data.channel = "direct";
+    }else{        
+        linkedme_data.channel = applink_channel;
+    }
+    var linkedme_type = "doc"; /*跳转类型*/
+    var linkedme_para1 = "数值稳定性"; /*词条名称*/
+    linkedme_data.params = '{"type":"'+linkedme_type+'","para1":"'+linkedme_para1+'"}'; /*此处的type代表跳转类型 para1代表附加参数(跳转类型为doc是doc_title, 跳转类型是fm为fm id)*/
+    linkedme.link(linkedme_data, function (err, linkedme_data) {
+        if (err) {
+        /* 生成深度链接失败，返回错误对象err*/
+        } else {
+        /* 生成深度链接成功，深度链接可以通过data.url得到*/
+        /* 使用深度链接代码*/
+     var qrcode = new QRCode('doc_qrcode', {
+  text: linkedme_data.url,
+  width: 512,
+  height: 512,
+  colorDark : '#000000',
+  colorLight : '#ffffff',
+  correctLevel : QRCode.CorrectLevel.H
+});
+     
+     
+     
+        }
+    }, false);
+</script>
+
+
+
+
+
+<script type="text/javascript">
+ac_as_id = 2094858;
+ac_click_track_url = "";ac_format = 0;ac_mode = 1;
+ac_width = 280;ac_height = 210;
+</script>
+<script type="text/javascript">
+$(function(){
+	$.ajaxSetup({cache: true});
+	$.getScript("http://www.huimg.cn/ads/js/hd.ad1.20170222.js",function(){
+			var hudongAdDocOptions = {
+			bizType : "doc",
+			bizId : $("#hdAdBizId").val(),
+			domain : "www.baike.com",
+			adBlockPrefix : "hd_ad_doc_",
+			adIframePrefix : "hd_ad_doc_iframe_",
+			adLocations : [2, 7, 3, 4, 16, 1,5,17, 6, 18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,63,69,91,92,109,110,112,131,133],
+			adConfigs : [{
+						type : "iframe",
+						width : 1140,
+						height : 70,
+						style : ""
+					}, {
+						type : "iframe",
+						width : 640,
+						height : 60,
+						style : "margin-top:10px;"
+					}, {
+						type : "iframe",
+						width : 640,
+						height : 60,
+						style : "margin-top:10px;"
+					}, {
+						type : "iframe",
+						width : 270,
+						height : 250,
+						style : "margin-top:10px;allowtransparency:allowtransparency;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 256,
+						style : "margin-top:10px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 250,
+						style : "allowtransparency:allowtransparency"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 250,
+						style : "allowtransparency:allowtransparency"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 310,
+						style : "allowtransparency:allowtransparency"
+					}, {
+						type : "script"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 250,
+						style : "allowtransparency:allowtransparency"
+					}, {
+						type : "iframe",
+						width : 640,
+						height : 120,
+						style : "margin-top:10px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-top:0px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-top:0px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-top:0px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "allowtransparency:allowtransparency"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-left:10px;margin-top:15px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "allowtransparency:allowtransparency"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-left:10px;margin-top:15px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-top:0px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-top:0px;"
+					},{
+						type : "script"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 250,
+						style : "margin-top:15px;"
+					}, {
+						type : "iframe",
+						width : 300,
+						height : 90,
+						style : "margin-left:10px;margin-top:15px;"
+					}, {
+						type : "iframe",
+						width : 640,
+						height : 90,
+						style : "margin-top:0px;"
+					}, {
+						type : "iframe",
+						width : 640,
+						height : 90,
+						style : "margin-top:0px;"
+					}, {
+						type : "script"
+					}, {
+						type : "iframe",
+						width : 640,
+						height : 120,
+						style : "margin-top:10px;"
+					}, {
+						type : "iframe",
+						width : 1080,
+						height : 90,
+						style : ""
+					},{
+						type : "script"
+					}, {
+						type : "iframe",
+						width : 270,
+						height : 140,
+						style : "margin-top:10px;allowtransparency:allowtransparency;"
+					}, {
+						type : "iframe",
+						width : 780,
+						height : 157,
+						style : ""
+					}, {
+						type : "script"
+					}, {
+						type : "script"
+					}, {
+						type : "script"
+					}, {
+						type : "script"
+					}
+					]
+			};
+			if (typeof(hudongAdsTemplate) != "undefined" && typeof(hudongAdsTemplate.loadAds) == "function") {
+				hudongAdsTemplate.loadAds(hudongAdDocOptions);
+			}
+		});
+		$.ajaxSetup({cache: false});
+	});
+</script>
+
+<style id="hudong_dialog_style">div.hudong_dialog {border:1px solid #eae3de;border-top:3px solid #71aae3;background-color:#FFFFFF;box-shadow: 0 0 6px #999;overflow:hidden;padding:5px 20px;}			
+div.hudong_dialog h2.title{margin:0;height:33px;border-bottom:1px solid #ccc;padding:3px 5px;font-size:16px;overflow:hidden;-moz-user-select:none;-webkit-user-select:none;user-select:none;line-height:33px;font-family:arial,'microsoft yahei',simsun,sans-self;font-weight: normal;color: #333;}			
+div.hudong_dialog .close{display:block;cursor:pointer;width:19px;height:19px;margin:0;top:10px;right:20px;position:absolute;background:url(http://www.huimg.cn/lib/dialog/close.png);}			
+div.hudong_dialog .close:hover{background-position: -33px 0;background-color: #cbcbcb;}			
+div.hudong_dialog div.content{padding:5px;text-align:center;background-color:#FFFFFF;position:relative;}			
+div.hudong_dialog div.button{position:absolute;width:100%;left:0;bottom:0;text-align:center;height:25px;padding:4px 10px 10px;}			
+div.hudong_dialog div.button input{text-align:center;margin-right:10px;}			
+div.hudong_overlay{z-index:2001;cursor:default;background-color:#403d3b;width:100%;height:100%;top:0px;left:0px;position:absolute;margin:0 auto;}div.bluebox{}			
+div.bluebox h2.title{}			
+ div.bluebox .close{}			
+ div.bluebox div.button{background-color:#E8E8E8;padding:5px 10px 2px;}div.noborder {border:0;background-color:transparent;}			
+div.noborder .close{top:10px;right:10px;}</style><script type="text/javascript" id="_hdssojs" src="./数值稳定性_互动百科_files/hdWebXBKStat.do"></script><style>div.noborder{box-shadow:none;padding:0;}div.hudong_dialog div.content .close_b{cursor:pointer;display:block;height:16px;width:57px;position:absolute;top:-16px;right:0;font-size:12px;color:#454545; background:#fff;}</style></head>
+<body>
+<div style="margin:0 auto; display:none;"><img src="./数值稳定性_互动百科_files/20300001349927140490061724160.jpg"></div>
+
+			
+			<div class="header-baike"><div class="wrap">
+			<h2 class="logo"><a href="http://www.baike.com/"><img alt="互动百科 - 全球最大中文百科网站" src="./数值稳定性_互动百科_files/a-baikelogo2.gif"></a></h2>
+			<ul class="navi-bk">
+			<li><a href="http://www.baike.com/" tagert="_blank">首页</a></li>
+			<li><a href="http://tupian.baike.com/" tagert="_blank">百科图片</a></li>
+			<li><a href="http://top.baike.com/">百科IN词</a></li>
+			<li><a href="http://fenlei.baike.com/">微百科</a></li>
+			<li><a href="http://hangye.baike.com/?prd=shouye_hangyebaike" tagert="_blank">行业百科</a></li>
+			<li><a href="http://qiye.baike.com/?prd=shouye_qiyebaike" tagert="_blank">企业百科</a></li>
+			<li><a href="http://xinzhishe.baike.com/" tagert="_blank">百科权威用户</a></li>
+			<li><a href="http://task.baike.com/?prd=shouye_wanshancitiao">百科任务</a></li>
+			<li><a href="http://xingyun.baike.com/">百科星云</a></li>
+			</ul>
+			<div id="loggingnews"><li class="log" id="entry"><a target="_self" class="cwhite" onmousedown="document.domain=&#39;baike.com&#39;;var date=new Date();date.setTime(date.getTime()+24*3600*1000);document.cookie=&#39;nextURL=&#39;+encodeURIComponent((document.referrer.length&gt;0&amp;&amp;document.referrer!=window.location.href)?document.referrer:window.location.href)+&#39;;expire=&#39;+date.toGMTString()+&#39;;path=/;domain=.baike.com;&#39;" href="http://passport.baike.com/login.do?service=http%3A%2F%2Fwww.baike.com%2Fwiki%2F%2525E6%252595%2525B0%2525E5%252580%2525BC%2525E7%2525A8%2525B3%2525E5%2525AE%25259A%2525E6%252580%2525A7">登录</a></li><li class="log bor-no" id="login"><a target="_self" href="http://passport.baike.com/user/userRegister.jsp" class="cwhite">注册</a></li></div>
+		</div></div>
+		<div class="header-search"><div class="nav-search wrap"><div class="search-panel">
+<form id="enter" method="get" target="_blank"><input autocomplete="off" class="ac_input" type="text" name="q" value="数值稳定性"></form>
+<input value="进入词条" class="entry-button" type="button"><input value="搜索词条" class="search-button" type="button">
+</div><div id="HOTDOC_RECOMMEND" class="hot_results">热词：<a target="_blank" href="http://www.baike.com/wiki/%E4%B8%AD%E5%85%B4&amp;prd=resoukuang">中兴</a><a target="_blank" href="http://www.baike.com/wiki/%E4%BA%8C%E6%9B%B4%E9%A3%9F%E5%A0%82&amp;prd=resoukuang">二更食堂</a><a target="_blank" href="http://www.baike.com/wiki/%E6%AF%8D%E4%BA%B2%E8%8A%82&amp;prd=resoukuang">母亲节</a><a target="_blank" href="http://www.baike.com/wiki/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F3&amp;prd=resoukuang">复仇者联盟3</a><a target="_blank" href="http://www.baike.com/wiki/%E5%8C%BA%E5%9D%97%E9%93%BE&amp;prd=resoukuang">区块链</a><a target="_blank" href="http://www.baike.com/wiki/%E4%BC%8A%E6%9C%97%E6%A0%B8%E9%97%AE%E9%A2%98%E5%8D%8F%E8%AE%AE&amp;prd=resoukuang">伊朗核问题协议</a><a target="_blank" href="http://www.baike.com/wiki/%E5%BE%AE%E8%BD%AFBuild%202018%E5%BC%80%E5%8F%91%E8%80%85%E5%A4%A7%E4%BC%9A&amp;prd=resoukuang">微软Build 2018开发者大会</a><a target="_blank" href="http://www.baike.com/wiki/%E6%9C%BA%E7%A5%A8%E9%80%80%E6%94%B9%E7%AD%BE&amp;prd=resoukuang">机票退改签</a><a target="_blank" href="http://www.baike.com/wiki/%E4%B8%AD%E5%9B%BD%E7%94%B7%E5%AD%90%E4%B9%92%E4%B9%93%E7%90%83%E9%98%9F&amp;prd=resoukuang">中国男子乒乓球队</a><a target="_blank" href="http://www.baike.com/wiki/%E6%99%AE%E4%BA%AC&amp;prd=resoukuang">普京</a></div></div></div>
+
+
+
+<div id="primary">
+
+
+<div style="display:;"><div>
+
+
+
+</div></div>
+<div class="w-990">
+		 <div class="polysemy" style="display:none"></div>
+		 <p id="unifypromptone" style="display:none"> </p>
+
+<div class="polysemy industry" id="personal_polysemy" style="display:none"></div>
+
+
+<div class="l w-640">
+<div id="place_div"><div class="mainnav-l" style="display: none;"><ul class="l">
+<li><span class="noback"></span><a class="btn-editdoc" onclick="return editdoc();" href="http://www.baike.com/editdocauth/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7">编辑</a>
+</li>
+         <li><a class="discuss" href="javascript:void(0)">讨论</a></li>
+          <li class="hide" id="sha">
+		 <a class="share" href="javascript:void(0)">分享</a><em></em>
+			<div id="share" class="d-list" name="div_fun_kmod"><p><a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="sinaminblog"><em></em>新浪微博</a>
+					<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="weixin"><em></em>微信
+					<span class="qrcode"><img class="img" src="./数值稳定性_互动百科_files/16608A864B656B9217392B0AE33D8324_90.png">扫描二维码用<i>手机</i>浏览词条</span></a>
+					<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="xinzhishe" id="xinzhisheshare2">	<em></em>新知社</a><a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="qqzone">	<em></em>QQ空间</a></p></div>
+		 </li>
+
+	    <li><a class="digg" href="javascript:void(0)">2406</a></li>
+       </ul></div></div>
+
+<div id="doc_mission_view" class="edit-kz"></div>
+<div class="clear"></div>
+<div class="content-h1"><h1>数值稳定性</h1></div>
+<div class="clear"></div>
+
+<div class="place">
+	<p id="openCatp" style="">开放分类：<a target="_blank" title="数学名词" href="http://fenlei.baike.com/%E6%95%B0%E5%AD%A6%E5%90%8D%E8%AF%8D/?prd=zhengwenye_left_kaifangfenlei">数学名词</a><a target="_blank" title="数学术语" href="http://fenlei.baike.com/%E6%95%B0%E5%AD%A6%E6%9C%AF%E8%AF%AD/?prd=zhengwenye_left_kaifangfenlei">数学术语</a><a target="_blank" title="术语" href="http://fenlei.baike.com/%E6%9C%AF%E8%AF%AD/?prd=zhengwenye_left_kaifangfenlei">术语</a><a target="_blank" title="科学" href="http://fenlei.baike.com/%E7%A7%91%E5%AD%A6/?prd=zhengwenye_left_kaifangfenlei">科学</a><a target="_blank" title="自然科学" href="http://fenlei.baike.com/%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6/?prd=zhengwenye_left_kaifangfenlei">自然科学</a></p>
+</div>
+<div class="clear"></div>
+<div id="unifyprompt" class="information"><div class="summary" name="anchor" id="anchor"><p>数值稳定性，算法对舍入误差的敏感性。在算法执行过程中会出现舍入误差的积累。对同一个计算问题，在不同的算法中舍入误差对计算结果产生的影响也各不相同。</p><span><a action="editsummaryhref" href="javascript:void(0);" onclick="editSummary();return false;">编辑摘要</a></span>
+</div></div>
+<input type="hidden" name="doctitle" id="doctitle" value="数值稳定性">
+<fieldset id="catalog">
+<div class="toctitle"><h3>目录</h3></div>
+<div id="full-all">
+			    		<ul class="lie3">
+			    			<li>
+<em>1</em><a href="javascript:void(0)" catalogkey="1" class="bold" title="数值稳定性" alt="数值稳定性">数值稳定性</a>
+</li>
+<li>
+<em>2</em><a href="javascript:void(0)" catalogkey="3" class="bold" title="正文" alt="正文">正文</a>
+</li>
+<li>
+<em>3</em><a href="javascript:void(0)" catalogkey="5" class="bold" title="配图" alt="配图">配图</a>
+</li>
+<li>
+<em>4</em><a href="javascript:void(0)" catalogkey="7" class="bold" title="相关连接" alt="相关连接">相关连接</a>
+</li>
+			    		</ul>
+			    	</div>
+<div class="bot-bg"></div>
+</fieldset>
+
+<div id="float_section" style="display:none;">
+<div class="catalog">
+<div class="full-list">
+<ul>
+	    	<li>
+<em>1</em><a href="javascript:void(0)" catalogkey="1" class="bold">数值稳定性</a>
+			     	 <i></i>
+			     	</li>
+<li>
+<em>2</em><a href="javascript:void(0)" catalogkey="3" class="bold">正文</a>
+			     	 <i></i>
+			     	</li>
+<li>
+<em>3</em><a href="javascript:void(0)" catalogkey="5" class="bold">配图</a>
+			     	 <i></i>
+			     	</li>
+<li>
+<em>4</em><a href="javascript:void(0)" catalogkey="7" class="bold">相关连接</a>
+			     	 <i></i>
+			     	</li>
+
+</ul>
+</div>
+</div>
+<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="topcontrol"></a>
+<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="toollist"></a>
+</div>
+
+
+<!--google_ad_section_start-->
+<div id="content" deep="3">
+				<div class="content_h2 bac_no">
+				<h2 class="mar-t10">
+<a name="1"> </a>数值稳定性<span class="f18">/数值稳定性 </span><a class="bjbd" href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" secid="1" target="_self">编辑</a>
+</h2>
+
+			</div>
+		<p>&nbsp;</p><div class="content_h2"><h2 class="mar-t10">
+<a name="3"> </a>正文<span class="f18">/数值稳定性 </span><a class="bjbd" href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" secid="3" target="_self">编辑</a>
+</h2>
+
+			</div>
+		　　算法对舍入误差的敏感性。在算法执行过程中会出现舍入误差的积累。对同一个计算问题，在不同的算法中舍入误差对计算结果产生的影响也各不相同。舍入误差对计算结果的精确性影响小的算法，具有较好的数值稳定性；反之，算法的数值稳定性差。例如，若干个正数相加时，按从大到小的次序进行就不如按从小到大的次序进行的数值稳定性好。二次方程<i>α</i><i>x</i><sup>2</sup>+<i>b</i><i>x</i>+с=0求根的公式为： <p align="center"><img src="./数值稳定性_互动百科_files/01000000000000119081546080124_s.gif" data-original="http://a0.att.hudong.com/24/15/01000000000000119081546080124_s.gif" align="absMiddle" alt="数值稳定性" title="数值稳定性" style="display: inline;">　 　(1)</p> <p align="center"><img src="./数值稳定性_互动百科_files/01000000000000119081546082844_s.gif" data-original="http://a3.att.hudong.com/44/15/01000000000000119081546082844_s.gif" align="absMiddle" alt="数值稳定性" title="数值稳定性" style="display: inline;"> 　 (2)</p>若<i>b</i>&gt;0，且<i>b</i><sup>2</sup>&gt;&gt;4|<i>α</i>с|，则由于<i>b</i>和<img src="./数值稳定性_互动百科_files/01000000000000119081546083900_s.gif" data-original="http://a0.att.hudong.com/00/15/01000000000000119081546083900_s.gif" align="absMiddle" alt="数值稳定性" title="数值稳定性" style="display: inline;">很接近,用公式(1)计算 <i>x</i><sub>1</sub>就会使有效数字严重损失。但这时可先用公式(2)计算<i>x</i><sub>2</sub>，然后根据关系<i>x</i><sub>1</sub><i>x</i><sub>2</sub>=с/<i>α</i>计算<i>x</i><sub>1</sub>，会得到比较好的结果。在用消去法解线性代数方程组时，选主元的算法比不选主元的算法的数值稳定性好。 <br data-filtered="filtered">　　算法的数值稳定性的判别是和(舍入)误差分析密切相关联的。早在1947年J.冯·诺伊曼和<a class="innerlink" title="戈尔茨坦" href="http://www.baike.com/sowiki/%E6%88%88%E5%B0%94%E8%8C%A8%E5%9D%A6?prd=content_doc_search">戈尔茨坦</a>关于<a class="innerlink" title="高斯消去法" href="http://www.baike.com/sowiki/%E9%AB%98%E6%96%AF%E6%B6%88%E5%8E%BB%E6%B3%95?prd=content_doc_search">高斯消去法</a>舍入误差分析的文章中就隐含着数值稳定性的概念，而首先明确提出这个概念的是J.W.吉文斯。J.H.威尔金森系统地发展了吉文斯提出的<a class="innerlink" title="向后误差" href="http://www.baike.com/sowiki/%E5%90%91%E5%90%8E%E8%AF%AF%E5%B7%AE?prd=content_doc_search">向后误差</a>分析的思想,对代数求解过程的舍入误差作了深入细致的分析,计算结果的精度不但依赖于所用的算法，而且也和问题是良态或病态有关。一个计算问题,如果其中的参数(如线性代数方程组的系数,自由项)的微小扰动只对解的精度产生不大的影响，便说这个计算问题是良态的，否则便称为病态的。吉文斯的数值稳定性概念就考虑到问题是良态或病态这个因素。一个算法计算得到的近似解可以看作原计算问题中的参数经适当扰动后的准确解，若扰动是微小的，就说这个算法是数值稳定的，否则就说算法是不稳定的。 <br data-filtered="filtered">　　<font size="-1">参考书目 <br data-filtered="filtered">　<font size="-1">J. H.Wilkinson,<i>Rounding Errors in Algebr<i>α</i>ic Processes</i>,Printice-Hall, Englewood Cliffs, New Jersey, 1963.<p>&nbsp;</p><div class="content_h2"><h2 class="mar-t10">
+<a name="5"> </a>配图<span class="f18">/数值稳定性 </span><a class="bjbd" href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" secid="5" target="_self">编辑</a>
+</h2>
+
+			</div>
+		<p>&nbsp;</p><div class="content_h2"><h2 class="mar-t10">
+<a name="7"> </a>相关连接<span class="f18">/数值稳定性 </span><a class="bjbd" href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" secid="7" target="_self">编辑</a>
+</h2>
+
+			</div>
+		
+<div class="clear"></div>
+</font></font></div><font size="-1"><font size="-1">
+
+<!--google_ad_section_end-->
+
+<div style="display:;"><div>
+
+
+</div></div>
+
+<div class="wenxian_app">
+<link href="./数值稳定性_互动百科_files/wenxianapp160908.css" rel="stylesheet" type="text/css">
+<div class="h3tit"><h3>相关文献</h3></div>
+<ul>
+<li>
+<span class="wfimg" title="万方数据">万方数据</span>期刊论文<a href="http://d.wanfangdata.com.cn/Periodical_zgkydxxb200102026.aspx" target="_blank" title="三次样条插值函数的数值稳定性" onclick="StatVirtualTraffic(document.referrer,window.location,&#39;stat_hdstat_onclick_wanfang_wenxian&#39;)">三次样条插值函数的数值稳定性</a><span>
+										-
+										中国矿业大学学报
+										-
+									</span><span>2001</span><span>30</span><span>
+										(
+										2
+										)
+									</span>
+</li>
+<li>
+<span class="wfimg" title="万方数据">万方数据</span>期刊论文<a href="http://d.wanfangdata.com.cn/Periodical_hnlgdxxb200909005.aspx" target="_blank" title="基于Ottosen准则的PC多梁式梁桥全过程分析" onclick="StatVirtualTraffic(document.referrer,window.location,&#39;stat_hdstat_onclick_wanfang_wenxian&#39;)">基于Ottosen准则的PC多梁式梁桥全过程分析</a><span>
+										-
+										华南理工大学学报（自然科学版）
+										-
+									</span><span>2009</span><span>37</span><span>
+										(
+										9
+										)
+									</span>
+</li>
+<li>
+<span class="wfimg" title="万方数据">万方数据</span>期刊论文<a href="http://d.wanfangdata.com.cn/Periodical_lxjz200404005.aspx" target="_blank" title="连续体结构的拓扑优化设计" onclick="StatVirtualTraffic(document.referrer,window.location,&#39;stat_hdstat_onclick_wanfang_wenxian&#39;)">连续体结构的拓扑优化设计</a><span>
+										-
+										力学进展
+										-
+									</span><span>2004</span><span>34</span><span>
+										(
+										4
+										)
+									</span>
+</li>
+</ul>
+</div>
+
+<div id="figure" class="zoom">
+<h3>附图</h3>
+<span id="moreGrayc" class="more grayc"><a name="_figurea">&nbsp;</a><a href="javascript:void(0)" id="addFigure" style="display:none;">上传图片</a></span>
+</div>
+<div id="fodder" class="zoom"><h3>
+<span class="r grayc"><a target="_blank" href="http://v.baike.com/videocenter/initadd?docTitle=%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7">添加视频</a>&nbsp;|&nbsp;<a target="_blank" href="http://tupian.baike.com/zutu/createZutuView?docTitle=%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7">添加图册</a></span>相关影像</h3></div>
+<div class="relevantinfo" id="catp_bottom">
+<dl id="show_tag" style="display:block;">
+<dt>
+<span class="l">开放分类
+                   
+				    <em class="onoff">
+					  <a href="javascript:void(0)" id="open_tag" style="display:none;">展开<i class="open"></i></a> <a href="javascript:void(0)" style="display:none;" id="close_tag">收起<i class="close"></i></a>
+				    </em>
+				  
+				</span><a href="javascript:void(0)" class="r completetaghref">我来补充</a>
+</dt>
+<dd class="h27">
+<a href="http://fenlei.baike.com/%E6%95%B0%E5%AD%A6%E5%90%8D%E8%AF%8D/?prd=zhengwenye_left_kuozhan_kaifangfenlei">数学名词</a><a href="http://fenlei.baike.com/%E6%95%B0%E5%AD%A6%E6%9C%AF%E8%AF%AD/?prd=zhengwenye_left_kuozhan_kaifangfenlei">数学术语</a><a href="http://fenlei.baike.com/%E6%9C%AF%E8%AF%AD/?prd=zhengwenye_left_kuozhan_kaifangfenlei">术语</a><a href="http://fenlei.baike.com/%E7%A7%91%E5%AD%A6/?prd=zhengwenye_left_kuozhan_kaifangfenlei">科学</a><a href="http://fenlei.baike.com/%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6/?prd=zhengwenye_left_kuozhan_kaifangfenlei">自然科学</a>
+</dd>
+</dl>
+<dl style="display:none;" id="edit_tag">
+<dt id="edit_tag_dt"><span class="l">开放分类</span></dt>
+<dd>
+<input type="text" class="input-textarea" maxlength="20" value="数学名词" name="tag" onblur="this.setAttribute(&#39;value&#39;,this.value);"> <a href="javascript:void(0)" onclick="removeTag(this)" id="_removeTag">[删除]</a>
+</dd>
+<dd>
+<input type="text" class="input-textarea" maxlength="20" value="数学术语" name="tag" onblur="this.setAttribute(&#39;value&#39;,this.value);"> <a href="javascript:void(0)" onclick="removeTag(this)" id="_removeTag">[删除]</a>
+</dd>
+<dd>
+<input type="text" class="input-textarea" maxlength="20" value="术语" name="tag" onblur="this.setAttribute(&#39;value&#39;,this.value);"> <a href="javascript:void(0)" onclick="removeTag(this)" id="_removeTag">[删除]</a>
+</dd>
+<dd>
+<input type="text" class="input-textarea" maxlength="20" value="科学" name="tag" onblur="this.setAttribute(&#39;value&#39;,this.value);"> <a href="javascript:void(0)" onclick="removeTag(this)" id="_removeTag">[删除]</a>
+</dd>
+<dd>
+<input type="text" class="input-textarea" maxlength="20" value="自然科学" name="tag" onblur="this.setAttribute(&#39;value&#39;,this.value);"> <a href="javascript:void(0)" onclick="removeTag(this)" id="_removeTag">[删除]</a>
+</dd>
+</dl>
+<dl id="show_thesaurus" style="display:none;"><dt id="show_thesaurus_dt">
+<span class="l">同义词
+		
+				<em class="onoff">
+                  <a href="javascript:void(0)" id="open_thesaurus" style="display:none;">展开<i class="open"></i></a> <a href="javascript:void(0)" style="display:none;" id="close_thesaurus">收起<i class="close"></i></a>
+                </em>
+		
+		</span><a name="show_thesaurus_test"></a>    
+		</dt></dl>
+<dl style="display:none;z-index:11;" id="edit_thesaurus"><dt id="thesaurus_edit_dt"><span class="l">同义词</span></dt></dl>
+</div>
+
+
+
+	<p class="place-bottom zoom"></p>
+
+<p class="point l-he22 descriptionP">互动百科的词条（含所附图片）系由网友上传，如果涉嫌侵权，请与客服联系，我们将按照法律之相关规定及时进行处理。未经许可，禁止商业网站等复制、抓取本站内容；合理使用者，请注明来源于www.baike.com。</p>
+
+<iframe scrolling="no" frameborder="0" id="commentIframeId" marginwidth="0" width="100%" marginheight="0" src="./数值稳定性_互动百科_files/comment.html" style="width: 780px; height: 163px;"> </iframe><input name="type" type="hidden" value="doc"><input name="doc_title" id="doc_title" type="hidden" value="数值稳定性"><input name="docidencry" id="docidencry" type="hidden" value="vHFZRa0dfBEEKBR4f"><input name="_loginstate" id="_loginstate" type="hidden" value="0">
+<iframe scrolling="no" frameborder="0" marginwidth="0" width="100%" height="90" marginheight="0" src="./数值稳定性_互动百科_files/comment(1).html"></iframe>
+<div class="bklog">
+<p>登录后使用互动百科的服务，将会得到个性化的提示和帮助，还有机会和专业认证智愿者沟通。</p>
+<a id="commentLoginButton" href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="bklogBtn">互动百科用户登录</a><a target="_self" href="http://passport.baike.com/user/userRegister.jsp" class="bkregBtn">注册</a>
+</div>
+
+</font></font></div><font size="-1"><font size="-1">
+<div class="r w-300">
+<div id="editmore">此词条还可添加&nbsp;
+			<a href="javascript:void(0);" id="addDocInfoTemplethref">信息模块</a>
+</div>
+
+
+<div class="doc-img"><a title="编辑摘要" href="javascript:void(0);" onclick="editSummary();return false;" action="editsummaryhref"><img title="编辑摘要" alt="编辑摘要" src="./数值稳定性_互动百科_files/summary_default270x233.png"></a></div>
+<div class="rightdiv cooperation cooperation_t">
+<h3>WIKI热度</h3>
+<ol>
+<li>编辑次数：<span>4次</span> <a href="http://www.baike.com/wikdoc/sp/qr/history/list.do?doc_title=%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7&amp;prd=citiao_right_jibenxinxi_lishibanben" target="_blank">历史版本</a>
+</li>
+<li>参与编辑人数：<span>4</span>位</li>
+<li>最近更新时间：2013-04-24 14:56:40</li>
+</ol>
+</div>
+<div class="rightdiv gongxianbang">
+<h3>贡献光荣榜</h3>
+<a target="_blank" class="more" href="http://www.baike.com/wikdoc/sp/qr/history/editorlist.do?doc_title=%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7&amp;prd=zhengwenye_left_jibenxinxi_xiezuozhe">更多</a><ul>
+<li>创建者：<span><a target="_blank" href="http://i.baike.com/profile.do?useriden=vHVZRa0dfBEcCCxga&amp;prd=citiao_right_jibenxinxi_chuangjianzhe" class="yonghu">zcyaohua</a></span>
+</li>
+<li><h4><a uiden="DdncDBV9QCnBXBnV2" href="http://i.baike.com/profile.do?useriden=DdncDBV9QCnBXBnV2&amp;prd=zhengwenye_zuixinxiezuozhe" class="yonghu vEditor">jingchu2013208</a></h4><a title="大学生" class="yyico">大学生</a></li>
+<li><h4><a uiden="ARVtRXEUDEUUHBVdC" href="http://i.baike.com/profile.do?useriden=ARVtRXEUDEUUHBVdC&amp;prd=zhengwenye_zuixinxiezuozhe" class="yonghu vEditor">天边月色</a></h4><a title="中国语言文学助教" class="yyico">中国语言文学助教</a></li>
+<li><h4><a class="yonghu">匿名用户</a></h4><a title="互动百科网友" class="yyico">互动百科网友</a></li>
+<li><h4><a uiden="vHVZRa0dfBEcCCxga" href="http://i.baike.com/profile.do?useriden=vHVZRa0dfBEcCCxga&amp;prd=zhengwenye_zuixinxiezuozhe" class="yonghu vEditor">zcyaohua</a></h4><a title="中国语言文学助教" class="yyico">中国语言文学助教</a></li>
+</ul>
+</div>
+<div id="map" class="rightdiv" style="display:none"><h3>地图</h3></div>
+<div id="hd_ad_doc_16" style="height: 257px;"> <iframe scrolling="no" frameborder="0" marginwidth="0" marginheight="0" height="256" width="300" style="margin-top: 10px; width: 300px; height: 247px;" id="hd_ad_doc_iframe_16" name="hd_ad_doc_iframe_16" src="javascript:void((function(){var d=document;d.open();d.domain=&#39;baike.com&#39;;d.close()})())" src="./数值稳定性_互动百科_files/saved_resource.html"></iframe></div>
+
+
+
+
+
+<div id="xgct" name="xgct" class="xgct rightdiv">
+<h3>相关词条</h3>
+<a style="display:none" id="a_xgct" href="javascript:void(0);" class="more" action="perfectcordocbtn">编辑</a><ul>
+<li class="h105"><a href="http://so.baike.com/doc/%E6%95%B0%E5%AD%97%E6%B0%B4%E5%8D%B0&amp;prd=citiao_so" target="_blank" title="数字水印"><span class="aimg" style="background-image:url(http://a1.att.hudong.com/40/84/20200000013920144730841436627_140.jpg);"><p></p></span>数字水印</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E4%B8%AD+%E5%9B%BD+%E6%95%B0+%E5%AD%A6+%E5%8F%B2&amp;prd=citiao_so" target="_blank" title="中 国 数 学 史"><span class="aimg" style="background-image:url(http://www.huimg.cn/public/default_70.png);"><p></p></span>中 国 …</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%88%9D%E5%80%BC%E9%97%AE%E9%A2%98%E6%95%B0%E5%80%BC%E8%A7%A3%E6%B3%95&amp;prd=citiao_so" target="_blank" title="常微分方程初值问题数值解法"><span class="aimg" style="background-image:url(http://a2.att.hoodong.com/08/15/01000000000000119081558049308_140.gif);"><p></p></span>常微分方…</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E4%B8%AD%E5%9B%BD%E6%95%B0%E5%AD%A6%E5%8F%B2&amp;prd=citiao_so" target="_blank" title="中国数学史"><span class="aimg" style="background-image:url(http://a2.att.hudong.com/91/15/01000000000000119081554191091_140.jpg);"><p></p></span>中国数学史</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E5%9D%A6%E5%85%8B%E7%81%AB%E6%8E%A7%E7%B3%BB%E7%BB%9F&amp;prd=citiao_so" target="_blank" title="坦克火控系统"><span class="aimg" style="background-image:url(http://a0.att.hudong.com/43/64/01200000032931136323648443082_140.jpg);"><p></p></span>坦克火控…</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E5%9B%9B%E8%88%8D%E4%BA%94%E5%85%A5%E6%B3%95&amp;prd=citiao_so" target="_blank" title="四舍五入法"><span class="aimg" style="background-image:url(http://a3.att.hudong.com/03/79/20200000013920144726794997581_140.jpg);"><p></p></span>四舍五入法</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%90%86%E8%AE%BA&amp;prd=citiao_so" target="_blank" title="常微分方程运动稳定性理论"><span class="aimg" style="background-image:url(http://a4.att.hoodong.com/97/15/01000000000000119081556878697_140.gif);"><p></p></span>常微分方…</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E5%9C%86%E5%91%A8%E7%8E%87&amp;prd=citiao_so" target="_blank" title="圆周率"><span class="aimg" style="background-image:url(http://a3.att.hudong.com/35/88/20200000013920144726885472521_140.jpg);"><p></p></span>圆周率</a></li>
+<li class="h105"><a href="http://so.baike.com/doc/%E3%80%8A%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8B&amp;prd=citiao_so" target="_blank" title="《线性代数》"><span class="aimg" style="background-image:url(http://a4.att.hudong.com/55/80/01300000295502122714806496887_140.jpg);"><p></p></span>《线性代…</a></li>
+</ul>
+</div><div><iframe scrolling="no" frameborder="0" marginwidth="0" marginheight="0" height="370" width="270" src="./数值稳定性_互动百科_files/wiki1.html"></iframe></div> 
+
+
+
+
+
+<div class="yzct rightdiv">
+<h3>分类热词</h3>
+<div class="f_4">
+<ul class="l">
+<li><a target="_blank" href="http://so.baike.com/doc/%E7%AC%A6%E5%8F%B7&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">符号</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E5%87%BD%E6%95%B0&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">函数</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E7%9F%9B%E7%9B%BE&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">矛盾</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E5%9C%86%E5%91%A8%E7%8E%87&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">圆周率</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">三角函数</a></li>
+</ul>
+<ul class="r">
+<li><a target="_blank" href="http://so.baike.com/doc/%E6%A0%91&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">树</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E5%8B%BE%E8%82%A1%E5%AE%9A%E7%90%86&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">勾股定理</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E6%95%B0%E5%AD%A6&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">数学</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E7%9F%A9%E9%98%B5&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">矩阵</a></li>
+<li><a target="_blank" href="http://so.baike.com/doc/%E6%B3%8A%E6%9D%BE%E5%88%86%E5%B8%83&amp;prd=citiao_so%0A%09%09%09%09%09%09%09">泊松分布</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="rightdiv wap-citiao clearfix">
+<style type="text/css">.wap-citiao{padding:10px;}.wap-citiao .fl{margin-top:5px;width:110px;font-size:12px;float:left;text-align: center;}.wap-citiao .fl img{display: block;width:60px;margin:0 auto;}.wap-citiao .fl p{color:#333;padding:6px 0;}.wap-citiao .fl span{color:#686868;}.wap-citiao .fr{float:right;}.wap-citiao .fr img{display: block;width:110px;height:110px;}</style>
+	<div class="fl">
+		<img src="./数值稳定性_互动百科_files/26100000006187151090019714114.png">
+		<p>互动百科</p>
+		<span>扫码下载APP</span>
+		
+	</div>
+	<div class="fr" id="doc_qrcode" title="https://lkme.cc/d0D/IqdG7SEDJ">
+	
+	<canvas width="512" height="512" style="display: none;"></canvas><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAgAElEQVR4Xu3d0ZYkR45r0ar//+i6K1I9pdbcXjNl3DaBYDr0nHCQBzRzpiu79fPHjx+/fvSfNQR+/crF9fPnzxinzX1L7UnmsbAvGAvzC/bjRyTzVmbJ2sfAHy583ei5N8rD4U/a10M68fwvTfKAb+5bak8yl1lJa4V5svZk3sosWXsys83eXQCWpaeHVNpNHvDNfUvtSeYyK2mtME/WnsxbmSVrT2a22bsLwLL09JBKu8kDvrlvqT3JXGYlrRXmydqTeSuzZO3JzDZ7dwFYlp4eUmk3ecA39y21J5nLrKS1wjxZezJvZZasPZnZZu8uAMvS00Mq7SYP+Oa+pfYkc5mVtFaYJ2tP5q3MkrUnM9vs3QVgWXp6SKXd5AHf3LfUnmQus5LWCvNk7cm8lVmy9mRmm727ACxLTw+ptJs84Jv7ltqTzGVW0lphnqw9mbcyS9aezGyzdxeAZenpIZV2kwd8c99Se5K5zEpaK8yTtSfzVmbJ2pOZbfbuArAsPT2k0m7ygG/uW2pPMpdZSWuFebL2ZN7KLFl7MrPN3l0AlqWnh1TaTR7wzX1L7UnmMitprTBP1p7MW5kla09mttm7C8Cy9PSQSrvJA765b6k9yVxmJa0V5snak3krs2Ttycw2e3cBWJaeHlJpN3nAN/cttSeZy6yktcI8WXsyb2WWrD2Z2WbvLgDL0tNDKu0mD/jmvqX2JHOZlbRWmCdrT+atzJK1JzPb7N0FYFl6ekil3eQB39y31J5kLrOS1grzZO3JvJVZsvZkZpu9aQHQgdkMTmqXg6LMxVt6Vq32Lf5bmb16Fm7JvqXuV9+ba0/NapK5eguzzVqd8y4AgfQlND0o4h1A9dtS+5batzLrAiCpz7VbZ1XrlnOi3vO0diuF+dei/PolYYqgoc3ISWjKXLxn3d5Rad9SxVZmXQAk9bl266xq3XJO1Hue1m6lMO8CEMpeQtODIt4hXF+22rfUvpWZckv2rXlvrj01q0nm6i3MNmt1zvsFIJC+hKYHRbwDqPqvABC6zEtyVqTur99sfr6utsw/WrtULX1r3UlvYbZZK8z7BSCUvISWPKQhXP0CAOBlXmROoeQreW+uXdhJ3zIrunSptzDbrJW8uwCEkpfQ9KCIdwjXlReC1L6VWf8VgKQ+1+oZnTvblw+tW86JeguzzVph3gUglLyEpgdFvEO4ugAAeJmX5KxI3frbKOBePatJ5uqtmW3V6xnt3wAEkpfQ9KCIdwDVb0vtW2rfyqxfACT1uXbrrGrdck7Ue57WbqUw7xeAUPYSmh4U8Q7hWv1bVZJZF4AMfT2jUrWcb6076S3MNmuFeReAUPISWvKQhnB1AQDwMi8yp1Dylbw31y7spG+ZFf3XLuotzDZrJe8uAKHkJTQ9KOIdwnXlhSC1b2XWLwCS+lyrZ3Tu3D8CFHYbtXo39W8AAqlLaHq5iHcA1W9L7Vtq38qsC4CkPtdunVWtW86Jes/T2q0U5v0CEMpeQtODIt4hXP0CAOBlXpKzInXr52jAvXpWk8zVWzPbqtcz2i8AgeQlND0o4h1A1S8ACF3mJTkrUncXgNnQJJmr96zj/So9o10AAjMgoelBEe8Aqi4ACF3mJTkrUncXgNnQJJmr96zj/So9o9EFQItPxafDKn2rtzCTusX3pdW+k7Vr76IXbklmUrfwurE8JGvX3kUv86LMxFt6Vm267y4AgwSToan3oN3fkuQh076TtQtz1Qq3JDOpW5lp38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQbhcAgRbWyrwkL1WpW5Fr38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQbhcAgRbWyrwkL1WpW5Fr38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQbhcAgRbWyrwkL1WpW5Fr38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQbhcAgRbWyrwkL1WpW5Fr38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQbhcAgRbWyrwkL1WpW5Fr38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQbhcAgRbWyrwkL1WpW5Fr38natXfRCzdlJt7Ss2rTfXcBGCSYDE29B+12ARBoYa3MS/JSlboVufadrF17F71wU2biLT2rNt13F4BBgsnQ1HvQ7kcsAFL3S/tUbk/tW+ZFmcnLSL2lb9Um+xZv7Vv0mrf23QVgkF4yNPUetNsFQKD9+PFDD6nYd17O6SkzyVu9z7u9p0j2Ld73CJw/SfPWvrsAnGfGv01KaDowg3a7AAi0LgBI7/1yPWNbz7eSTvYt3tq36JOz9qq7C8AgvWRo6j1otwuAQOsCgPTeL9czJi8j9X4/rb8dk32Ld5KZ5q19dwEYpJ8MTb0H7XYBEGhdAJDe++V6xuRSVu/30+oCIMw1b5m1fgEYJpcMTb2HLX/JdNjEW7VP5fbUvmVelJmcE/WWvlWb7Fu8tW/Ra97ad78ADNJLhqbeg3b7BUCghRenzst5eMpMLmX1Pu/2niLZt3jfI3D+JM1b++4CcJ5Z/whwwCwt0YMm9eshFe+n9p1kJnkn8xJm+oVQ+xbm2rfo0313ARiklwxNvQft9guAQOsXAKT3frmeMXkZqff7af3tmOxbvJPMNG/tuwvAIP1kaOo9aLcLgEDrAoD03i/XMyaXsnq/n1YXAGGuecusfX21ef2fpE0bSBc/rVt1yb7VW3rXYRNv1T6V21P7lnlRZnJO1Fv6Vm2yb/HWvkWveWvfXQAG6SVDU+9Bu/0CIND6BQDpvV+uZ0wuZfV+P61+ARDmmrfMWr8ADJNLhqbew5a/ZDps4q3ap3J7at8yL8pMzol6S9+qTfYt3tq36DVv7btfAAbpJUNT70G7/QIg0MKLU+flPDxlJpeyep93e0+R7Fu87xE4f5LmrX13ATjPrP8zwAGztEQPmtSvh1S8n9p3kpnkncxLmOkXQu1bmGvfok/33QVgkF4yNPUetNsvAAKtXwCQ3vvlesbkZaTe76f1t2Oyb/FOMtO8te8uAIP0k6Gp96DdawuA1K6DnvQW5lK3/lYmdb+0UrvmLbVL3eK7XSuZKXPxTnJP990FYJB+MjT1HrTbBeDn65hk/tG8kxej1L617syUfIarZCazkl50hX667y4Ag/SSoan3oN0uAF0ARmMjsyovk1Gx/yaSutV7s14yU+binWSe7rsLwCD9ZGjqPWi3C0AXgNHYyKwmL3SpewTqm4gkM2Uu3kn86b67AAzST4am3oN2uwB0ARiNjcxq8kKXukegvolIMlPm4p3En+67C8Ag/WRo6j1otwtAF4DR2MisJi90qXsE6puIJDNlLt5J/Om+uwAM0k+Gpt6DdrsAdAEYjY3MavJCl7pHoL6JSDJT5uKdxJ/uuwvAIP1kaOo9aLcLQBeA0djIrCYvdKl7BOqbiCQzZS7eSfzpvrsADNJPhqbeg3a7AHQBGI2NzGryQpe6R6C+iUgyU+bincSf7rsLwCD9ZGjqPWi3C0AXgNHYyKwmL3SpewTqm4gkM2Uu3kn86b67AAzST4am3oN2uwB0ARiNjcxq8kKXukegvolIMlPm4p3En+67C8Ag/WRo6j1otwtAF4DR2MisJi90qXsE6puIJDNlLt5J/Om+uwAM0k+Gpt6DdrsAdAEYjY3MavJCl7pHoL6JSDJT5uKdxJ/uuwvAIP1kaOo9aLcLQBeA0djIrCYvdKl7BOqbiCQzZS7eSfzpvrsADNJPhqbeg3a7AHQBGI2NzGryQpe6R6C+iUgyU+bincSf7ju6ACTBJ71lWJMDU+/k1OzzTs650JK6xTet3Xy+0+xS/jqrXQACyUlomw/pU/sOjNhHWCbzFgBSt/imtZvvljS7lL/OaheAQHIS2uZD+tS+AyP2EZbJvAWA1C2+ae3muyXNLuWvs9oFIJCchLb5kD6178CIfYRlMm8BIHWLb1q7+W5Js0v566x2AQgkJ6FtPqRP7TswYh9hmcxbAEjd4pvWbr5b0uxS/jqrXQACyUlomw/pU/sOjNhHWCbzFgBSt/imtZvvljS7lL/OaheAQHIS2uZD+tS+AyP2EZbJvAWA1C2+ae3muyXNLuWvs9oFIJCchLb5kD6178CIfYRlMm8BIHWLb1q7+W5Js0v566x2AQgkJ6FtPqRP7TswYh9hmcxbAEjd4pvWbr5b0uxS/jqrXQACyUlomw/pU/sOjNhHWCbzFgBSt/imtZvvljS7lL/OaheAQHIS2uZD+tS+AyP2EZbJvAWA1C2+ae3muyXNLuWvs9oFIJCchLb5kD6178CIfYRlMm8BIHWLb1q7+W5Js0v566x2AQgkJ6FtPqRP7TswYh9hmcxbAEjd4pvWbr5b0uxS/jqrXQACyUlomw/pU/sOjNhHWCbzFgBSt/imtZvvljS7lL/OaheAQHIS2uZD+tS+AyP2EZbJvAWA1C2+ae3muyXNLuWvs9oFIJCchLb5kD6178CIfYRlMm8BIHWLb1q7+W5Js0v566zSApBq+sm+mw+pDGv7nk19mZ9z66ydM3spZNZmjlUpgS4ASvDN+l5OM+ByOZV5mZ8Q6Kyd0OrPJgl0AUjSH3j3ZTSAhr+dlHmZnxDoAnBCqz+bJNAFIEl/4N2X0QBaF4ARtM7aCBt9Cn8q8xnpqpRAFwAl+Gb9Uy+I9j0btP42es6ts3bO7KWQWZs5VqUEugAowTfreznNgMvlVOZlfkKgs3ZCqz+bJNAFIEl/4N2X0QAa/nZS5mV+QqALwAmt/mySQBeAJP2Bd19GA2hdAEbQOmsjbPQp/KnMZ6SrUgJdAJTgm/VPvSDa92zQ+tvoObfO2jmzl0JmbeZYlRLoAqAE36zv5TQDLpdTmZf5CYHO2gmt/mySQBeAJP2Bd19GA2j420mZl/kJgS4AJ7T6s0kCXQCS9AfefRkNoHUBGEHrrI2w0afwpzKfka5KCXQBUIJv1j/1gmjfs0Hrb6Pn3Dpr58xeCpm1mWNVSqALgBJ8s76X0wy4XE5lXuYnBDprJ7T6s0kCXQCS9AfefRkNoOFvJ2Ve5icEugCc0OrPJgn8/KW3W7L6eh8TkMvp2Oy/CWTUtG7x1r6ldq076a3cUnph9qpZM5O+pfZk3dJztXMCXQDm7FYq5YLQhuWC0brFW/uW2rXupLdyS+mFWReAVGr1nRDoAjChtlijl5u0Li8zrVu8peeXVmrXupPeyi2lF2ZdAFKp1XdCoAvAhNpijV5u0rq8zLRu8ZaeuwAovffrO2vvZ17HDIEuABnuMVe93KRweQlr3eItPXcBUHrv13fW3s+8jhkCXQAy3GOuerlJ4fIS1rrFW3ruAqD03q/vrL2feR0zBLoAZLjHXPVyk8LlJax1i7f03AVA6b1f31l7P/M6Zgh0Achwj7nq5SaFy0tY6xZv6bkLgNJ7v76z9n7mdcwQ6AKQ4R5z1ctNCpeXsNYt3tJzFwCl9359Z+39zOuYIdAFIMM95qqXmxQuL2GtW7yl5y4ASu/9+s7a+5nXMUOgC0CGe8xVLzcpXF7CWrd4S89dAJTe+/Wdtfczr2OGQBeADPeYq15uUri8hLVu8ZaeuwAovffrO2vvZ17HDIEuABnuMVe93KRweQlr3eItPXcBUHrv13fW3s+8jhkCXQAy3GOuerlJ4fIS1rrFW3ruAqD03q/vrL2feR0zBLoAZLjHXPVyk8LlJax1i7f03AVA6b1f31l7P/M6Zgh0Achwj7nq5SaFy0tY6xZv6bkLgNJ7v76z9n7mdcwQeOwCoIc8E5e7yoswyUzq1pewUtfaxV8yS9YtPatWmL28hZt6S+9S95PPmDDXvDmzX/oE6T6oVfDB0sla4k4yk7qffDlJZsqcBjUoFmZdADLBbZ3V5Kx93YtdADIDm3KVg6LDKj1L3V0AZuSV+cw1r9I5F27qLfSk7iefMWGueXNmXQAkvn1aGRgdVqEldT/5cpLMlLnkndQKs34ByCS3dVaTs9YvAJlZjbrKQdFhlcal7i4AM/LKfOaaV+mcCzf1FnpS95PPmDDXvDmzfgGQ+PZpZWB0WIWW1P3ky0kyU+aSd1IrzPoFIJPc1llNzlq/AGRmNeoqB0WHVRqXursAzMgr85lrXqVzLtzUW+hJ3U8+Y8Jc8+bM+gVA4tunlYHRYRVaUveTLyfJTJlL3kmtMOsXgExyW2c1OWv9ApCZ1airHBQdVmlc6u4CMCOvzGeueZXOuXBTb6EndT/5jAlzzZsz6xcAiW+fVgZGh1VoSd1PvpwkM2UueSe1wqxfADLJbZ3V5Kz1C0BmVqOuclB0WKVxqbsLwIy8Mp+55lU658JNvYWe1P3kMybMNW/OrF8AJL59WhkYHVahJXU/+XKSzJS55J3UCrN+Acgkt3VWk7PWLwCZWY26ykHRYZXGpe4uADPyynzmmlfpnAs39RZ6UveTz5gw17w5s34BkPj2aWVgdFiFltT95MtJMlPmkndSK8z6BSCT3NZZTc5avwBkZjXqKgdFh1Ual7q7AMzIK/OZa16lcy7c1FvoSd1PPmPCXPPmzF7/9cppA2o+9U3rkqGpd5Jd5+X99IV5Z22Wl3CTvGbVfoZKmOlXFyWgtYu/zsvPLgDn+DVwCU29z7u9p5C+71Xx/iclMxPmybo1JelbvYVbsm7tW/TCrAvAnHwXgAG75LCq96Dda5JebtdQ/vGDhHln7Y8x/+MHhZvkNav2M1TCrAvAPMMuAAN2yWFV70G71yS93K6h/OMHCfPO2h9j7gIwQ/VbpbMmc46l/9DaxV/77gIwoK+BS2jqPWj3mkT6vlZE4EHJzIR5sm6NSfpWb+GWrFv7Fr0w6xeAOfkuAAN2yWFV70G71yS93K6h/OMHCfPO2h9j7heAGap+AUBucr5f1l0ABgHoxSihqfeg3WsS6ftaEYEHJTMT5sm6NSbpW72FW7Ju7Vv0wqxfAObkuwAM2CWHVb0H7V6T9HK7hvKPHyTMO2t/jLlfAGao+gUAucn57heAIXy9GCU09R62fEUmfV8pIPSQZGbCPFm3RiV9q7dwS9atfYtemPULwJx8vwAM2CWHVb0H7V6T9HK7hvKPHyTMO2t/jLlfAGao+gUAucn57heAIXy9GCU09R62fEUmfV8pIPSQZGbCPFm3RiV9q7dwS9atfYtemPULwJx8vwAM2CWHVb0H7V6T9HK7hvKPHyTMO2t/jLlfAGao+gUAucn57heAIXy9GCU09R62fEUmfV8pIPSQZGbCPFm3RiV9q7dwS9atfYtemPULwJx8vwAM2CWHVb0H7V6T9HK7hvKPHyTMO2t/jLlfAGao+gUAucn57heAIXy9GCU09R62fEUmfV8pIPSQZGbCPFm3RiV9q7dwS9atfYtemPULwJx8vwAM2CWHVb0H7V6T9HK7hvKPHyTMO2t/jLlfAGao+gUAucn5/voC8AuekLwgoGxE7nLhpn2Lt3YutSfrTvat3km9ZCazoj1L3eqteuGmfSe9lZvok32LdxcASR20ctA48J+vjz6Zf6R2YZbp9m9X6Ttdu/hLZklmUrfwuqEVbtp30vsGu+kzkn2LdxeAaeKok4PGgXcBwPTO5ZrZueNnKJJzLgSkbvG9oZVZ076T3jfYTZ+R7Fu8uwBME0edHDQOvAsApncu18zOHT9DkZxzISB1i+8Nrcya9p30vsFu+oxk3+LdBWCaOOrkoHHgXQAwvXO5Znbu+BmK5JwLAalbfG9oZda076T3DXbTZyT7Fu8uANPEUScHjQPvAoDpncs1s3PHz1Ak51wISN3ie0Mrs6Z9J71vsJs+I9m3eHcBmCaOOjloHHgXAEzvXK6ZnTt+hiI550JA6hbfG1qZNe076X2D3fQZyb7FuwvANHHUyUHjwLsAYHrncs3s3PEzFMk5FwJSt/je0Mqsad9J7xvsps9I9i3eXQCmiaNODhoH3gUA0zuXa2bnjp+hSM65EJC6xfeGVmZN+05632A3fUayb/HuAjBNHHVy0DjwLgCY3rlcMzt3/AxFcs6FgNQtvje0Mmvad9L7BrvpM5J9i3cXgGniqJODxoF3AcD0zuWa2bnjZyiScy4EpG7xvaGVWdO+k9432E2fkexbvLsATBNHnRw0DrwLAKZ3LtfMzh0/Q5GccyEgdYvvDa3Mmvad9L7BbvqMZN/i3QVgmjjq5KBx4F0AML1zuWZ27vgZiuScCwGpW3xvaGXWtO+k9w1202ck+xbvLgDTxFEnB40D7wKA6Z3LNbNzx89QJOdcCEjd4ntDK7OmfSe9b7CbPiPZt3h3AZgmjjo5aBx4FwBM71yumZ07foYiOedCQOoW3xtamTXtO+l9g930Gcm+xftrAfjx48evaeObdQpuc+/T2p96QeisCLenek9n9BN0kpnMSrp36VtrF27JurVv1XcBUIIP0sshe2GSg6beEpPU/bVlw1eXp3pLXmmtZCazsrlvrV24SV5ad1rfBSCdwCJ/OWRdAGZB6+UkmSW9Z7Q+QyXcJK9099K31i7cknVr36rvAqAEH6SXQ9YFYDYoejlJZknvGa3PUAk3ySvdvfSttQu3ZN3at+q7ACjBB+nlkHUBmA2KXk6SWdJ7RuszVMJN8kp3L31r7cItWbf2rfouAErwQXo5ZF0AZoOil5NklvSe0foMlXCTvNLdS99au3BL1q19q74LgBJ8kF4OWReA2aDo5SSZJb1ntD5DJdwkr3T30rfWLtySdWvfqu8CoAQfpJdD1gVgNih6OUlmSe8Zrc9QCTfJK9299K21C7dk3dq36rsAKMEH6eWQdQGYDYpeTpJZ0ntG6zNUwk3ySncvfWvtwi1Zt/at+i4ASvBBejlkXQBmg6KXk2SW9J7R+gyVcJO80t1L31q7cEvWrX2rvguAEnyQXg5ZF4DZoOjlJJklvWe0PkMl3CSvdPfSt9Yu3JJ1a9+q7wKgBB+kl0PWBWA2KHo5SWZJ7xmtz1AJN8kr3b30rbULt2Td2rfquwAowQfp5ZB1AZgNil5OklnSe0brM1TCTfJKdy99a+3CLVm39q36LgBK8EF6OWRdAGaDopeTZJb0ntH6DJVwk7zS3UvfWrtwS9atfau+C4ASfJBeDlkXgNmg6OUkmSW9Z7Q+QyXcJK9099K31i7cknVr36rvAqAEH6SXQ9YFYDYoejlJZknvGa3PUAk3ySvdvfSttQu3ZN3at+ppAdgMTgZGoW/VJ/PenJdw077FOzmn2rfUvpXZq+cktzI/J5CetS4A55k9VpEc1q0XW/rLRzIzOSjJvLcy6wIgEzfXyqymZ60LwDz3xymTwyqHLB2UcNO+xTvJTfuW2rcy6wIgqc+1MqvpWesCMM/9ccrksMohSwcl3LRv8U5y076l9q3MugBI6nOtzGp61roAzHN/nDI5rHLI0kEJN+1bvJPctG+pfSuzLgCS+lwrs5qetS4A89wfp0wOqxyydFDCTfsW7yQ37Vtq38qsC4CkPtfKrKZnrQvAPPfHKZPDKocsHZRw077FO8lN+5batzLrAiCpz7Uyq+lZ6wIwz/1xyuSwyiFLByXctG/xTnLTvqX2rcy6AEjqc63ManrWugDMc3+cMjmscsjSQQk37Vu8k9y0b6l9K7MuAJL6XCuzmp61LgDz3B+nTA6rHLJ0UMJN+xbvJDftW2rfyqwLgKQ+18qspmetC8A898cpk8MqhywdlHDTvsU7yU37ltq3MusCIKnPtTKr6VnrAjDP/XHK5LDKIUsHJdy0b/FOctO+pfatzLoASOpzrcxqeta6AMxzf5wyOaxyyNJBCTftW7yT3LRvqX0rsy4AkvpcK7OanrUuAPPcH6dMDqscsnRQwk37Fu8kN+1bat/KrAuApD7XyqymZ60LwDz3xymTwyqHLB2UcNO+xTvJTfuW2rcy6wIgqc+1MqvpWfv5K1hBEpx4z0flL6Ug31q3MlO9cJO8Nl/Kyly4SV5a92Z9krl4J5lvnjVl3gUgMHkSWnJYpe4A5n9YCjftW7zT3MRfuD2VmfBO/3IheWvfot88a8q8C4BMzlAroSWHVeoeoromE27at3hfAxB4kHB7KjONKclcvLVv0W+eNWXeBUAmZ6iV0JLDKnUPUV2TCTftW7yvAQg8SLg9lZnGlGQu3tq36DfPmjLvAiCTM9RKaMlhlbqHqK7JhJv2Ld7XAAQeJNyeykxjSjIXb+1b9JtnTZl3AZDJGWoltOSwSt1DVNdkwk37Fu9rAAIPEm5PZaYxJZmLt/Yt+s2zpsy7AMjkDLUSWnJYpe4hqmsy4aZ9i/c1AIEHCbenMtOYkszFW/sW/eZZU+ZdAGRyhloJLTmsUvcQ1TWZcNO+xfsagMCDhNtTmWlMSebirX2LfvOsKfMuADI5Q62ElhxWqXuI6ppMuGnf4n0NQOBBwu2pzDSmJHPx1r5Fv3nWlHkXAJmcoVZCSw6r1D1EdU0m3LRv8b4GIPAg4fZUZhpTkrl4a9+i3zxryrwLgEzOUCuhJYdV6h6iuiYTbtq3eF8DEHiQcHsqM40pyVy8tW/Rb541Zd4FQCZnqJXQksMqdQ9RXZMJN+1bvK8BCDxIuD2VmcaUZC7e2rfoN8+aMu8CIJMz1EpoyWGVuoeorsmEm/Yt3tcABB4k3J7KTGNKMhdv7Vv0m2dNmXcBkMkZahRbc6IAACAASURBVCW05LBK3UNU12TCTfsW72sAAg8Sbk9lpjElmYu39i36zbOmzLsAyOQMtRJaclil7iGqazLhpn2L9zUAgQcJt6cy05iSzMVb+xb95llT5l0AZHKGWgktOaxS9xDVNZlw077F+xqAwIOE21OZaUxJ5uKtfYt+86wp85+v/zz9FB6b/3zZz/5R75nrX6rkwCT7FmabtZr31sySfSe9k7OqfUvtOqebaxduolVmnFkXgPP4NLRzx78VGrh4P1WreW/NLNl30js559q31K5zurl24SZaZcaZdQE4j09DO3fsAiDMVKt56yHV+qf6ZN9J7ymvGzrtW2rQOd1cu3ATrTLjzLoAnMenoZ07dgEQZqrVvPWQav1TfbLvpPeU1w2d9i016Jxurl24iVaZcWZdAM7j09DOHbsACDPVat56SLX+qT7Zd9J7yuuGTvuWGnRON9cu3ESrzDizLgDn8Wlo545dAISZajVvPaRa/1Sf7DvpPeV1Q6d9Sw06p5trF26iVWacWReA8/g0tHPHLgDCTLWatx5SrX+qT/ad9J7yuqHTvqUGndPNtQs30SozzqwLwHl8Gtq5YxcAYaZazVsPqdY/1Sf7TnpPed3Qad9Sg87p5tqFm2iVGWfWBeA8Pg3t3LELgDBTreath1Trn+qTfSe9p7xu6LRvqUHndHPtwk20yowz6wJwHp+Gdu7YBUCYqVbz1kOq9U/1yb6T3lNeN3Tat9Sgc7q5duEmWmXGmXUBOI9PQzt37AIgzFSreesh1fqn+mTfSe8prxs67Vtq0DndXLtwE60y48y6AJzHp6GdO3YBEGaq1bz1kGr9U32y76T3lNcNnfYtNeicbq5duIlWmXFmXQDO49PQzh27AAgz1Wreeki1/qk+2XfSe8rrhk77lhp0TjfXLtxEq8w4sy4A5/FpaOeOXQCEmWo1bz2kWv9Un+w76T3ldUOnfUsNOqebaxduolVmnFkXgPP4NLRzxy4Awky1mrceUq1/qk/2nfSe8rqh076lBp3TzbULN9EqM84suQBsBZcOTbiJNtl3vSW5mZYvl+B/7lvnZUbsL5VyE2/RKjPpO+ktzFSb7vtnF4DzCNOhnVd8R5Hsu953Mjx5ilzoLx/JLOl9wug//azWrv5TveSli0/Se8rrhi7ddxeAQYrp0AYlX5Ek+673lQiPHqIvMsks6X0E6T/8sNau/lO95NUFYEY9yfxrSe8XgPPg0qGdV3xHkey73ncyPHmKvsgks6T3CaN+AfibgGQms6LLh+Yt+nTfXQAG6aVDG5R8RZLsu95XIjx6iFzoX79d9G8Ajninf1jy0pdw0jvJPd13F4BB+unQBiVfkST7rveVCI8e0gXgCNfvH1ZuM1dXPfWMObn5E5LMv5b0/iuA8/DSoZ1XfEeR7LvedzI8eYq+yCSzpPcJo//0s1q7+k/1kle/AMyoJ5l3AZhlRp829aAMS74iSw5rva9EePQQfZFJZknvI0j/4Ye1dvWf6iUvvdeS3lNeN3TpvvsFYJBiOrRByVckyb7rfSXCo4foi0wyS3ofQeoC8JuAZCazosuH5i36dN9dAAbppUMblHxFkuy73lciPHqIXOhfnxf7R4BHvNM/LHnpSzjpneSe7rsLwCD9dGiDkq9Ikn3X+0qERw/pAnCE68pvwjPHO6qnnrE79GZPSTL/WtL7R4DnwaVDO6/4jiLZd73vZHjylC4AJ7T+/lnlNnN11VPPmJObPyHJvAvAMLd0aMOyWZbsu94c3/ED9EUmmSW9j0H9N4HWrv5TveT18pS+k95TXjd06b77BWCQYjq0QclXJMm+630lwqOHyIX+9dtF/wbgiHf6hyWvLgCz9JLM+wVglhldbHpQhiVfkSWHtd5XIjx6SBeAI1y/f1i5zVxd9dQz5uTmT0gy7wIwzC0d2rBsliX7rjfHd/wAfZFJZknvY1D/TaC1q/9UL3npLzZJ7ymvG7p03z9/LZ3WJDj1vjE4iWfoqAg39U7wuuEpzG74b32GzIsyF++tvL9+mwz+K58kt819dwEYTI4EPrD7GIlebMJNvT8G4mEhwuzQ6lv9uMyLMhfvzSEIt83MNvfdBWBw4iTwgd3HSPSQCjf1/hiIh4UIs0Orb/XjMi/KXLw3hyDcNjPb3HcXgMGJk8AHdh8j0UMq3NT7YyAeFiLMDq2+1Y/LvChz8d4cgnDbzGxz310ABidOAh/YfYxED6lwU++PgXhYiDA7tPpWPy7zoszFe3MIwm0zs819dwEYnDgJfGD3MRI9pMJNvT8G4mEhwuzQ6lv9uMyLMhfvzSEIt83MNvfdBWBw4iTwgd3HSPSQCjf1/hiIh4UIs0Orb/XjMi/KXLw3hyDcNjPb3HcXgMGJk8AHdh8j0UMq3NT7YyAeFiLMDq2+1Y/LvChz8d4cgnDbzGxz310ABidOAh/YfYxED6lwU++PgXhYiDA7tPpWPy7zoszFe3MIwm0zs819dwEYnDgJfGD3MRI9pMJNvT8G4mEhwuzQ6lv9uMyLMhfvzSEIt83MNvfdBWBw4iTwgd3HSPSQCjf1/hiIh4UIs0Orb/XjMi/KXLw3hyDcNjPb3HcXgMGJk8AHdh8j0UMq3NT7YyAeFiLMDq2+1Y/LvChz8d4cgnDbzGxz310ABidOAh/YfYxED6lwU++PgXhYiDA7tPpWPy7zoszFe3MIwm0zs819dwEYnDgJfGD3MRI9pMJNvT8G4mEhwuzQ6lv9uMyLMhfvzSEIt83MNvfdBWBw4iTwgd3HSPSQCjf1/hiIh4UIs0Orb/XjMi/KXLw3hyDcNjPb3PfPHz9+/JoOnYaWBJf0nvJ+6aTul14zS9WudQs39RZmqk32Ld7at2SmdSe9hZvULb7b7zXpXWdNvL+4dwE4R9iDcs5MD7kyl4Om3jNad1TJvsVbu5fMtO6kt3CTusVX74b0LzbSu86aeHcBGNLrQZmBk2FX5knvGa07qmTf4q3dy7xo3Ulv4SZ1i28XAKU31/cLwIBdD8oAGv7rC2Uul7p6z2jdUSX7Fm/tXjLTupPewk3qFt8uAEpvru8CMGDXgzKA1gVgBg1V8jLTORdvbJv+1kXrFm7qLdykbvHtAqD05vouAAN2PSgDaF0AZtBQJS8UnXPxxra7AAwAat4Dy98SnZVk7cm+xftr8eofAZ4jTA7b5oMitSvzpPf5hN1TJPsWbyUg86J1J72Fm9Qtvv0CoPTm+i4AA3Y9KANo/QIwg4YqeZnpnIs3tt0vAAOAmvfAsl8Afr5ewbl/ugAM2PegDKB1AZhBQ5W8hHXOxRvb7gIwAKh5Dyy7AHQBmI2NDqtcTuo96/gvldT90m+tXesWbuoteas22bd4a9+Smdad9BZuUrf4br/XpHedNfH+4t6/AThH2INyzkwPuTKXg6beM1p3VMm+xVu7l8y07qS3cJO6xVfvhvQvNtK7zpp4dwEY0utBmYGTYVfmSe8ZrTuqZN/ird3LvGjdSW/hJnWLbxcApTfX9wvAgF0PygAa/usLZS6XunrPaN1RJfsWb+1eMtO6k97CTeoW3y4ASm+u7wIwYNeDMoDWBWAGDVXyMtM5F29sm/7WResWbuot3KRu8e0CoPTm+i4AA3Y9KANoXQBm0FAlLxSdc/HGtrsADABq3gPL3xKdlWTtyb7F+2vx6h8BniNMDtvmgyK1K/Ok9/mE3VMk+xZvJSDzonUnvYWb1C2+/QKg9Ob6n78gdT0o87L9f84mtQOyr5brLcm/X6t5S8UyKy9fqV29pW/VSt/qLfrNzKXvZF7KXGpPen+9i7oAnI+tBN4F4Jx3WqF5S/3JC0K9pW/VJjOT2jczl76TeSlzqT3p3QVgOLESeBeAIfSgTPOW0pMXhHpL36pNZia1b2YufSfzUuZSe9K7C8BwYiXwLgBD6EGZ5i2lJy8I9Za+VZvMTGrfzFz6TualzKX2pHcXgOHESuBdAIbQgzLNW0pPXhDqLX2rNpmZ1L6ZufSdzEuZS+1J7y4Aw4mVwLsADKEHZZq3lJ68INRb+lZtMjOpfTNz6TuZlzKX2pPeXQCGEyuBdwEYQg/KNG8pPXlBqLf0rdpkZlL7ZubSdzIvZS61J727AAwnVgLvAjCEHpRp3lJ68oJQb+lbtcnMpPbNzKXvZF7KXGpPencBGE6sBN4FYAg9KNO8pfTkBaHe0rdqk5lJ7ZuZS9/JvJS51J707gIwnFgJvAvAEHpQpnlL6ckLQr2lb9UmM5PaNzOXvpN5KXOpPendBWA4sRJ4F4Ah9KBM85bSkxeEekvfqk1mJrVvZi59J/NS5lJ70rsLwHBiJfAuAEPoQZnmLaUnLwj1lr5Vm8xMat/MXPpO5qXMpfakdxeA4cRK4F0AhtCDMs1bSk9eEOotfas2mZnUvpm59J3MS5lL7UnvLgDDiZXAuwAMoQdlmreUnrwg1Fv6Vm0yM6l9M3PpO5mXMpfak95dAIYTK4F3ARhCD8o0byk9eUGot/St2mRmUvtm5tJ3Mi9lLrUnvb/eRa//Yug0OGlcX4TTmv9LJ7UnQ3uqt+b9VL3Oi3CTMya+m+8W7Tupl1lLzspWZjfq7gIwoCiD/rKTYX+q9yCmSl4b/s/XEc/8I3OuFT+1b+UmemGenBXpWbXCTL37BWBIUEOTYX+q9zCqx8t0XgSgzLn49guA0pvpZdaSszLr9o5KmN2ooF8ABhQ1NBn2p3oPYqqkXwAiMyDnO1LwJVO5m8rsUgiHj+kCcAjsxm8XMuxyyF61b/UexFRJF4DIDMgZixR8yVTupjK7FMLhY7oAHALrAjAA9i/JUw/5nJgr5VJW92TeT+1bMxO9ME/OivSsWmGm3l/vsv6vAM4xamgy7E/1Pk+pihvLqlCUORffJ/et3EQvd1NyVqRn1Qoz9e4CMCSoocmwP9V7GNXjZTovAlDmXHy7ACi9mV5mLTkrs27vqITZjQr6BWBAUUOTYX+q9yCmSvo3AJEZkPMdKfiSqdxNZXYphMPHdAE4BHbjtwsZdjlkr9q3eg9iqqQLQGQG5IxFCr5kKndTmV0K4fAxXQAOgXUBGAD7l+Sph3xOzJVyKat7Mu+n9q2ZiV6YJ2dFelatMFPvr3dZ/wjwHKOGJsP+VO/zlKq4sawKRZlz8X1y38pN9HI3JWdFelatMFPvLgBDghqaDPtTvYdRPV6m8yIAZc7FtwuA0pvpZdaSszLr9o5KmN2ooF8ABhQ1NBn2p3oPYqqkfwMQmQE535GCL5nK3VRml0I4fEwXgENgN367kGGXQ/aqfav3IKZKugBEZkDOWKTgS6ZyN5XZpRAOH9MF4BBYF4ABsH9JnnrI58RcKZeyuifzfmrfmpnohXlyVqRn1Qoz9f56l/0C8lo8WEf/M6c3wKeesZW51H1jaZO8tHbx1jMq3tJ3sm7pWbXCTL0365PzIpkl6+4CsHnih7VvHVapuwvAcFhQJpmlL0ZsfSwXZmPTbyBMzotklqy7C8A3GPzTFrYOq9TdBeB0Su78vGSWvhjvEDh/ijA7d/s+iuS8SGbJursAfJ/5/+NOtg6r1N0F4I/H4+oPSmbpi/EqiIOHCbMDm2/3o8l5kcySdXcB+HbH4H9vaOuwSt1dAP73ufi/+AnJLH0x/l/w+JNnCrM/ef53/ZnkvEhmybq7AHzX0/A/9LV1WKXuLgCZQZfM0hdjhpj9z3RTNX+Cb3JeNs95/1cAnzC9b6xh67BK3V0A3jhg/2YlmSUv9Aytv1yFWbLutHdyXiSzZN39ApCe2oD/1mGVursABAYNX2bpizFDrAvAlHtyXuRuStbdBWA6bYt1W4dV6u4CkBlYySx9MWaIdQGYck/Oy+Y5778CmE7cUt3WYZW6uwBkhlUyS17oGVr9VwDCPTkvm+e8C4BM3ULt1mGVursAZAZVMkte6BlaXQCEe3JeNs95FwCZuoXarcMqdXcByAyqZJa80DO0ugAI9+S8bJ7zLgAydQu1W4dV6u4CkBlUySx5oWdodQEQ7sl52TznXQBk6hZqtw6r1N0FIDOoklnyQs/Q6gIg3JPzsnnOuwDI1C3Ubh1WqbsLQGZQJbPkhZ6h1QVAuCfnZfOc/3z9z3UFvGgFnPg+Wbv1oGhmyb619q365PmWvJN1a9bSt3on9ZszS3LrApCkH/BOXhDJQ5rsOxDzR1huzTtZtwb31DnfnJlmLvouAEJvoTZ5QSQPabLvhWNypeSteSfrVvBPnfPNmWnmou8CIPQWapMXRPKQJvteOCZXSt6ad7JuBf/UOd+cmWYu+i4AQm+hNnlBJA9psu+FY3Kl5K15J+tW8E+d882Zaeai7wIg9BZqkxdE8pAm+144JldK3pp3sm4F/9Q535yZZi76LgBCb6E2eUEkD2my74VjcqXkrXkn61bwT53zzZlp5qLvAiD0FmqTF0TykCb7XjgmV0remneybgX/1DnfnJlmLvouAEJvoTZ5QSQPabLvhWNypeSteSfrVvBPnfPNmWnmou8CIPQWapMXRPKQJvteOCZXSt6ad7JuBf/UOd+cmWYu+i4AQm+hNnlBJA9psu+FY3Kl5K15J+tW8E+d882Zaeai7wIg9BZqkxdE8pAm+144JldK3pp3sm4F/9Q535yZZi76LgBCb6E2eUEkD2my74VjcqXkrXkn61bwT53zzZlp5qLvAiD0FmqTF0TykCb7XjgmV0remneybgX/1DnfnJlmLvouAEJvoTZ5QSQPabLvhWNypeSteSfrVvBPnfPNmWnmou8CIPQWapMXRPKQJvteOCZXSt6ad7JuBf/UOd+cmWYu+p+/guSSwyptb637NSjJ2mVQVZvMu96a3rle5lzyOq/0nwqpW72TfWvtwk37Tnozty4A5wgl8HO3fyqSw6q1J/XCTfOu9/uTl8wkL+1U6lbvZN9au3DTvpPezK0LwDlCCfzcrQuAMnvp5ZBr3vW+keDZMyQzyeusyv//p6Vu9U72rbULN+076c3cugCcI5TAz926ACizLgAzgjrnerHOqv5LJbVvrVt46RlRb9Un8056M7cuAOcIJfBzty4AykwvN81bXihP9dbMhZvklaxbvZN9a+3JvJPezK0LwDlCCfzcrQuAMusCMCOoc558oUjtW+uepfy3Ktm31p7MO+nN3LoAnCOUwM/dugAosy4AM4I658kXitS+te5Zyl0ANO+ts/ZKvv8zwMGpkcAHdv+QJIdVa0/qhZvmXe/3Jy+ZSV7aqdSt3sm+tXbhpn0nvZlbvwCcI5TAz936BUCZ9QvAjKDOuV6ss6r/UkntW+sWXnpG1Fv1ybyT3sytC8A5Qgn83K0LgDLTy03zlhfKU701c+EmeSXrVu9k31p7Mu+kN3PrAnCOUAI/d+sCoMy6AMwI6pwnXyhS+9a6Zyn/rUr2rbUn8056M7cuAOcIJfBzty4AyqwLwIygznnyhSK1b617lnIXAM1766y9ku8fAQ5OjQQ+sPuHJDmsWntSL9w073q/P3nJTPLSTqVu9U72rbULN+076c3c+gXgHKEEfu7WLwDKrF8AZgR1zvVinVX9l0pq31q38NIzot6qT+ad9GZuXQDOEUrg525dAJSZXm6at7xQnuqtmQs3yStZt3on+9bak3knvZlbcgGQ4gW6vhCk7idrJbPNl5NkLsx0ztVb+k7mrX1L7UlvyavanQSifwMgyHpQhF5GK5nJpZrp9o6rMOsCMMtgM/OnnpNZ0lV1AegMvI2AXKxPvdiEWReA2WhvZv7UczJLuqouAJ2BtxGQi/WpF5sw6wIwG+3NzJ96TmZJV9UFoDPwNgJysT71YhNmXQBmo72Z+VPPySzpqroAdAbeRkAu1qdebMKsC8BstDczf+o5mSVdVReAzsDbCMjF+tSLTZh1AZiN9mbmTz0ns6Sr6gLQGXgbAblYn3qxCbMuALPR3sz8qedklnRVXQA6A28jIBfrUy82YdYFYDbam5k/9ZzMkq6qC0Bn4G0E5GJ96sUmzLoAzEZ7M/OnnpNZ0lV1AegMvI2AXKxPvdiEWReA2WhvZv7UczJLuqouAJ2BtxGQi/WpF5sw6wIwG+3NzJ96TmZJV9UFoDPwNgJysT71YhNmXQBmo72Z+VPPySzpqroAdAbeRkAu1qdebMKsC8BstDczf+o5mSVdVReAzsDbCMjF+tSLTZh1AZiN9mbmTz0ns6Sr6gLQGXgbAblYn3qxCbMuALPR3sz8qedklnRVP3/8+PFrI4bkoOsFIbyTfUvdT9Ym50W4b541Ya59b/WWWdms1byTvcusveruAjBIT6EPLH9LNg+r9L1Zm5wX4bZ51oS59r3VW2Zls1bzTvYus9YFYJicQh/afsk2D6v0vVmbnBfhtnnWhLn2vdVbZmWzVvNO9i6z1gVgmJxCH9p2ARBwQW1yXqTtp16M2rfknfSWWdmsVebJ3mXWugAMk1PoQ9suAAIuqE3Oi7T91ItR+5a8k94yK5u1yjzZu8xaF4Bhcgp9aNsFQMAFtcl5kbafejFq35J30ltmZbNWmSd7l1nrAjBMTqEPbbsACLigNjkv0vZTL0btW/JOesusbNYq82TvMmtdAIbJKfShbRcAARfUJudF2n7qxah9S95Jb5mVzVplnuxdZq0LwDA5hT607QIg4ILa5LxI20+9GLVvyTvpLbOyWavMk73LrHUBGCan0Ie2XQAEXFCbnBdp+6kXo/YteSe9ZVY2a5V5sneZtS4Aw+QU+tC2C4CAC2qT8yJtP/Vi1L4l76S3zMpmrTJP9i6z1gVgmJxCH9p2ARBwQW1yXqTtp16M2rfknfSWWdmsVebJ3mXWugAMk1PoQ9suAAIuqE3Oi7T91ItR+5a8k94yK5u1yjzZu8xaF4Bhcgp9aNsFQMAFtcl5kbafejFq35J30ltmZbNWmSd7l1nrAjBMTqEPbbsACLigNjkv0vZTL0btW/JOesusbNYq82TvMmtfC8Cvzd0nyS/1loHZPCrS99Ko4wtjkrnM6ta6vy70n6//wOvsH2E2c7ynkr7vVfH+J2lmXQDen1nUUQ6KDluycek7Wbd6JzNLMpe+t9bdBUBPyz69zHm/AOzLmyuWy02HjYuHB0jfYBuXJjNLMpe+t9bdBSB+3N5egMx5F4C3x5U3lMtNhy3ZvfSdrFu9k5klmUvfW+vuAqCnZZ9e5rwLwL68uWK53HTYuHh4gPQNtnFpMrMkc+l7a91dAOLH7e0FyJx3AXh7XHlDudx02JLdS9/JutU7mVmSufS9te4uAHpa9ullzrsA7MubK5bLTYeNi4cHSN9gG5cmM0syl7631t0FIH7c3l6AzHkXgLfHlTeUy02HLdm99J2sW72TmSWZS99b6+4CoKdln17mvAvAvry5YrncdNi4eHiA9A22cWkysyRz6Xtr3V0A4sft7QXInHcBeHtceUO53HTYkt1L38m61TuZWZK59L217i4Aelr26WXOuwDsy5srlstNh42LhwdI32AblyYzSzKXvrfW3QUgftzeXoDMeReAt8eVN5TLTYct2b30naxbvZOZJZlL31vr7gKgp2WfXua8C8C+vLliudx02Lh4eID0DbZxaTKzJHPpe2vdXQDix+3tBcicdwF4e1x5Q7ncdNiS3UvfybrVO5lZkrn0vbXuLgB6WvbpZc67AOzLmyuWy02HjYuHB0jfYBuXJjNLMpe+t9bdBSB+3N5egMx5F4C3x5U3lMtNhy3ZvfSdrFu9k5klmUvfW+vuAqCnZZ9e5vxrXn78+PFrX9vPrZgD738v/O3Do5m9veBLhvIifSozRZ9kvtVbmcusCrNX3eLdBUCTD+g58C4Ab09NM3t7wZcM5XJ7KjNFn2S+1VuZy6wKsy4AmtxCvQxbPxFmAtfMMlW7q1xuT2Wm1JPMt3orc5lVYdYFQJNbqJdh6wKQCVwzy1TtrnK5PZWZUk8y3+qtzGVWhVkXAE1uoV6GrQtAJnDNLFO1u8rl9lRmSj3JfKu3MpdZFWZdADS5hXoZti4AmcA1s0zV7iqX21OZKfUk863eylxmVZh1AdDkFupl2LoAZALXzDJVu6tcbk9lptSTzLd6K3OZVWHWBUCTW6iXYesCkAlcM8tU7a5yuT2VmVJPMt/qrcxlVoVZFwBNbqFehq0LQCZwzSxTtbvK5fZUZko9yXyrtzKXWRVmXQA0uYV6GbYuAJnANbNM1e4ql9tTmSn1JPOt3spcZlWYdQHQ5BbqZdi6AGQC18wyVburXG5PZabUk8y3eitzmVVh1gVAk1uol2HrApAJXDPLVO2ucrk9lZlSTzLf6q3MZVaFWRcATW6hXoatC0AmcM0sU7W7yuX2VGZKPcl8q7cyl1kVZl0ANLmFehm2LgCZwDWzTNXuKpfbU5kp9STzrd7KXGZVmHUB0OQW6mXYugBkAtfMMlW7q1xuT2Wm1JPMt3orc5lVYRZfAKRxhb5ZL6Er86d6y7wIM/G9csDhv/6YrF2Z6zmR3qV2rTvpLcxUK32rt2SWrPvrF8LXf1J4CkAan3p+B52Ersyf6i1zI8zEtwvAnJ6ek7nzjx8yL1p30luYqVb6Vm/JLFl3FwBNfqiX0GXY0v8KINn3MKovmdQtvl0A5vT0nMydbV60bplV9RZmqpW+1Vu4JevuAqDJD/USugybvsw2ew+j6gIA4GRe5IzcWJygbVoYhVn6fAsz1eq8iL9klqy7C4CkDloJXYYtfUEk+4a46EIX3xsvMmGerF3r1nMivUvtWnfSW5ipVvpWb8ksWXcXAE1+qJfQZdi6AMwCk7xmjn+rknkna1fmyk16l9q17qS3MFOt9K3eklmy7i4AmvxQL6HLsHUBmAUmec0cuwAocz0nkpvUrnUnvYWZaqVv9ZbMknV3AdDkh3oJXYatC8AsMMlr5tgFQJnrOZHcpHatO+ktzFQrfau3ZJasuwuAJj/US+gybF0AZoFJXjPHLgDKXM+J5Ca1a91Jb2GmWulbvSWzZN1dADT5oV5CMXX+JAAADNtJREFUl2HrAjALTPKaOXYBUOZ6TiQ3qV3rTnoLM9VK3+otmSXr7gKgyQ/1EroMWxeAWWCS18yxC4Ay13MiuUntWnfSW5ipVvpWb8ksWXcXAE1+qJfQZdi6AMwCk7xmjl0AlLmeE8lNate6k97CTLXSt3pLZsm6uwBo8kO9hC7D1gVgFpjkNXPsAqDM9ZxIblK71p30Fmaqlb7VWzJL1t0FQJMf6iV0GbYuALPAJK+ZYxcAZa7nRHKT2rXupLcwU630rd6SWbLuLgCa/FAvocuwdQGYBSZ5zRy7AChzPSeSm9SudSe9hZlqpW/1lsySdXcB0OSHegldhq0LwCwwyWvm2AVAmes5kdykdq076S3MVCt9q7dklqw7vgCkm58GL4H3JTylbjqZNc1bKpe6X77J2pN9i7cyk8yS3sJss1aZb+795+uOmDag4OSgTGu+oUv2vdn7BvvpM2TWlPm0Zl0WuwDMyGveyVkT7xmt/SrNezOBLgCD9HRg5JBu9h6gviZJMpcmpO4uADPym8+YzsuM2G6V5r25+y4Ag/R0YOSQbvYeoL4mSTKXJqTuLgAz8pvPmM7LjNhulea9ufsuAIP0dGDkkG72HqC+Jkkylyak7i4AM/Kbz5jOy4zYbpXmvbn7LgCD9HRg5JBu9h6gviZJMpcmpO4uADPym8+YzsuM2G6V5r25+y4Ag/R0YOSQbvYeoL4mSTKXJqTuLgAz8pvPmM7LjNhulea9ufsuAIP0dGDkkG72HqC+Jkkylyak7i4AM/Kbz5jOy4zYbpXmvbn7LgCD9HRg5JBu9h6gviZJMpcmpO4uADPym8+YzsuM2G6V5r25+y4Ag/R0YOSQbvYeoL4mSTKXJqTuLgAz8pvPmM7LjNhulea9ufsuAIP0dGDkkG72HqC+Jkkylyak7i4AM/Kbz5jOy4zYbpXmvbn7LgCD9HRg5JBu9h6gviZJMpcmpO4uADPym8+YzsuM2G6V5r25+y4Ag/R0YOSQbvYeoL4mSTKXJqTuLgAz8pvPmM7LjNhulea9ufsuAIP0dGDkkG72HqC+Jkkylyak7i4AM/Kbz5jOy4zYbpXmvbn7LgCD9HRg5JBu9h6gviZJMpcmpO4uADPym8+YzsuM2G6V5r25+y4Ag/R0YOSQqveg3d8SqVt8b2ifyk361ryT3jdmZvqMrX1L3S9WOi9T3pt1aeZdAAbTkwxNvQftdgEQaOGLUeZFL/SkN0ZG8q19S91dAGYjk2beBWCQWzI09R602wVAoHUBGNHT5WNkekkkZzTZt9TdBWA2PGnmXQAGuSVDU+9Bu10ABFoXgBG95ItwVPC/ieSMJvuWursAzKYmzbwLwCC3ZGjqPWi3C4BA6wIwopd8EY4K7gLQvwEYDI7e53pOugAsC00HZtBuFwCB1gVgRE8vtpHpJZGc0WTfUne/AMyGJ828C8Agt2Ro6j1otwuAQOsCMKKXfBGOCu4XgH4BGAyO3ud6TroALAtNB2bQbhcAgdYFYERPL7aR6SWRnNFk31J3vwDMhifNvAvAILdkaOo9aLcLgEDrAjCil3wRjgruF4B+ARgMjt7nek66ACwLTQdm0G4XAIHWBWBETy+2keklkZzRZN9Sd78AzIYnzbwLwCC3ZGjqPWi3C4BA6wIwopd8EY4K7heAfgEYDI7e53pOugAsC00HZtBuFwCB1gVgRE8vtpHpJZGc0WTfUne/AMyGJ828C8Agt2Ro6j1otwuAQOsCMKKXfBGOCu4XgH4BGAyO3ud6TroALAtNB2bQbhcAgdYFYERPL7aR6SWRnNFk31J3vwDMhifNvAvAILdkaOo9aLcLgEDrAjCil3wRjgruF4B+ARgMjt7nek66ACwLTQdm0G4XAIHWBWBETy+2keklkZzRZN9Sd78AzIYnzbwLwCC3ZGjqPWj32gIgtScvRmH20rbvc4LJvCWv9ItQai/z8znV8z1zvKfqAjBgKYdMLwj1HrTbBUCgdQEY0evLaIRt7bKp99rmeZklfUfVBWDAMTms6j1otwuAQOsCMKK3+ULfWvvWuvWXqtGA/psoeSdr7V0ABgQ1cDlo6j1otwuAQOsCMKInZ2RkePFC31r71rq7AMwnvgvAgJ2+hOWgqfeg3S4AAq0LwIienJGRYReA6F/x6722eV50XkXfBWBALzms6j1otwuAQOsCMKK3+ULfWvvWuvsFYHTEvkRdAAbs9CUsB029B+12ARBoXQBG9OSMjAz7BaBfAIaDk7yThyX/fae/7qfpQ7Tx5CGf9vzSJftWb+lb85La1Vv6Vm37PieYzFvy2vzbaJmfz+mN98HM9Y6qXwAGHJMXhHoP2u0XAIGGC2PyUsa2aVFO9q1nbGvtW+vevHTpGVN9F4ABweQFod6DdrsACLQuACN6fRmNsHXpmmEjVfJOpsL7NwAzfBq4XG7qPev4L5XUrZ/K1Fv6Vq1k1r6V/rle8rpxTs4r/lshtSdnTerezFyyvqHtF4ABxeSwqveg3X4BEGj9AjCi15fRCFu/AMywkSp5J1Ph/QIww6eBy+Wm3rOO+wVAuElmMitS8w3t1r6l7s2/jSZn7anMb5wzeUa/AAzoJYdVvQft9guAQOsXgBG9voxG2PoFYIaNVMk7mQrvF4AZPg1cLjf1nnXcLwDCTTKTWZGab2i39i119wvAbHKeynxG654q+gXgXhu7niSXuh4UISV1i29am2SuvTczJXiufyrzc1Kfodh8vpVgFwAlONDLBZEcVql7gOljJEnmCqGZKcFz/VOZn5P6DMXm860EuwAowYFeLojksErdA0wfI0kyVwjNTAme65/K/JzUZyg2n28l2AVACQ70ckEkh1XqHmD6GEmSuUJoZkrwXP9U5uekPkOx+XwrwS4ASnCglwsiOaxS9wDTx0iSzBVCM1OC5/qnMj8n9RmKzedbCXYBUIIDvVwQyWGVugeYPkaSZK4QmpkSPNc/lfk5qc9QbD7fSrALgBIc6OWCSA6r1D3A9DGSJHOF0MyU4Ln+qczPSX2GYvP5VoJdAJTgQC8XRHJYpe4Bpo+RJJkrhGamBM/1T2V+TuozFJvPtxLsAqAEB3q5IJLDKnUPMH2MJMlcITQzJXiufyrzc1Kfodh8vpVgFwAlONDLBZEcVql7gOljJEnmCqGZKcFz/VOZn5P6DMXm860EuwAowYFeLojksErdA0wfI0kyVwjNTAme65/K/JzUZyg2n28l2AVACQ70ckEkh1XqHmD6GEmSuUJoZkrwXP9U5uekPkOx+XwrwS4ASnCglwsiOaxS9wDTx0iSzBVCM1OC5/qnMj8n9RmKzedbCXYBUIIDvVwQyWGVugeYPkaSZK4QmpkSPNc/lfk5qc9QbD7fSrALgBIc6OWCSA6r1D3A9DGSJHOF0MyU4Ln+qczPSX2GYvP5VoJdAJTgQC8XRHJYpe4Bpo+RJJkrhGamBM/1T2V+TuozFJvPtxKkBUDNqz8n8NRh7aV6Piuq0FmTzNRbexe99C2+aa1kpszEW7lJ7Vq3eL/67gKg6b9ZrwPz5nKv2emgXyvkQQ/SWZPM1DsZk/SdrFu9JTNlJt7at9SudYt3FwBNPqDXgQmUfMVSB/1KEQ97iM6aZKbeyaik72Td6i2ZKTPx1r6ldq1bvLsAaPIBvQ5MoOQrljroV4p42EN01iQz9U5GJX0n61ZvyUyZibf2LbVr3eLdBUCTD+h1YAIlX7HUQb9SxMMeorMmmal3MirpO1m3ektmyky8tW+pXesW7y4AmnxArwMTKPmKpQ76lSIe9hCdNclMvZNRSd/JutVbMlNm4q19S+1at3h3AdDkA3odmEDJVyx10K8U8bCH6KxJZuqdjEr6Ttat3pKZMhNv7Vtq17rFuwuAJh/Q68AESr5iqYN+pYiHPURnTTJT72RU0neybvWWzJSZeGvfUrvWLd5dADT5gF4HJlDyFUsd9CtFPOwhOmuSmXono5K+k3Wrt2SmzMRb+5batW7x7gKgyQf0OjCBkq9Y6qBfKeJhD9FZk8zUOxmV9J2sW70lM2Um3tq31K51i3cXAE0+oNeBCZR8xVIH/UoRD3uIzppkpt7JqKTvZN3qLZkpM/HWvqV2rVu8uwBo8gG9Dkyg5CuWOuhXinjYQ3TWJDP1TkYlfSfrVm/JTJmJt/YttWvd4t0FQJMP6HVgAiVfsdRBv1LEwx6isyaZqXcyKuk7Wbd6S2bKTLy1b6ld6xbvLgCafECvAxMo+YqlDvqVIh72EJ01yUy9k1FJ38m61VsyU2birX1L7Vq3eHcB0OQDeh2YQMlXLHXQrxTxsIforElm6p2MSvpO1q3ekpkyE2/tW2rXusW7C4AmH9DrwARKvmKpg36liIc9RGdNMlPvZFTSd7Ju9ZbMlJl4a99Su9Yt3q++/x+P0Eub5cVYMwAAAABJRU5ErkJggg==" style="display: block;"></div>
+</div>
+ 
+
+
+
+
+</div>
+</font></font></div><font size="-1"><font size="-1">
+<input type="hidden" name="doctitle_utf8" id="doctitle_utf8" value="%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7"><input name="lock_type" id="lock_type" type="hidden" value="01"><input type="hidden" name="doctitle" id="doctitle" value="数值稳定性"><input type="hidden" name="_doc_flag" id="_doc_flag" value=""><input type="hidden" name="_doc_type" id="_doc_type" value="1"><input type="hidden" name="doc_first_image" id="doc_first_image" value="http://a0.att.hudong.com/24/15/01000000000000119081546080124_140.gif"><input type="hidden" name="docid" id="docid" value="300000058630"><input type="hidden" name="dociden" id="dociden" value="vHFZRa0dfBEEKBR4f"><input type="hidden" name="tagstr" id="tagstr" value="数学名词,数学术语,术语,科学,自然科学"><input type="hidden" name="prethes" id="prethes" value=""><input type="hidden" name="pagetype" id="pagetype" value="doc"><input type="hidden" name="PAGETIME" id="PAGETIME" value="2017-07-19 03:14:58"><input type="hidden" name="DOCVIEWTIME" id="DOCVIEWTIME" value="2017-7-18 18:04:10"><input type="hidden" value="vHVZRa0dfBEcCCxga" name="creatoriden" id="creatoriden"><input type="hidden" name="originalsummarycontent" id="originalsummarycontent" value="数值稳定性，算法对舍入误差的敏感性。在算法执行过程中会出现舍入误差的积累。对同一个计算问题，在不同的算法中舍入误差对计算结果产生的影响也各不相同。"><input type="hidden" name="hdAdBizId" id="hdAdBizId" value="%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7">
+
+<div class="clear"></div>
+
+
+<div id="index-footer" class="">
+<ul class="t">
+<li><a class="yjfk" href="http://group.baike.com/help" target="_blank">请提意见</a></li>
+<li><a class="bzzx" href="http://service.baike.com/" target="_blank">帮助中心</a></li>
+<li>服务热线：86-10-62303127（9:00-21:00）</li>
+
+</ul>
+<ul class="c">
+<li><a target="_blank" href="http://www.baike.com/wiki/%E4%BA%92%E5%8A%A8%E7%99%BE%E7%A7%91">关于我们</a></li>
+<li><a target="_blank" href="http://www.baike.com/hdnews/">新闻中心</a></li>
+<li><a target="_blank" href="http://www.baike.com/wiki/%E4%BA%92%E5%8A%A8%E7%99%BE%E7%A7%91%E6%9C%8D%E5%8A%A1%E5%8D%8F%E8%AE%AE">服务协议</a></li>
+<li><a target="_blank" href="http://open.baike.com/">互动合作</a></li>
+<li><a target="_blank" href="http://about.hudong.com/link/">友情链接</a></li>
+<li><a target="_blank" href="http://www.baike.com/zhaopin/index.html">招聘信息</a></li>
+<li><a target="_blank" href="http://www.baike.com/wiki/%E4%BA%92%E5%8A%A8%E7%99%BE%E7%A7%91%EF%BC%9A%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">联系我们</a></li>
+<li class="bor_no"><a href="http://www.baike.com/map-article.html" target="_blank">站点</a><a target="_blank" href="http://fenleisuoyin.baike.com/">地图</a></li>
+<li class="bor_no"><a target="_blank" href="http://z.baike.com/">知识官网</a></li>
+<li class="bor_no"><a target="_blank" href="http://mkt.baike.com/">百科营销</a></li>
+</ul>
+<p class="b">互动百科 版权所有 Powered by <a class="bold" href="http://kaiyuan.hudong.com/" target="_blank">HDwiki</a> © 2018 股票代码：835799</p>
+</div>
+
+
+
+<div class="clear"></div>
+<div class="mainnav-wrap" style=""><div class="mainnav">
+<div class="mainnav-r l">
+			<div class="logo"><a href="http://www.baike.com/" target="_blank"><img src="./数值稳定性_互动百科_files/a-baikelogo2.gif"></a></div>
+			<div class="search-area"><input type="text" class="l ac_input" name="q" autocomplete="off"></div>
+<input type="button" class="s-btn" value="">
+</div>
+<div class="mainnav-l r"><ul class="l">
+		  	<li><a onclick="return editdoc();" href="http://www.baike.com/editdocauth/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7" class="editdoc">编辑</a></li>
+			<li style="display:none;"><span class="noback"></span><a class="pic" href="javascript:void(0)"><span>0</span></a></li>
+			 <li style="display:none;" class="hide" id="module"><a class="kmod" href="javascript:void(0)">知识魔块</a><em></em>
+			 	<div id="kmodlist" name="div_fun_kmod" class="d-list"></div>
+         	</li>
+         	  <li style="display:none;"><a class="discuss" href="javascript:void(0)">讨论</a></li>
+           <li class="hide">
+         	<a class="share" href="javascript:void(0)" id="sha">分享</a><em></em>
+			<div id="share" class="d-list" name="div_fun_kmod"><p><a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="sinaminblog"><em></em>新浪微博</a>
+					<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="weixin"><em></em>微信
+					<span class="qrcode"><img class="img" src="./数值稳定性_互动百科_files/16608A864B656B9217392B0AE33D8324_90.png">扫描二维码用<i>手机</i>浏览词条</span></a>
+					<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="xinzhishe" id="xinzhisheshare2">	<em></em>新知社</a><a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="qqzone">	<em></em>QQ空间</a></p></div>
+		 </li>
+		   <li class="hide"><a class="diggg" href="javascript:void(0)">赞</a></li>
+		  </ul></div>
+</div></div>
+</font></font><div style="z-index: 2000; position: fixed; bottom: 45px; display: none; left: 944.5px;" id="tool">
+<div class="catalog">
+<div class="full-list">
+<ul>
+	    	<li class="current">
+<em>1</em><a href="javascript:void(0)" catalogkey="1" class="bold">数值稳定性</a>
+			     	 <i></i>
+			     	</li>
+<li class="">
+<em>2</em><a href="javascript:void(0)" catalogkey="3" class="bold">正文</a>
+			     	 <i></i>
+			     	</li>
+<li>
+<em>3</em><a href="javascript:void(0)" catalogkey="5" class="bold">配图</a>
+			     	 <i></i>
+			     	</li>
+<li>
+<em>4</em><a href="javascript:void(0)" catalogkey="7" class="bold">相关连接</a>
+			     	 <i></i>
+			     	</li>
+
+</ul>
+</div>
+<div style="width: 1px; height: 270px; right: 0px; top: 0px; position: absolute; border-left: 2px solid rgb(235, 237, 234); display: none;"><div style="background-position: -287px -188px; width: 10px; position: absolute; top: 0px; cursor: pointer; left: -6px; height: 64px; background-image: url(&quot;http://www.huimg.cn/entry/images/citiaobj.gif&quot;);"><span></span></div></div></div>
+<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="topcontrol"></a>
+<a href="http://www.baike.com/wiki/%E6%95%B0%E5%80%BC%E7%A8%B3%E5%AE%9A%E6%80%A7#" class="toollist"></a>
+</div></div><font size="-1"><font size="-1">
+
+
+</font></font><div id="renzheng" style="position: absolute; z-index: 100; visibility: visible; display: none;"><em class="bg"></em><em class="rztiao-t" id="rzjiao-b" style="display:none;"></em><div class="rz-contant"></div><em class="rzjiao-t" id="rzjiao-t" style="display:none;"></em></div><script src="./数值稳定性_互动百科_files/newloadads"></script><div class="hudong_dialog noborder" id="dialog_HDpopMsg" style="position: fixed; z-index: 2014; width: 310px; height: 261px; left: 1035px; top: 300px; display: block;"><h2 class="title" style="display: none; cursor: move;"></h2><div class="content" style="height: 245px; width: 310px; margin: 16px 0px 0px; padding: 0px; position: relative; overflow: visible; background: none;"><div class="close_b" onclick="$.popMessage.close();">关闭广告×</div><iframe id="docrightPopMesgIframe" frameborder="0" scrolling="no" onload="$.popMessage.show();" marginheight="0" marginwidth="0" style="width:310px;height:245px;" src="./数值稳定性_互动百科_files/hdbk.html"></iframe></div><div class="button" style="display: none;"><input type="button" class="ok" name="ok" value="确定"><input type="button" class="cancel" name="cancel" value="取消"></div><em class="close" style="display: none;"></em></div></body></html>

@@ -1,0 +1,85 @@
+%诊断对象是无人机纵向特性，升降舵到俯仰角速率
+clear;
+close all;
+clc;
+
+N = 127; 
+sigma=0.1;
+%正常模式下的相应参数
+M_alpha = -1.94;
+M_q = 0.11;
+M_dlte = 1.3;
+Z_alpha = 0.48;
+Z_dlte = 0;
+K_alpha2az = Z_alpha*177;
+%舵面破损故障对应参数，仅Z_dlte与M_dlte有变化，其余不变
+Z_dlte_half = Z_dlte*0.75;
+M_dlte_half = M_dlte*0.75;
+Z_dlte_full = Z_dlte*0.5;
+M_dlte_full = M_dlte*0.5;
+%正常模式对应的传递函数
+tf_dlte2dtheta = -tf( [M_dlte M_dlte*Z_alpha-Z_dlte*M_alpha],...
+    [1 Z_alpha+M_q M_alpha+Z_alpha*M_q] )
+%升降舵半损故障对应传递函数
+
+tf_dlte2dtheta_half = -tf( [M_dlte_half M_dlte_half*Z_alpha-...
+    Z_dlte_half*M_alpha],[1 Z_alpha+M_q M_alpha+Z_alpha*M_q] )
+%升降舵全损故障对应传递函数
+tf_dlte2dtheta_full = -tf( [M_dlte_full M_dlte_full*Z_alpha-...
+    Z_dlte_full*M_alpha],[1 Z_alpha+M_q M_alpha+Z_alpha*M_q] )
+
+%正常模式对应的传递函数
+tf_dlte2dtheta_d=c2d(tf_dlte2dtheta,0.1)
+%升降舵半损故障对应传递函数
+tf_dlte2dtheta_half_d=c2d(tf_dlte2dtheta_half,0.1)
+%升降舵全损故障对应传递函数
+tf_dlte2dtheta_full_d=c2d(tf_dlte2dtheta_full,0.1)
+
+A=cell2mat(tf_dlte2dtheta_half_d.den)
+B=cell2mat(tf_dlte2dtheta_half_d.num)
+C=1;
+M1=idpoly(A,B,C,'Ts',0.1);
+
+%产生用于辨识的输入输出数据
+U = idinput(N,'prbs');     
+E = idinput(N,'rgs')*sigma;       
+Y1 = sim(M1,[U,E]);                     
+Z = iddata(Y1,U);
+
+%ARMAX模型阶次的估计
+NN = struc(1:2,1:2,1);
+Loss_fun = arxstruc(Z,Z,NN);
+order = selstruc(Loss_fun,'aic');
+
+%ARMAX模型参数的估计（最小二乘法）
+Model_para = arx(Z,order);
+Model_para
+% present(Model_para);
+
+%ARMAX模型参数的估计（递归最小二乘法）
+SSS=zeros(2,3,N);
+obj=recursiveARX(order);
+for i=1:N
+    [A,B,Esout]=step(obj,Y1(i),U(i));
+    SSS(i,1,1)=obj.A(1);
+    SSS(i,1,2)=obj.A(2);
+    SSS(i,1,3)=obj.A(3);
+    SSS(i,2,1)=obj.B(1);
+    SSS(i,2,2)=obj.B(2);
+    SSS(i,2,3)=obj.B(3);
+end
+
+%绘制递归参数辨识图像
+figure()
+plot(SSS(:,1,1))
+figure()
+plot(SSS(:,1,2))
+figure()
+plot(SSS(:,1,3))
+figure()
+plot(SSS(:,2,1))
+figure()
+plot(SSS(:,2,2))
+figure()
+plot(SSS(:,2,3))
+
